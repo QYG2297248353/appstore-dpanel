@@ -1,0 +1,21 @@
+networks:
+  traccar-network:
+    driver: bridge
+services:
+  traccar:
+    container_name: traccar
+    env_file:
+    - ./envs/global.env
+    - .env
+    hostname: traccar
+    image: traccar/traccar:6.5
+    labels:
+      createdBy: Apps
+    networks:
+    - traccar-network
+    ports:
+    - ${PANEL_APP_PORT_HTTP}:8082
+    restart: always
+    volumes:
+    - ${TRACCAR_ROOT_PATH}/logs:/opt/traccar/logs:rw
+    - ${TRACCAR_ROOT_PATH}/traccar.xml:/opt/traccar/conf/traccar.xml:ro

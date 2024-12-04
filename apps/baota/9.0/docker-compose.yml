@@ -1,0 +1,26 @@
+networks:
+  1panel-network:
+    external: true
+services:
+  baota:
+    container_name: baota
+    env_file:
+    - ./envs/global.env
+    - .env
+    image: btpanel/baota:9.0_lts_latest
+    labels:
+      createdBy: Apps
+    network_mode: ${NETWORK_MODE}
+    ports:
+    - ${PANEL_APP_PORT_HTTP}:8888
+    - ${PANEL_APP_PORT_WEB_HTTP}:80
+    - ${PANEL_APP_PORT_WEB_HTTPS}:443
+    - ${PANEL_APP_PORT_FTP}:21
+    - ${PANEL_APP_PORT_SSH}:22
+    - ${PANEL_APP_PORT_MYSQL}:3306
+    - ${PANEL_APP_PORT_PHPADMIN}:888
+    restart: always
+    volumes:
+    - ${BAOTA_ROOT_PATH}/wwwroot:/www/wwwroot
+    - ${BAOTA_ROOT_PATH}/data:/www/server/data
+    - ${BAOTA_ROOT_PATH}/vhost:/www/server/panel/vhost

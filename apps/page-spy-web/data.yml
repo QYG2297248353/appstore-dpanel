@@ -1,0 +1,15 @@
+﻿additionalProperties:
+  key: page-spy-web
+  name: PageSpy
+  tags:
+    - WebSite
+    - Middleware
+    - Local
+  shortDescZh: 开源调试平台
+  shortDescEn: Open source debugging platform
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://www.pagespy.org/
+  github: https://github.com/HuolalaTech/page-spy-web/
+  document: https://www.pagespy.org/

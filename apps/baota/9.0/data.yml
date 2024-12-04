@@ -1,0 +1,81 @@
+additionalProperties:
+  formFields:
+    - default: "/home/baota"
+      edit: true
+      envKey: BAOTA_ROOT_PATH
+      labelZh: 数据持久化路径
+      labelEn: Data persistence path
+      required: true
+      type: text
+    - default: "host"
+      edit: true
+      envKey: NETWORK_MODE
+      labelEn: Drive path
+      labelZh: 网络模式
+      required: true
+      type: select
+      values:
+        - label: 主机网络模式
+          value: "host"
+        - label: 桥接网络模式
+          value: "bridge"
+        - label: 无网络模式
+          value: "none"
+        - label: 1panel-network
+          value: "1panel-network"
+    - default: 8888
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: WebUI 端口
+      labelEn: WebUI port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 80
+      edit: true
+      envKey: PANEL_APP_PORT_WEB_HTTP
+      labelZh: 网站服务 HTTP
+      labelEn: Website service HTTP
+      required: true
+      rule: paramPort
+      type: number
+    - default: 443
+      edit: true
+      envKey: PANEL_APP_PORT_WEB_HTTPS
+      labelZh: 网站服务 HTTPS
+      labelEn: Website service HTTPS
+      required: true
+      rule: paramPort
+      type: number
+    - default: 22
+      edit: true
+      envKey: PANEL_APP_PORT_SSH
+      labelZh: SSH 端口
+      labelEn: SSH port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 21
+      edit: true
+      envKey: PANEL_APP_PORT_FTP
+      labelZh: FTP 端口
+      labelEn: FTP port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 3306
+      edit: true
+      envKey: PANEL_APP_PORT_MYSQL
+      labelZh: MySQL 端口
+      labelEn: MySQL port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 888
+      edit: true
+      envKey: PANEL_APP_PORT_PHPADMIN
+      labelZh: phpMyAdmin 端口
+      labelEn: phpMyAdmin port
+      required: true
+      rule: paramPort
+      type: number
