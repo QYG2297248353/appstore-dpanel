@@ -1,2 +1,6 @@
-# appstore-dpanle
-DPanel 应用商店 镜像仓库
+# Docker 应用商店 - DPanel 镜像
+
+本项目由 [`新疆萌森软件开发工作室`](https://blog.lifebus.top/) 提供技术支持，我们致力于为 `Docker Compose`
+应用商店用户提供更多的应用程序。
+
+本仓库中的所有应用均来自官方推荐应用，我们会定期更新应用，如果您有任何问题，请联系我们。
