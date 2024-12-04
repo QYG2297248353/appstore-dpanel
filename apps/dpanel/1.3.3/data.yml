@@ -45,3 +45,10 @@ additionalProperties:
       labelEn: Admin Password
       required: true
       type: text
+    - default: ""
+      edit: true
+      envKey: HTTP_PROXY
+      labelZh: 网络代理
+      labelEn: Network Proxy
+      required: false
+      type: text
