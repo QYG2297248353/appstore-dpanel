@@ -1,6 +1,6 @@
 additionalProperties:
   key: plex
-  name: plex
+  name: Plex
   tags:
     - WebSite
     - Media
