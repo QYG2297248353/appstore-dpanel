@@ -3,6 +3,8 @@ networks:
     external: true
 services:
   pihole:
+    cap_add:
+    - NET_ADMIN
     container_name: pi-hole-dhcp
     env_file:
     - ./envs/global.env
