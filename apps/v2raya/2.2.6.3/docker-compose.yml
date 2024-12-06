@@ -8,11 +8,8 @@ services:
     - ./envs/global.env
     - .env
     environment:
-    - V2RAYA_ADDRESS=:::2017
+    - V2RAYA_ADDRESS=0.0.0.0:2017
     - V2RAYA_PLUGINLISTENPORT=32346
-    - V2RAYA_CONFIG=/etc/v2raya
-    - V2RAYA_WEBDIR=/etc/v2raya/web
-    - V2RAYA_LOG_FILE=/tmp/v2raya.log
     - V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray
     image: mzz2017/v2raya:v2.2.6.3
     labels:

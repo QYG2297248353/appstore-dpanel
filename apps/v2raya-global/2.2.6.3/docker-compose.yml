@@ -8,14 +8,11 @@ services:
     - ./envs/global.env
     - .env
     environment:
-    - V2RAYA_ADDRESS=:::${PANEL_APP_PORT_HTTP}
+    - V2RAYA_ADDRESS=0.0.0.0:${PANEL_APP_PORT_HTTP}
     - V2RAYA_PLUGINLISTENPORT=${PANEL_APP_PORT_PLUGIN}
-    - V2RAYA_CONFIG=/etc/v2raya
-    - V2RAYA_WEBDIR=/etc/v2raya/web
     - IPTABLES_MODE=legacy
     - V2RAYA_NFTABLES_SUPPORT=off
     - V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray
-    - V2RAYA_LOG_FILE=/tmp/v2raya.log
     image: mzz2017/v2raya:v2.2.6.3
     labels:
       createdBy: Apps
