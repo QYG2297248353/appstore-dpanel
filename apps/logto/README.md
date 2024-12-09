@@ -34,6 +34,12 @@ Logto 是一个开源的身份和访问管理（IAM）平台，旨在简化客�
 
 ## 安装说明
 
+> 该应用强制使用 HTTPS 协议，因此初始化需要使用 `https` 协议。
+>
+> 请确保您的域名已经配置了 SSL 证书。
+>
+> 如有需要，请在初始化前配置反向代理，并开启 HTTPS 访问。
+
 ### `中央缓存 Redis` 配置
 
 基本格式, 请根据实际情况修改, 遵循 [Redis协议](https://www.iana.org/assignments/uri-schemes/prov/rediss)：

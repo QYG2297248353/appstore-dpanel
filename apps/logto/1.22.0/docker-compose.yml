@@ -13,8 +13,8 @@ services:
     - .env
     environment:
     - NODE_ENV=production
-    - PORT=${PANEL_APP_PORT_API}
-    - ADMIN_PORT=${PANEL_APP_PORT_HTTP}
+    - PORT=3001
+    - ADMIN_PORT=3002
     - TRUST_PROXY_HEADER=true
     - CASE_SENSITIVE_USERNAME=true
     - DB_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_NAME}
@@ -24,6 +24,6 @@ services:
     networks:
     - 1panel-network
     ports:
-    - ${PANEL_APP_PORT_API}
-    - ${PANEL_APP_PORT_HTTP}
+    - ${PANEL_APP_PORT_API}:3001
+    - ${PANEL_APP_PORT_HTTP}:3002
     restart: always
