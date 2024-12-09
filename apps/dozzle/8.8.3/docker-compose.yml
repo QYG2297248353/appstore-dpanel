@@ -20,7 +20,7 @@ services:
       - /dozzle
       - healthcheck
       timeout: 30s
-    image: amir20/dozzle:v8.8.2
+    image: amir20/dozzle:v8.8.3
     labels:
       createdBy: Apps
     networks:
