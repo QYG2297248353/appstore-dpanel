@@ -54,7 +54,7 @@ services:
     - .env
     healthcheck:
       disable: false
-    image: ghcr.io/immich-app/immich-server:v1.122.0
+    image: ghcr.io/immich-app/immich-server:v1.122.2
     labels:
       createdBy: Apps
     networks:
