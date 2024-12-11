@@ -7,7 +7,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: orekiiiiiiiiiiiii/auto-lady:1.4.3
+    image: orekiiiiiiiiiiiii/auto-lady:1.4.4
     labels:
       createdBy: Apps
     networks:
