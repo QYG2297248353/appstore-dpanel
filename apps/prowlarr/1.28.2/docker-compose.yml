@@ -12,7 +12,7 @@ services:
     - PGID=1000
     - UMASK=022
     - TZ=Asia/Shanghai
-    image: linuxserver/prowlarr:1.27.0
+    image: linuxserver/prowlarr:1.28.2
     labels:
       createdBy: Apps
     networks:
