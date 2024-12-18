@@ -12,7 +12,7 @@ services:
     - .env
     healthcheck:
       disable: false
-    image: ghcr.io/immich-app/immich-machine-learning:v1.122.3
+    image: ghcr.io/immich-app/immich-machine-learning:v1.123.0
     labels:
       createdBy: Apps
     networks:
