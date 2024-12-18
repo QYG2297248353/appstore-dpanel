@@ -16,7 +16,7 @@ services:
     - UMASK=022
     - HTTP_PROXY=${PROXY_HOST}
     - HTTPS_PROXY=${PROXY_HOST}
-    image: jxxghp/moviepilot-v2:2.1.2
+    image: jxxghp/moviepilot-v2:2.1.3
     labels:
       createdBy: Apps
     logging:
