@@ -20,7 +20,7 @@ services:
     - SHIORI_HTTP_IDLE_TIMEOUT=10s
     - SHIORI_HTTP_DISABLE_KEEP_ALIVE=true
     - SHIORI_HTTP_DISABLE_PARSE_MULTIPART_FORM=true
-    image: ghcr.io/go-shiori/shiori:v1.7.1
+    image: ghcr.io/go-shiori/shiori:v1.7.2
     labels:
       createdBy: Apps
     networks:
