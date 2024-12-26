@@ -35,7 +35,6 @@ additionalProperties:
       labelZh: 团队 ID
       labelEn: Team ID
       required: true
-      rule: paramPort
       type: number
     - default: 0
       edit: true
@@ -43,5 +42,4 @@ additionalProperties:
       labelZh: Runner ID
       labelEn: Runner ID
       required: true
-      rule: paramPort
       type: number
