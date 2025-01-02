@@ -36,6 +36,11 @@ IYUU 是一个基于种子特征码的交叉索引工具
 >
 > 站点认证：请提前准备相应站点
 
+### 版本选择
+
++ `latest` : 最新版本 (仅包含 IYUU 核心服务)
++ `latest-mysql` : 最新版本 (包含 IYUU 核心服务 + MySQL 服务)
+
 ## 支持的下载器
 
 + [transmission](https://transmissionbt.com/)
