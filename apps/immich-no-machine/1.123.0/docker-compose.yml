@@ -52,8 +52,6 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    healthcheck:
-      disable: false
     image: ghcr.io/immich-app/immich-server:v1.123.0
     labels:
       createdBy: Apps

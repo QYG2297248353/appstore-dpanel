@@ -10,8 +10,6 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    healthcheck:
-      disable: false
     image: ghcr.io/immich-app/immich-machine-learning:v1.123.0
     labels:
       createdBy: Apps
@@ -70,8 +68,6 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    healthcheck:
-      disable: false
     image: ghcr.io/immich-app/immich-server:v1.123.0
     labels:
       createdBy: Apps
