@@ -76,3 +76,31 @@ additionalProperties:
       labelEn: Proxy URL regular expression
       required: false
       type: text
+    - default: ""
+      edit: true
+      envKey: FOLLOW_OWNER_USER_ID
+      labelZh: 用户 ID
+      labelEn: User id
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: FOLLOW_DESCRIPTION
+      labelZh: 服务描述
+      labelEn: Service description
+      required: false
+      type: text
+    - default: 100
+      edit: true
+      envKey: FOLLOW_PRICE
+      labelZh: 月度价格
+      labelEn: Service price
+      required: true
+      type: number
+    - default: 100
+      edit: true
+      envKey: FOLLOW_USER_LIMIT
+      labelZh: 用户限制
+      labelEn: User limit
+      required: true
+      type: number
