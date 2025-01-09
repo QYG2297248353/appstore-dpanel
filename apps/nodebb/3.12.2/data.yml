@@ -35,7 +35,7 @@ additionalProperties:
       labelZh: 管理员密码
       labelEn: Admin password
       required: true
-      type: text
+      type: password
     - default: "postgres"
       edit: true
       envKey: NODEBB_DB

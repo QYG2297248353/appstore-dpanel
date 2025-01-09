@@ -12,7 +12,17 @@ if [ -f .env ]; then
   echo "GLOBAL_ENV_FILE=${CURRENT_DIR}/envs/global.env" >> .env
   echo "APP_ENV_FILE=${CURRENT_DIR}/envs/outline.env" >> .env
 
-  chmod 777 -R "$OUTLINE_ROOT_PATH"
+  # setup-2 remove empty values
+  sed -i '/^.*=""/d' .env
+
+  # setup-3 update directory permissions
+  mkdir -p "$OUTLINE_ROOT_PATH"
+  mkdir -p "$OUTLINE_ROOT_PATH/data"
+
+  chmod 1001:1001 -R "$OUTLINE_ROOT_PATH"
+  chmod 644 -R "$OUTLINE_ROOT_PATH"
+  chmod 1001:1001 -R "$OUTLINE_ROOT_PATH/data"
+  chmod 644 -R "$OUTLINE_ROOT_PATH/data"
 
   echo "Check Finish."
 
