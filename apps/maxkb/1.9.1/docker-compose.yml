@@ -7,7 +7,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: 1panel/maxkb:v1.9.0
+    image: 1panel/maxkb:v1.9.1
     labels:
       createdBy: Apps
     networks:
