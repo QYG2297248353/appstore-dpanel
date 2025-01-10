@@ -78,7 +78,7 @@ additionalProperties:
       envKey: NODEBB_DB_USER
       labelZh: 数据库 用户名
       labelEn: Database Username
-      required: true
+      required: false
       type: text
     - default: ""
       edit: true
@@ -86,6 +86,6 @@ additionalProperties:
       labelZh: 数据库 密码
       labelEn: Database Password
       random: true
-      required: true
+      required: false
       rule: paramComplexity
       type: password

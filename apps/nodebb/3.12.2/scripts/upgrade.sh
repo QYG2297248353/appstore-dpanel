@@ -12,11 +12,13 @@ if [ -f .env ]; then
 
   # setup-2 update dir permissions
   mkdir -p "$NODEBB_ROOT_PATH"
+  mkdir -p "$NODEBB_ROOT_PATH/node_modules"
   mkdir -p "$NODEBB_ROOT_PATH/build"
   mkdir -p "$NODEBB_ROOT_PATH/uploads"
   mkdir -p "$NODEBB_ROOT_PATH/config"
 
   chown -R 1001:1001 "$NODEBB_ROOT_PATH"
+  chown -R 1001:1001 "$NODEBB_ROOT_PATH/node_modules"
   chown -R 1001:1001 "$NODEBB_ROOT_PATH/build"
   chown -R 1001:1001 "$NODEBB_ROOT_PATH/uploads"
   chown -R 1001:1001 "$NODEBB_ROOT_PATH/config"
