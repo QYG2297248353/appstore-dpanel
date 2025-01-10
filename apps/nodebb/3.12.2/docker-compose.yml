@@ -20,6 +20,8 @@ services:
     - ${PANEL_APP_PORT_HTTP}:4567
     restart: always
     volumes:
+    - ${NODEBB_ROOT_PATH}/node_modules:/usr/src/app/node_modules
     - ${NODEBB_ROOT_PATH}/build:/usr/src/app/build
     - ${NODEBB_ROOT_PATH}/uploads:/usr/src/app/public/uploads
     - ${NODEBB_ROOT_PATH}/config:/opt/config
+    - ${NODEBB_ROOT_PATH}/setup.json:/usr/src/app/setup.json

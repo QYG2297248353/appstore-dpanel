@@ -16,6 +16,8 @@ if [ -f .env ]; then
   mkdir -p "$NODEBB_ROOT_PATH/uploads"
   mkdir -p "$NODEBB_ROOT_PATH/config"
 
+  cp ./conf/setup.json "$NODEBB_ROOT_PATH/setup.json"
+
   chown -R 1001:1001 "$NODEBB_ROOT_PATH"
   chown -R 1001:1001 "$NODEBB_ROOT_PATH/build"
   chown -R 1001:1001 "$NODEBB_ROOT_PATH/uploads"
