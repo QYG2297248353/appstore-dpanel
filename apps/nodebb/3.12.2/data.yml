@@ -15,27 +15,6 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-    - default: ""
-      edit: true
-      envKey: NODEBB_ADMIN_EMAIL
-      labelZh: 管理员邮箱
-      labelEn: Admin email
-      required: true
-      type: text
-    - default: ""
-      edit: true
-      envKey: NODEBB_ADMIN_USERNAME
-      labelZh: 管理员用户名
-      labelEn: Admin username
-      required: true
-      type: text
-    - default: ""
-      edit: true
-      envKey: NODEBB_ADMIN_PASSWORD
-      labelZh: 管理员密码
-      labelEn: Admin password
-      required: true
-      type: password
     - default: "postgres"
       edit: true
       envKey: NODEBB_DB
