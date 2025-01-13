@@ -15,6 +15,34 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
+    - default: "http://127.0.0.1:4567"
+      edit: true
+      envKey: NODEBB_URL
+      labelZh: 服务地址
+      labelEn: Service address
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: NODEBB_ADMIN_USERNAME
+      labelZh: 管理员用户名
+      labelEn: Admin Username
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: NODEBB_ADMIN_PASSWORD
+      labelZh: 管理员密码
+      labelEn: Admin Password
+      required: true
+      type: password
+    - default: ""
+      edit: true
+      envKey: NODEBB_ADMIN_EMAIL
+      labelZh: 管理员邮箱
+      labelEn: Admin Email
+      required: true
+      type: text
     - default: "postgres"
       edit: true
       envKey: NODEBB_DB

@@ -9,15 +9,6 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    - bind_address=0.0.0.0
-    - port=4567
-    - url=http://127.0.0.1:4567
-    - database=${NODEBB_DB}
-    - ${NODEBB_DB}__host=${NODEBB_DB_HOST}
-    - ${NODEBB_DB}__port=${NODEBB_DB_PORT}
-    - ${NODEBB_DB}__database=${NODEBB_DB_NAME}
-    - ${NODEBB_DB}__username=${NODEBB_DB_USER}
-    - ${NODEBB_DB}__password=${NODEBB_DB_PASSWORD}
     image: ghcr.io/nodebb/nodebb:3.12.2
     labels:
       createdBy: Apps
@@ -31,3 +22,4 @@ services:
     - ${NODEBB_ROOT_PATH}/build:/usr/src/app/build
     - ${NODEBB_ROOT_PATH}/uploads:/usr/src/app/public/uploads
     - ${NODEBB_ROOT_PATH}/config:/opt/config
+    - ${NODEBB_ROOT_PATH}/setup.json:/usr/src/app/setup.json
