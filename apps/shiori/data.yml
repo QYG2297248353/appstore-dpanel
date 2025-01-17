@@ -9,6 +9,6 @@
   type: website
   crossVersionUpdate: true
   limit: 0
-  website: https://www.kimai.org/
-  github: https://github.com/kimai/kimai/
-  document: https://www.kimai.org/documentation/
+  website: https://github.com/go-shiori/shiori/
+  github: https://github.com/go-shiori/shiori/
+  document: https://github.com/go-shiori/shiori/
