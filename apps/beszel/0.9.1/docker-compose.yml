@@ -2,16 +2,20 @@ networks:
   1panel-network:
     external: true
 services:
-  cyberchef:
-    container_name: cyberchef
+  beszel:
+    container_name: beszel
     env_file:
     - ./envs/global.env
     - .env
-    image: ghcr.io/gchq/cyberchef:10.19.4
+    environment:
+    - TZ=Asia/Shanghai
+    image: henrygd/beszel:0.9.1
     labels:
       createdBy: Apps
     networks:
     - 1panel-network
     ports:
-    - ${PANEL_APP_PORT_HTTP}:80
+    - ${PANEL_APP_PORT_HTTP}:8090
     restart: always
+    volumes:
+    - ${BESZEL_ROOT_PATH}/data:/beszel_data
