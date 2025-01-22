@@ -15,7 +15,7 @@ services:
     - MINIO_BROWSER_REDIRECT=true
     extra_hosts:
     - ${MINIO_SERVER_HOST:-localhost}:127.0.0.1
-    image: minio/minio:RELEASE.2025-01-18T00-31-37Z
+    image: minio/minio:RELEASE.2025-01-20T14-49-07Z
     labels:
       createdBy: Apps
     logging:
