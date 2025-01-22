@@ -18,6 +18,18 @@ Stash 是一个用 Go 语言编写的网页应用程序，用于为您存储和�
 
 + Stash 提供关于表演者、标签、工作室等统计信息。
 
+## 安装说明
+
+### 网络代理
+
+请前往持久化目录下, 修改 `config/config.yml` 配置文件。
+
+增加配置：
+
+```yml
+proxy: http://127.0.0.1:7890
+```
+
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
