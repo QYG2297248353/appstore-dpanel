@@ -19,10 +19,8 @@ if [ -f .env ]; then
   mkdir -p "$OUTLINE_ROOT_PATH"
   mkdir -p "$OUTLINE_ROOT_PATH/data"
 
-  chmod 1001:1001 -R "$OUTLINE_ROOT_PATH"
-  chmod 644 -R "$OUTLINE_ROOT_PATH"
-  chmod 1001:1001 -R "$OUTLINE_ROOT_PATH/data"
-  chmod 644 -R "$OUTLINE_ROOT_PATH/data"
+  chown -R 1001:1001 "$OUTLINE_ROOT_PATH"
+  chmod -R 1777 "$OUTLINE_ROOT_PATH"
 
   echo "Check Finish."
 
