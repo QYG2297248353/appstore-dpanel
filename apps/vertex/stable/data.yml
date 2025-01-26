@@ -1,13 +1,13 @@
 additionalProperties:
   formFields:
-    - default: "/home/glance"
+    - default: "/home/vertex"
       edit: true
-      envKey: GLANCE_ROOT_PATH
+      envKey: VERTEX_ROOT_PATH
       labelZh: 数据持久化路径
       labelEn: Data persistence path
       required: true
       type: text
-    - default: 8080
+    - default: 3000
       edit: true
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口

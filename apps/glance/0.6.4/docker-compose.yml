@@ -18,7 +18,7 @@ services:
     - ${PANEL_APP_PORT_HTTP}:8080
     restart: always
     volumes:
-    - ${APP_NAME_ROOT_PATH}/app/glance.yml:/app/glance.yml
-    - ${APP_NAME_ROOT_PATH}/app/assets:/app/assets
+    - ${GLANCE_ROOT_PATH}/app/glance.yml:/app/glance.yml
+    - ${GLANCE_ROOT_PATH}/app/assets:/app/assets
     - /etc/timezone:/etc/timezone:ro
     - /etc/localtime:/etc/localtime:ro

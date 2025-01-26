@@ -52,7 +52,7 @@ additionalProperties:
       labelZh: 密码
       labelEn: Password
       required: true
-      type: text
+      type: password
     - default: ""
       edit: true
       envKey: TRANSMISSION_WEB_HOME

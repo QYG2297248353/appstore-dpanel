@@ -27,6 +27,8 @@ services:
     - ${PANEL_APP_PORT_HTTP}:3000
     - ${PANEL_APP_PORT_API}:3001
     restart: always
+    stdin_open: true
+    tty: true
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
     - ${MOVIEPILOT_ROOT_PATH}/config:/config

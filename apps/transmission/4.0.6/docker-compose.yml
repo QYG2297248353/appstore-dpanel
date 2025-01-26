@@ -8,10 +8,10 @@ services:
     - ./envs/global.env
     - .env
     environment:
-    - PUID=0
-    - PGID=0
-    - UMASK=022
+    - PUID=1000
+    - PGID=1000
     - PEERPORT= ${PANEL_APP_PORT_TORRENTING}
+    - TZ=Asia/Shanghai
     image: linuxserver/transmission:4.0.6
     labels:
       createdBy: Apps
@@ -22,6 +22,7 @@ services:
     - ${PANEL_APP_PORT_TORRENTING}/udp
     restart: always
     volumes:
+    - ${TRANSMISSION_ROOT_PATH}/ui/themes:/ui/themes
     - ${TRANSMISSION_ROOT_PATH}/config:/config
     - ${TRANSMISSION_ROOT_PATH}/downloads:/downloads
     - ${TRANSMISSION_ROOT_PATH}/watch:/watch
