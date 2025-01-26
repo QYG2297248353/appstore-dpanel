@@ -12,6 +12,12 @@
 + PT刷流
 + 追剧
 
+## 安装说明
+
+> 默认用户名：`admin`
+>
+> 默认密码：请在持久化目录下查看`vertex/data/password` 文件中查找
+
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
