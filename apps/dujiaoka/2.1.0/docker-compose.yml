@@ -17,7 +17,7 @@ services:
     - APP_DEBUG=false
     - APP_ENV=local
     - DB_CONNECTION=mysql
-    image: qyg2297248353/dujiaoka:v2.0.9
+    image: qyg2297248353/dujiaoka:v2.1.0
     labels:
       createdBy: Apps
     networks:
