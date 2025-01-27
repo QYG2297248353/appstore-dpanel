@@ -7,7 +7,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: qyg2297248353/acg-faka:v1.3.8
+    image: qyg2297248353/acg-faka:v1.3.9
     labels:
       createdBy: Apps
     networks:

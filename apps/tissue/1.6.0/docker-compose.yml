@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: chris2s/tissue:1.5.12
+    image: chris2s/tissue:1.6.0
     labels:
       createdBy: Apps
     networks:
