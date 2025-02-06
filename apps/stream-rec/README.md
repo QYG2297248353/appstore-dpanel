@@ -39,7 +39,7 @@ Stream-rec 是一个自动录制各种直播平台的工具。
 
 + `WebSocket API 地址`
 
-默认值：`ws://stream-rec-backend:12555/live/update`
+默认值：`ws://stream-rec-backend:12555/live/update` 或 `ws://127.0.0.1:12555/live/update`
 
 需要获取：
 
@@ -48,24 +48,9 @@ Stream-rec 是一个自动录制各种直播平台的工具。
 
 填写格式：`ws://{宿主机 IP 地址}:{API 端口}/live/update`
 
-### 可修改配置
++ `访问域名`
 
-+ `NextAuth 服务器地址`
-
-默认值：`http://localhost:15275/`
-
-需要获取：
-
-+ 宿主机 IP 地址
-+ 配置项 `WebUI 端口`, 默认值：`15275`
-
-填写格式：`http://{宿主机 IP 地址}:{WebUI 端口}/`
-
-### 无法修改项目
-
-+ `API 地址`
-
-当前部署方式为 前后端合并部署，请勿强制修改参数值。
+服务跳转地址，用于跳转到 Web 界面
 
 ---
 

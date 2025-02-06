@@ -24,36 +24,36 @@ additionalProperties:
       rule: paramPort
       type: number
     - default: "stream-rec"
+      disabled: true
+      envKey: LOGIN_USERNAME
+      labelZh: 默认用户名
+      labelEn: Default Username
+      required: true
+      type: text
+    - default: "stream-rec"
       edit: false
       envKey: LOGIN_SECRET
       labelZh: 登录密码 (初始化)
       labelEn: Login Password (Initialization)
       required: true
       random: true
-      type: text
+      type: password
     - default: ""
       edit: true
-      envKey: NEXTAUTH_SECRET
-      labelZh: NextAuth 加密密钥
-      labelEn: NextAuth Secret
+      envKey: AUTH_SECRET
+      labelZh: 加密密钥
+      labelEn: Encryption Key
       required: true
       random: true
       type: text
-    - default: "http://localhost:15275/"
+    - default: "http://127.0.0.1:15275"
       edit: true
-      envKey: NEXTAUTH_URL
-      labelZh: NextAuth 服务器地址
-      labelEn: NextAuth Server URL
+      envKey: NEXT_PUBLIC_BASE_URL
+      labelZh: 访问域名
+      labelEn: Access Domain
       required: true
       type: text
-    - default: "http://stream-rec-backend:12555/api"
-      disabled: true
-      envKey: API_URL
-      labelZh: API 地址
-      labelEn: API URL
-      required: true
-      type: text
-    - default: "ws://stream-rec-backend:12555/live/update"
+    - default: "ws://127.0.0.1:12555/live/update"
       edit: true
       envKey: WS_API_URL
       labelZh: WebSocket API 地址
