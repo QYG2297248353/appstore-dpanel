@@ -47,6 +47,22 @@ additionalProperties:
       type: text
     - default: "false"
       edit: true
+      envKey: MOVIEPILOT_AUTO_UPDATE
+      labelZh: 重启时自动更新
+      labelEn: Auto Update on Restart
+      required: true
+      type: select
+      values:
+        - label: 开启
+          value: "true"
+        - label: 关闭
+          value: "false"
+        - label: 发布版
+          value: "release"
+        - label: 开发板
+          value: "dev"
+    - default: "false"
+      edit: true
       envKey: AUTO_UPDATE_RESOURCE
       labelZh: 自动更新资源包
       labelEn: Auto Update Resources
