@@ -10,6 +10,8 @@ services:
           devices:
           - capabilities:
             - gpu
+    devices:
+    - /dev/dri:/dev/dri
     env_file:
     - ./envs/global.env
     - .env
