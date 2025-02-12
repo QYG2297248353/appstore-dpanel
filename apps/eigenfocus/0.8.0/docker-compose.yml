@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: eigenfocus/eigenfocus:0.7.0
+    image: eigenfocus/eigenfocus:0.8.0
     labels:
       createdBy: Apps
     networks:
