@@ -15,7 +15,7 @@ services:
     - ENABLE_OLLAMA_API=True
     - ENABLE_OPENAI_API=False
     - https_proxy=${http_proxy}
-    image: ghcr.io/open-webui/open-webui:v0.5.11
+    image: ghcr.io/open-webui/open-webui:0.5.12
     labels:
       createdBy: Apps
     networks:
