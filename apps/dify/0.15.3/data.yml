@@ -23,6 +23,14 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
+    - default: 5003
+      edit: true
+      envKey: PLUGIN_DEBUGGING_PORT
+      labelZh: 插件调试端口
+      labelEn: Plugin debugging port
+      required: true
+      rule: paramPort
+      type: number
     - default: 19530
       disabled: true
       envKey: MILVUS_STANDALONE_PORT1
