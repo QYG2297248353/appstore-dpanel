@@ -10,11 +10,11 @@ if [ -f .env ]; then
   echo "ENV_FILE=${CURRENT_DIR}/.env" >> .env
   echo "GLOBAL_ENV_FILE=${CURRENT_DIR}/envs/global.env" >> .env
 
-  mkdir -p "$APP_NAME_ROOT_PATH"
-  mkdir -p "$APP_NAME_ROOT_PATH/app"
+  mkdir -p "$GLANCE_ROOT_PATH"
+  mkdir -p "$GLANCE_ROOT_PATH/app"
 
-  if [ ! -f "$APP_NAME_ROOT_PATH/app/glance.yml" ]; then
-    cp ./conf/glance.yml "$APP_NAME_ROOT_PATH/app/glance.yml"
+  if [ ! -f "$GLANCE_ROOT_PATH/app/glance.yml" ]; then
+    cp ./conf/glance.yml "$GLANCE_ROOT_PATH/app/glance.yml"
   fi
 
   echo "Check Finish."
