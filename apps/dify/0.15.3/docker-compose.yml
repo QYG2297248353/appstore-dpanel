@@ -555,7 +555,7 @@ services:
       - -s
       - http://localhost:9200/_cluster/health?pretty
       timeout: 10s
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.14.3
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.17.2
     ports:
     - ${ELASTICSEARCH_PORT:-9200}:9200
     profiles:
@@ -587,7 +587,7 @@ services:
       - endpoint
       - health
       timeout: 20s
-    image: quay.io/coreos/etcd:v3.5.5
+    image: quay.io/coreos/etcd:v3.5.18
     networks:
     - milvus
     profiles:
