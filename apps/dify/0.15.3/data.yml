@@ -1,0 +1,65 @@
+additionalProperties:
+  formFields:
+    - default: "/home/dify"
+      edit: true
+      envKey: DIFY_ROOT_PATH
+      labelZh: 数据持久化路径
+      labelEn: Data persistence path
+      required: true
+      type: text
+    - default: 8080
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: WebUI 端口
+      labelEn: WebUI port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 8443
+      edit: true
+      envKey: PANEL_APP_PORT_HTTPS
+      labelZh: WebUI SSL 端口
+      labelEn: WebUI SSL port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 19530
+      disabled: true
+      envKey: MILVUS_STANDALONE_PORT1
+      labelZh: Milvus 端口
+      labelEn: Milvus port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 9091
+      disabled: true
+      envKey: MILVUS_STANDALONE_PORT2
+      labelZh: Milvus 端口
+      labelEn: Milvus port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 8123
+      edit: true
+      envKey: MYSCALE_PORT
+      labelZh: MyScale 端口
+      labelEn: MyScale port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 9200
+      edit: true
+      envKey: ELASTICSEARCH_PORT
+      labelZh: Elasticsearch 端口
+      labelEn: Elasticsearch port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 5601
+      edit: true
+      envKey: KIBANA_PORT
+      labelZh: Kibana 端口
+      labelEn: Kibana port
+      required: true
+      rule: paramPort
+      type: number
