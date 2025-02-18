@@ -462,7 +462,7 @@ services:
     volumes:
     - ${DIFY_ROOT_PATH}/volumes/chroma:/chroma/chroma
   couchbase-server:
-    build: ./couchbase-server
+    build: ./conf/couchbase-server
     command: sh -c "/opt/couchbase/init/init-cbserver.sh"
     container_name: couchbase-server
     entrypoint:

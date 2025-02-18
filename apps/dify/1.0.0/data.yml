@@ -64,7 +64,7 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-    - default: 8123
+    - default: 9200
       edit: true
       envKey: ELASTICSEARCH_PORT
       labelZh: Elasticsearch 端口
@@ -72,7 +72,7 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-    - default: 8123
+    - default: 5601
       edit: true
       envKey: KIBANA_PORT
       labelZh: Kibana 端口
