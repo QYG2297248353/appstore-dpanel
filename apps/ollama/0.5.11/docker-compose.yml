@@ -26,5 +26,6 @@ services:
     ports:
     - ${PANEL_APP_PORT_HTTP}:11434
     restart: always
+    tty: true
     volumes:
     - ${OLLAMA_ROOT_PATH}/data:/root/.ollama
