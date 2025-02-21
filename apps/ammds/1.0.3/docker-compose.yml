@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: qyg2297248353/ammds:v1.0.2
+    image: qyg2297248353/ammds:v1.0.3
     labels:
       createdBy: Apps
     network_mode: ${NETWORK_MODE}
