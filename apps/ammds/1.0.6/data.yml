@@ -33,6 +33,20 @@ additionalProperties:
       type: number
     - default: ""
       edit: true
+      envKey: AMMDS_METATUBE_URL
+      labelZh: MetaTube URL
+      labelEn: MetaTube URL
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AMMDS_METATUBE_TOKEN
+      labelZh: MetaTube 密钥
+      labelEn: MetaTube token
+      required: false
+      type: text
+    - default: ""
+      edit: true
       envKey: CUSTOM_MOUNT_DIRECTORY_1
       labelEn: Custom mount directory 1
       labelZh: 自定义挂载目录 1
