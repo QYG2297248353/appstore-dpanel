@@ -422,7 +422,7 @@ services:
       WORKFLOW_MAX_EXECUTION_STEPS: ${WORKFLOW_MAX_EXECUTION_STEPS:-500}
       WORKFLOW_MAX_EXECUTION_TIME: ${WORKFLOW_MAX_EXECUTION_TIME:-1200}
       WORKFLOW_PARALLEL_DEPTH_LIMIT: ${WORKFLOW_PARALLEL_DEPTH_LIMIT:-3}
-    image: langgenius/dify-api:1.0.0
+    image: langgenius/dify-api:0.15.3
     networks:
     - ssrf_proxy_network
     - default
@@ -1232,7 +1232,7 @@ services:
       WORKFLOW_MAX_EXECUTION_STEPS: ${WORKFLOW_MAX_EXECUTION_STEPS:-500}
       WORKFLOW_MAX_EXECUTION_TIME: ${WORKFLOW_MAX_EXECUTION_TIME:-1200}
       WORKFLOW_PARALLEL_DEPTH_LIMIT: ${WORKFLOW_PARALLEL_DEPTH_LIMIT:-3}
-    image: langgenius/dify-plugin-daemon:0.0.1-local
+    image: langgenius/dify-plugin-daemon:0.0.2-local
     ports:
     - ${EXPOSE_PLUGIN_DEBUGGING_PORT:-5003}:${PLUGIN_DEBUGGING_PORT:-5003}
     restart: always
@@ -1339,7 +1339,7 @@ services:
       SENTRY_DSN: ${WEB_SENTRY_DSN:-}
       TEXT_GENERATION_TIMEOUT_MS: ${TEXT_GENERATION_TIMEOUT_MS:-60000}
       TOP_K_MAX_VALUE: ${TOP_K_MAX_VALUE:-}
-    image: langgenius/dify-web:1.0.0
+    image: langgenius/dify-web:0.15.3
     restart: always
   worker:
     depends_on:
@@ -1755,7 +1755,7 @@ services:
       WORKFLOW_MAX_EXECUTION_STEPS: ${WORKFLOW_MAX_EXECUTION_STEPS:-500}
       WORKFLOW_MAX_EXECUTION_TIME: ${WORKFLOW_MAX_EXECUTION_TIME:-1200}
       WORKFLOW_PARALLEL_DEPTH_LIMIT: ${WORKFLOW_PARALLEL_DEPTH_LIMIT:-3}
-    image: langgenius/dify-api:1.0.0
+    image: langgenius/dify-api:0.15.3
     networks:
     - ssrf_proxy_network
     - default
