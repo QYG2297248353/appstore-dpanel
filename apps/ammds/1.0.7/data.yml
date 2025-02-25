@@ -47,6 +47,20 @@ additionalProperties:
       type: text
     - default: ""
       edit: true
+      envKey: AMMDS_PROWLARR_URL
+      labelZh: Prowlarr URL
+      labelEn: Prowlarr URL
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AMMDS_PROWLARR_TOKEN
+      labelZh: Prowlarr 密钥
+      labelEn: Prowlarr token
+      required: false
+      type: text
+    - default: ""
+      edit: true
       envKey: CUSTOM_MOUNT_DIRECTORY_1
       labelEn: Custom mount directory 1
       labelZh: 自定义挂载目录 1

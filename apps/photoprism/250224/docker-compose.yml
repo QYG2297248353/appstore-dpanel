@@ -17,7 +17,7 @@ services:
       PHOTOPRISM_PASSWORD_LENGTH: 8
       PHOTOPRISM_UID: 0
       PHOTOPRISM_UMASK: 18
-    image: photoprism/photoprism:250223
+    image: photoprism/photoprism:250224
     labels:
       createdBy: Apps
     networks:
