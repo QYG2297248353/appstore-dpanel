@@ -9,6 +9,7 @@ networks:
     internal: true
 services:
   api:
+    container_name: api-dify
     depends_on:
     - db
     - redis
@@ -434,6 +435,7 @@ services:
     - tail
     - -f
     - /dev/null
+    container_name: certbot-dify
     entrypoint:
     - /docker-entrypoint.sh
     environment:
@@ -451,6 +453,7 @@ services:
     - ${DIFY_ROOT_PATH}/certbot/update-cert.template.txt:/update-cert.template.txt
     - ${DIFY_ROOT_PATH}/certbot/docker-entrypoint.sh:/docker-entrypoint.sh
   chroma:
+    container_name: chroma-dify
     environment:
       CHROMA_SERVER_AUTHN_CREDENTIALS: ${CHROMA_SERVER_AUTHN_CREDENTIALS:-difyai123456}
       CHROMA_SERVER_AUTHN_PROVIDER: ${CHROMA_SERVER_AUTHN_PROVIDER:-chromadb.auth.token_authn.TokenAuthenticationServerProvider}
@@ -500,6 +503,7 @@ services:
       \      -c 'shared_buffers=${POSTGRES_SHARED_BUFFERS:-128MB}'\n         -c 'work_mem=${POSTGRES_WORK_MEM:-4MB}'\n\
       \         -c 'maintenance_work_mem=${POSTGRES_MAINTENANCE_WORK_MEM:-64MB}'\n\
       \         -c 'effective_cache_size=${POSTGRES_EFFECTIVE_CACHE_SIZE:-4096MB}'\n"
+    container_name: db-dify
     environment:
       PGDATA: ${PGDATA:-/var/lib/postgresql/data/pgdata}
       PGUSER: ${PGUSER:-postgres}
@@ -519,7 +523,7 @@ services:
     volumes:
     - ${DIFY_ROOT_PATH}/volumes/db/data:/var/lib/postgresql/data
   elasticsearch:
-    container_name: elasticsearch
+    container_name: elasticsearch-dify
     deploy:
       resources:
         limits:
@@ -560,7 +564,7 @@ services:
   etcd:
     command: etcd -advertise-client-urls=http://127.0.0.1:2379 -listen-client-urls
       http://0.0.0.0:2379 --data-dir /etcd
-    container_name: milvus-etcd
+    container_name: milvus-etcd-dify
     environment:
       ETCD_AUTO_COMPACTION_MODE: ${ETCD_AUTO_COMPACTION_MODE:-revision}
       ETCD_AUTO_COMPACTION_RETENTION: ${ETCD_AUTO_COMPACTION_RETENTION:-1000}
@@ -583,7 +587,7 @@ services:
     volumes:
     - ${DIFY_ROOT_PATH}/volumes/milvus/etcd:/etcd
   kibana:
-    container_name: kibana
+    container_name: kibana-dify
     depends_on:
     - elasticsearch
     environment:
@@ -614,7 +618,7 @@ services:
     - milvus
     - run
     - standalone
-    container_name: milvus-standalone
+    container_name: milvus-standalone-dify
     depends_on:
     - etcd
     - minio
@@ -644,7 +648,7 @@ services:
     - ${DIFY_ROOT_PATH}/volumes/milvus/milvus:/var/lib/milvus
   minio:
     command: minio server /minio_data --console-address ":9001"
-    container_name: milvus-minio
+    container_name: milvus-minio-dify
     environment:
       MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY:-minioadmin}
       MINIO_SECRET_KEY: ${MINIO_SECRET_KEY:-minioadmin}
@@ -665,7 +669,7 @@ services:
     volumes:
     - ${DIFY_ROOT_PATH}/volumes/milvus/minio:/minio_data
   myscale:
-    container_name: myscale
+    container_name: myscale-dify
     image: myscale/myscaledb:1.6.4
     ports:
     - ${MYSCALE_PORT:-8123}:${MYSCALE_PORT:-8123}
@@ -678,6 +682,7 @@ services:
     - ${DIFY_ROOT_PATH}/volumes/myscale/log:/var/log/clickhouse-server
     - ${DIFY_ROOT_PATH}/volumes/myscale/config/users.d/custom_users_config.xml:/etc/clickhouse-server/users.d/custom_users_config.xml
   nginx:
+    container_name: nginx-dify
     depends_on:
     - api
     - web
@@ -717,6 +722,7 @@ services:
     - ${DIFY_ROOT_PATH}/volumes/certbot/conf:/etc/letsencrypt
     - ${DIFY_ROOT_PATH}/volumes/certbot/www:/var/www/html
   oceanbase:
+    container_name: oceanbase-dify
     environment:
       OB_CLUSTER_NAME: ${OCEANBASE_CLUSTER_NAME:-difyai}
       OB_MEMORY_LIMIT: ${OCEANBASE_MEMORY_LIMIT:-6G}
@@ -732,7 +738,7 @@ services:
     - ${DIFY_ROOT_PATH}/volumes/oceanbase/conf:/root/.obd/cluster
     - ${DIFY_ROOT_PATH}/volumes/oceanbase/init.d:/root/boot/init.d
   opensearch:
-    container_name: opensearch
+    container_name: opensearch-dify
     environment:
       OPENSEARCH_INITIAL_ADMIN_PASSWORD: ${OPENSEARCH_INITIAL_ADMIN_PASSWORD:-Qazwsxedc!@#123}
       OPENSEARCH_JAVA_OPTS: -Xms${OPENSEARCH_JAVA_OPTS_MIN:-512m} -Xmx${OPENSEARCH_JAVA_OPTS_MAX:-1024m}
@@ -753,7 +759,7 @@ services:
     volumes:
     - ${DIFY_ROOT_PATH}/volumes/opensearch/data:/usr/share/opensearch/data
   opensearch-dashboards:
-    container_name: opensearch-dashboards
+    container_name: opensearch-dashboards-dify
     depends_on:
     - opensearch
     environment:
@@ -766,6 +772,7 @@ services:
     volumes:
     - ${DIFY_ROOT_PATH}/volumes/opensearch/opensearch_dashboards.yml:/usr/share/opensearch-dashboards/config/opensearch_dashboards.yml
   oracle:
+    container_name: oracle-dify
     environment:
       ORACLE_CHARACTERSET: ${ORACLE_CHARACTERSET:-AL32UTF8}
       ORACLE_PWD: ${ORACLE_PWD:-Dify123456}
@@ -779,6 +786,7 @@ services:
       type: volume
     - ${DIFY_ROOT_PATH}/startupscripts:/opt/oracle/scripts/startup
   pgvecto-rs:
+    container_name: pgvecto-rs-dify
     environment:
       PGDATA: ${PGVECTOR_PGDATA:-/var/lib/postgresql/data/pgdata}
       PGUSER: ${PGVECTOR_PGUSER:-postgres}
@@ -798,6 +806,7 @@ services:
     volumes:
     - ${DIFY_ROOT_PATH}/volumes/pgvecto_rs/data:/var/lib/postgresql/data
   pgvector:
+    container_name: pgvector-dify
     environment:
       PGDATA: ${PGVECTOR_PGDATA:-/var/lib/postgresql/data/pgdata}
       PGUSER: ${PGVECTOR_PGUSER:-postgres}
@@ -817,6 +826,7 @@ services:
     volumes:
     - ${DIFY_ROOT_PATH}/volumes/pgvector/data:/var/lib/postgresql/data
   plugin_daemon:
+    container_name: plugin_daemon-dify
     environment:
       ACCESS_TOKEN_EXPIRE_MINUTES: ${ACCESS_TOKEN_EXPIRE_MINUTES:-60}
       ALIYUN_OSS_ACCESS_KEY: ${ALIYUN_OSS_ACCESS_KEY:-your-access-key}
@@ -1239,6 +1249,7 @@ services:
     volumes:
     - ${DIFY_ROOT_PATH}/volumes/plugin_daemon:/app/storage
   qdrant:
+    container_name: qdrant-dify
     environment:
       QDRANT_API_KEY: ${QDRANT_API_KEY:-difyai123456}
     image: langgenius/qdrant:v1.7.3
@@ -1249,6 +1260,7 @@ services:
     - ${DIFY_ROOT_PATH}/volumes/qdrant:/qdrant/storage
   redis:
     command: redis-server --requirepass ${REDIS_PASSWORD:-difyai123456}
+    container_name: redis-dify
     environment:
       REDISCLI_AUTH: ${REDIS_PASSWORD:-difyai123456}
     healthcheck:
@@ -1261,6 +1273,7 @@ services:
     volumes:
     - ${DIFY_ROOT_PATH}/volumes/redis/data:/data
   sandbox:
+    container_name: sandbox-dify
     environment:
       API_KEY: ${SANDBOX_API_KEY:-dify-sandbox}
       ENABLE_NETWORK: ${SANDBOX_ENABLE_NETWORK:-true}
@@ -1282,6 +1295,7 @@ services:
     volumes:
     - ${DIFY_ROOT_PATH}/volumes/sandbox/dependencies:/dependencies
   ssrf_proxy:
+    container_name: ssrf_proxy-dify
     entrypoint:
     - sh
     - -c
@@ -1302,6 +1316,7 @@ services:
     - ${DIFY_ROOT_PATH}/ssrf_proxy/squid.conf.template:/etc/squid/squid.conf.template
     - ${DIFY_ROOT_PATH}/ssrf_proxy/docker-entrypoint.sh:/docker-entrypoint-mount.sh
   unstructured:
+    container_name: unstructured-dify
     image: downloads.unstructured.io/unstructured-io/unstructured-api:latest
     profiles:
     - unstructured
@@ -1309,6 +1324,7 @@ services:
     volumes:
     - ${DIFY_ROOT_PATH}/volumes/unstructured:/app/data
   weaviate:
+    container_name: weaviate-dify
     environment:
       AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: ${WEAVIATE_AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED:-false}
       AUTHENTICATION_APIKEY_ALLOWED_KEYS: ${WEAVIATE_AUTHENTICATION_APIKEY_ALLOWED_KEYS:-WVF5YThaHlkYwhGUSmCRgsX3tD5ngdN8pkih}
@@ -1328,6 +1344,7 @@ services:
     volumes:
     - ${DIFY_ROOT_PATH}/volumes/weaviate:/var/lib/weaviate
   web:
+    container_name: dify
     environment:
       APP_API_URL: ${APP_API_URL:-}
       CONSOLE_API_URL: ${CONSOLE_API_URL:-}
@@ -1342,6 +1359,7 @@ services:
     image: langgenius/dify-web:0.15.3
     restart: always
   worker:
+    container_name: worker-dify
     depends_on:
     - db
     - redis
