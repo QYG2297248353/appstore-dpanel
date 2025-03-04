@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - MYSQL_URL=jdbc:mariadb://${DB_HOSTNAME}:${DB_PORT}/${DB_NAME}?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
-    image: q2316367743/feedback:1.0.4
+    image: q2316367743/feedback:1.0.5
     labels:
       createdBy: Apps
     networks:
