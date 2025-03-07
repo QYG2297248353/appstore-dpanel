@@ -2,28 +2,25 @@ networks:
   1panel-network:
     external: true
 services:
-  ammds:
-    container_name: ammds
+  komga:
+    container_name: komga
     env_file:
     - ./envs/global.env
     - .env
     environment:
     - TZ=Asia/Shanghai
-    - NGINX_PORT=${PANEL_APP_PORT_HTTP:-8080}
-    - AMMDS_SERVER_PORT=${PANEL_APP_PORT_API:-9523}
-    image: qyg2297248353/ammds:v1.0.15
+    image: gotson/komga:1.21.1
     labels:
       createdBy: Apps
-    network_mode: ${NETWORK_MODE:-host}
+    networks:
+    - 1panel-network
     ports:
-    - ${PANEL_APP_PORT_HTTP:-8080}:${PANEL_APP_PORT_HTTP:-8080}
+    - ${PANEL_APP_PORT_HTTP}:25600
     restart: always
-    stdin_open: true
-    tty: true
+    user: 1000:1000
     volumes:
-    - ${AMMDS_ROOT_PATH}/data:/ammds/data
-    - ${AMMDS_ROOT_PATH}/db:/ammds/db
-    - ${AMMDS_ROOT_PATH}/download:/ammds/download
+    - ${KOMGA_ROOT_PATH}/config:/config
+    - ${KOMGA_ROOT_PATH}/data:/data
     - ${CUSTOM_MOUNT_DIRECTORY_1:-./default_mount_1}:${CUSTOM_MOUNT_DIRECTORY_1:-/default_mount_1}
     - ${CUSTOM_MOUNT_DIRECTORY_2:-./default_mount_2}:${CUSTOM_MOUNT_DIRECTORY_2:-/default_mount_2}
     - ${CUSTOM_MOUNT_DIRECTORY_3:-./default_mount_3}:${CUSTOM_MOUNT_DIRECTORY_3:-/default_mount_3}
