@@ -16,4 +16,4 @@ services:
     - ${PANEL_APP_PORT_HTTP}:80
     restart: always
     volumes:
-    - ${MACCMS10_ROOT_PATH}/iycms:/app/iycms
+    - ${MACCMS10_ROOT_PATH}/www:/var/www
