@@ -7,7 +7,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: envyafish/byte-muse:1.7.5
+    image: envyafish/byte-muse:1.7.6
     labels:
       createdBy: Apps
     networks:

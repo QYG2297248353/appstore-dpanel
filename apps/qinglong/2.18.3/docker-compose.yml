@@ -7,7 +7,7 @@ services:
     environment:
     - QlPort=5700
     - QlBaseUrl=${QINGLONG_BASE_URL:-/}
-    image: whyour/qinglong:2.18.2
+    image: whyour/qinglong:2.18.3
     labels:
       createdBy: Apps
     networks:
