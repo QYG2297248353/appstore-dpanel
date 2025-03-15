@@ -2,21 +2,28 @@ networks:
   1panel-network:
     external: true
 services:
-  auto-lady:
-    container_name: byte-muse
+  ammds:
+    container_name: ammds
     env_file:
     - ./envs/global.env
     - .env
-    image: envyafish/byte-muse:1.7.6
+    environment:
+    - TZ=Asia/Shanghai
+    - NGINX_PORT=${PANEL_APP_PORT_HTTP:-8080}
+    - AMMDS_SERVER_PORT=${PANEL_APP_PORT_API:-9523}
+    image: qyg2297248353/ammds:v1.0.20
     labels:
       createdBy: Apps
-    networks:
-    - 1panel-network
+    network_mode: ${NETWORK_MODE:-host}
     ports:
-    - ${PANEL_APP_PORT_HTTP}:80
+    - ${PANEL_APP_PORT_HTTP:-8080}:${PANEL_APP_PORT_HTTP:-8080}
     restart: always
+    stdin_open: true
+    tty: true
     volumes:
-    - ${AUTO_LADY_ROOT_PATH}/config:/data
+    - ${AMMDS_ROOT_PATH}/data:/ammds/data
+    - ${AMMDS_ROOT_PATH}/db:/ammds/db
+    - ${AMMDS_ROOT_PATH}/download:/ammds/download
     - ${CUSTOM_MOUNT_DIRECTORY_1:-./default_mount_1}:${CUSTOM_MOUNT_DIRECTORY_1:-/default_mount_1}
     - ${CUSTOM_MOUNT_DIRECTORY_2:-./default_mount_2}:${CUSTOM_MOUNT_DIRECTORY_2:-/default_mount_2}
     - ${CUSTOM_MOUNT_DIRECTORY_3:-./default_mount_3}:${CUSTOM_MOUNT_DIRECTORY_3:-/default_mount_3}
