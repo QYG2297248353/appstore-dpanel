@@ -12,7 +12,7 @@ services:
     - PGID=0
     - UMASK=022
     - FORCE=false
-    image: xhofe/alist:v3.42.0
+    image: xhofe/alist:v3.43.0
     labels:
       createdBy: Apps
     networks:
