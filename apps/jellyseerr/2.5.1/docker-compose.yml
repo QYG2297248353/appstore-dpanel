@@ -12,7 +12,7 @@ services:
     - LOG_LEVEL=debug
     - TZ=Asia/Shanghai
     - https_proxy=${http_proxy:-}
-    image: fallenbagel/jellyseerr:2.5.0
+    image: fallenbagel/jellyseerr:2.5.1
     labels:
       createdBy: Apps
     networks:
