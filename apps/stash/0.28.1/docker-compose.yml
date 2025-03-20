@@ -14,7 +14,7 @@ services:
     - STASH_GENERATED=/generated/
     - STASH_METADATA=/metadata/
     - STASH_CACHE=/cache/
-    image: stashapp/stash:v0.28.0
+    image: stashapp/stash:v0.28.1
     labels:
       createdBy: Apps
     logging:
