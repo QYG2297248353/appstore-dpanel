@@ -14,6 +14,9 @@ services:
     - STASH_GENERATED=/generated/
     - STASH_METADATA=/metadata/
     - STASH_CACHE=/cache/
+    - HTTPS_PROXY=${HTTP_PROXY}
+    - HTTP_PROXY=${HTTP_PROXY:-}
+    - NO_PROXY=${NO_PROXY:-}
     image: stashapp/stash:v0.28.1
     labels:
       createdBy: Apps

@@ -7,6 +7,10 @@ services:
     env_file:
     - ./envs/global.env
     - .env
+    environment:
+    - HTTPS_PROXY=${HTTP_PROXY}
+    - HTTP_PROXY=${HTTP_PROXY:-}
+    - NO_PROXY=${NO_PROXY:-}
     image: envyafish/byte-muse:1.8.3
     labels:
       createdBy: Apps

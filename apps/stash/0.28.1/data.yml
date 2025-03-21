@@ -52,3 +52,17 @@ additionalProperties:
       labelZh: 自定义挂载目录 3
       required: false
       type: text
+    - default: ""
+      edit: true
+      envKey: HTTP_PROXY
+      labelZh: 网络代理地址
+      labelEn: Network proxy address
+      required: false
+      type: text
+    - default: "localhost,127.0.0.1,::1,192.168.0.0/16,10.0.0.0/8,*.local"
+      edit: true
+      envKey: NO_PROXY
+      labelZh: 跳过代理地址
+      labelEn: Skip proxy address
+      required: false
+      type: text
