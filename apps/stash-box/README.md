@@ -1,6 +1,6 @@
-# Stash
+# Stash Box
 
-组织和刮削你的色情内容
+视频索引和感知哈希元数据API
 
 ![Stash](https://file.lifebus.top/imgs/stasho_cover.png)
 
@@ -22,14 +22,18 @@ Stash 是一个用 Go 语言编写的网页应用程序，用于为您存储和�
 
 > 默认用户名与密码，请通过日志查看
 
-### 网络代理
+### 配置数据库
 
-请前往持久化目录下, 修改 `config/config.yml` 配置文件。
+Stash 使用 PostgreSQL 作为数据库。您可以在安装后前往持久化目录下的 `data/stash-box-config.yml` 修改配置
 
-增加配置：
+基本格式：`username:password@host:port/database?sslmode=disable`
+
+示例：`postgres:postgres@127.0.0.1:5432/stash?sslmode=disable`
 
 ```yml
-proxy: http://127.0.0.1:7890
+database: "填写数据库配置"
+jwt_secret_key: "系统生成"
+session_store_key: "系统生成"
 ```
 
 ---
