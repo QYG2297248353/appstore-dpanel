@@ -14,7 +14,7 @@ services:
     - verificationCodeTimeout=10
     - appname=casdoor
     - authState=casdoor
-    image: casbin/casdoor:v1.864.0
+    image: casbin/casdoor:v1.873.0
     labels:
       createdBy: Apps
     networks:
