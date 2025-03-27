@@ -16,7 +16,7 @@ services:
     - REGION=en-US
     - KEYBOARD=en-US
     - VERSION=${VERSION}
-    image: dockurr/windows:4.26
+    image: dockurr/windows:4.27
     labels:
       createdBy: Apps
     networks:
