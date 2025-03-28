@@ -11,7 +11,7 @@ services:
     - V2RAYA_ADDRESS=0.0.0.0:2017
     - V2RAYA_PLUGINLISTENPORT=32346
     - V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray
-    image: mzz2017/v2raya:v2.2.6.6
+    image: mzz2017/v2raya:v2.2.6.7
     labels:
       createdBy: Apps
     networks:

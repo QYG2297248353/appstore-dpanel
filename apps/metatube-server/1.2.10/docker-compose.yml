@@ -15,7 +15,7 @@ services:
     - DB_MAX_OPEN_CONNS=0
     - DB_PREPARED_STMT=false
     - DB_AUTO_MIGRATE=true
-    image: ghcr.io/metatube-community/metatube-server:1.2.9
+    image: ghcr.io/metatube-community/metatube-server:1.2.10
     labels:
       createdBy: Apps
     networks:
