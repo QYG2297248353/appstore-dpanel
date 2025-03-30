@@ -11,7 +11,7 @@ services:
     - HOST=0.0.0.0
     - PORT=8840
     - LOG_LEVEL=info
-    image: aceberg/watchyourlan:2.1.1
+    image: aceberg/watchyourlan:2.1.2
     labels:
       createdBy: Apps
     network_mode: host
