@@ -13,6 +13,7 @@ services:
     - N8N_PORT=5678
     - N8N_PROTOCOL=http
     - N8N_DIAGNOSTICS_ENABLED=false
+    - N8N_SECURE_COOKIE=false
     image: n8nio/n8n:1.86.0
     labels:
       createdBy: Apps
