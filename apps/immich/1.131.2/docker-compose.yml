@@ -10,7 +10,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: ghcr.io/immich-app/immich-machine-learning:v1.131.1
+    image: ghcr.io/immich-app/immich-machine-learning:v1.131.2
     labels:
       createdBy: Apps
     networks:
@@ -68,7 +68,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: ghcr.io/immich-app/immich-server:v1.131.1
+    image: ghcr.io/immich-app/immich-server:v1.131.2
     labels:
       createdBy: Apps
     networks:
