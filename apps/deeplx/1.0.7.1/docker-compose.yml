@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - PORT=1188
-    image: qyg2297248353/deeplx:v1.0.5.1
+    image: qyg2297248353/deeplx:v1.0.7.1
     labels:
       createdBy: Apps
     networks:
