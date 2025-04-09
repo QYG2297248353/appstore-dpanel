@@ -7,7 +7,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: huolalatech/page-spy-web:v2.2.2
+    image: huolalatech/page-spy-web:v2.2.3
     labels:
       createdBy: Apps
     networks:
