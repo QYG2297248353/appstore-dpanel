@@ -14,7 +14,7 @@ services:
     - PUID=0
     - PGID=0
     - UMASK=022
-    image: jxxghp/moviepilot:1.9.17
+    image: jxxghp/moviepilot:1.9.18
     labels:
       createdBy: Apps
     logging:
