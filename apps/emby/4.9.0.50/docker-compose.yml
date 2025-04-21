@@ -3,18 +3,17 @@ networks:
     external: true
 services:
   emby:
-    container_name: emby-lovechen
+    container_name: emby
     devices:
     - /dev/dri:/dev/dri
     environment:
     - UID=0
     - GID=0
     - GIDLIST=0
-    - NVIDIA_VISIBLE_DEVICES=all
     - HTTP_PROXY=${HTTP_PROXY:-}
     - HTTPS_PROXY=${HTTP_PROXY:-}
     - NO_PROXY=localhost,127.0.0.1,::1
-    image: lovechen/embyserver:4.8.0.21
+    image: emby/embyserver:4.9.0.50
     labels:
       createdBy: Apps
     network_mode: ${NETWORK_MODE}
