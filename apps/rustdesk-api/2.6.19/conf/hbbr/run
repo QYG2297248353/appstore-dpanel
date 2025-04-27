@@ -1,0 +1,5 @@
+#!/command/with-contenv sh
+cd /data || exit
+PARAMS=
+[ "${ENCRYPTED_ONLY}" = "1" ] && PARAMS="-k ${KEY}"
+/usr/bin/hbbr $PARAMS
