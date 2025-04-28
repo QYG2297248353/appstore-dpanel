@@ -15,3 +15,10 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
+    - default: "b7fa3f6f09ac8084ca03b94589d799e6a9225212e8f691c6b419a139acf412c7"
+      edit: true
+      envKey: SECRET_ENCRYPTION_KEY
+      labelZh: 密钥
+      labelEn: Secret key
+      required: true
+      type: text

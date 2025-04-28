@@ -7,7 +7,7 @@
   shortDescZh: 一个时尚、现代化的仪表板
   shortDescEn: A stylish, modern dashboard
   type: website
-  crossVersionUpdate: true
+  crossVersionUpdate: false
   limit: 0
   website: https://homarr.dev/
   github: https://github.com/ajnart/homarr/
