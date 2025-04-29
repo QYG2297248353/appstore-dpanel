@@ -3,14 +3,14 @@ additionalProperties:
     - child:
         default: ""
         envKey: PANEL_DB_HOST
-        required: false
+        required: true
         type: service
       default: mysql
       edit: true
       envKey: PANEL_DB_TYPE
       labelZh: MySQL 服务 (前置检查)
       labelEn: Database Service (Pre-check)
-      required: false
+      required: true
       type: apps
       values:
         - label: MySQL
@@ -19,6 +19,22 @@ additionalProperties:
           value: mariadb
         - label: Percona
           value: percona
+    - default: "host"
+      edit: true
+      envKey: NETWORK_MODE
+      labelEn: Drive path
+      labelZh: 网络模式
+      required: true
+      type: select
+      values:
+        - label: 主机网络模式
+          value: "host"
+        - label: 桥接网络模式
+          value: "bridge"
+        - label: 无网络模式
+          value: "none"
+        - label: 1panel-network
+          value: "1panel-network"
     - default: "/home/nacos"
       edit: true
       envKey: NACOS_ROOT_PATH
@@ -26,7 +42,7 @@ additionalProperties:
       labelEn: Data persistence path
       required: true
       type: text
-    - default: 8080
+    - default: 8848
       edit: true
       envKey: PANEL_APP_PORT_HTTP
       labelZh: WebUI 端口
@@ -34,19 +50,19 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-    - default: 8848
+    - default: 9848
       edit: true
-      envKey: PANEL_APP_PORT_API
-      labelZh: WebUI API 端口
-      labelEn: WebUI API port
+      envKey: PANEL_APP_PORT_GRPC_CLIENT
+      labelZh: Nacos gRPC 客户端端口
+      labelEn: Nacos gRPC client port
       required: true
       rule: paramPort
       type: number
-    - default: 9848
+    - default: 9849
       edit: true
-      envKey: PANEL_APP_PORT_GRPC
-      labelZh: Nacos gRPC 端口
-      labelEn: Nacos gRPC port
+      envKey: PANEL_APP_PORT_GRPC_SERVER
+      labelZh: Nacos gRPC 服务端端口
+      labelEn: Nacos gRPC server port
       required: true
       rule: paramPort
       type: number

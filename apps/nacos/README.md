@@ -86,6 +86,8 @@ Nacos
 
 ## 升级说明
 
+> [升级手册](https://nacos.io/docs/latest/manual/admin/upgrading/)
+
 ### 2.5.0
 
 表结构发生变化
