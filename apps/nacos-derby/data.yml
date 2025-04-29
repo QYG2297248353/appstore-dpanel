@@ -1,6 +1,6 @@
 ﻿additionalProperties:
-  key: nacos
-  name: Nacos
+  key: nacos-derby
+  name: Nacos Derby版
   tags:
     - WebSite
     - Middleware
