@@ -7,7 +7,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: awesometechnologies/synapse-admin:0.10.3
+    image: awesometechnologies/synapse-admin:0.10.4
     labels:
       createdBy: Apps
     networks:
