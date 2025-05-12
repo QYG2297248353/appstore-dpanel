@@ -10,7 +10,7 @@ services:
     - .env
     environment:
     - DATABASE_URL=postgres://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOSTNAME}:${DB_PORT}/${DB_DATABASE_NAME}
-    image: outlinewiki/outline:0.83.0
+    image: outlinewiki/outline:0.84.0
     labels:
       createdBy: Apps
     networks:
