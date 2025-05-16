@@ -7,7 +7,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: usual2970/certimate:v0.3.11
+    image: usual2970/certimate:v0.3.12
     labels:
       createdBy: Apps
     networks:
