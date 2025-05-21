@@ -2,12 +2,12 @@ networks:
   1panel-network:
     external: true
 services:
-  element-web:
-    container_name: element-web
+  synapse-admin:
+    container_name: synapse-admin
     env_file:
     - ./envs/global.env
     - .env
-    image: vectorim/element-web:v1.11.100
+    image: awesometechnologies/synapse-admin:0.11.0
     labels:
       createdBy: Apps
     networks:
@@ -15,5 +15,3 @@ services:
     ports:
     - ${PANEL_APP_PORT_HTTP}:80
     restart: always
-    volumes:
-    - ${ELEMENT_WEB_ROOT_PATH}/config/config.json:/app/config.json
