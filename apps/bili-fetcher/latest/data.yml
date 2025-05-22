@@ -7,9 +7,17 @@ additionalProperties:
       labelEn: Data persistence path
       required: true
       type: text
-    - default: 8080
+    - default: 5173
       edit: true
       envKey: PANEL_APP_PORT_HTTP
+      labelZh: WebUI 端口
+      labelEn: WebUI port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 8899
+      edit: true
+      envKey: PANEL_APP_PORT_API
       labelZh: WebUI 端口
       labelEn: WebUI port
       required: true
