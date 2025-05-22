@@ -1,0 +1,40 @@
+networks:
+  1panel-network:
+    external: true
+services:
+  bili-fetcher-api:
+    build:
+      context: https://github.com/2977094657/BilibiliHistoryFetcher.git
+      dockerfile: docker/Dockerfile.cpu
+    container_name: api-bili-fetcher
+    env_file:
+    - ./envs/global.env
+    - .env
+    environment:
+    - TZ=Asia/Shanghai
+    - DOCKER_ENV=true
+    image: bilibili-api:latest
+    networks:
+    - 1panel-network
+    restart: always
+    volumes:
+    - ${BILI_FETCHER_ROOT_PATH}/config:/app/config
+    - ${BILI_FETCHER_ROOT_PATH}/output:/app/output
+  bili-fetcher-web:
+    build:
+      context: https://github.com/2977094657/BiliHistoryFrontend.git
+      dockerfile: Dockerfile
+    container_name: bili-fetcher
+    depends_on:
+    - bili-fetcher-api
+    environment:
+    - BACKEND_URL=http://bili-fetcher-api:8899
+    - TZ=Asia/Shanghai
+    image: bilibili-frontend:latest
+    labels:
+      createdBy: Apps
+    networks:
+    - 1panel-network
+    ports:
+    - ${PANEL_APP_PORT_HTTP}:80
+    restart: always

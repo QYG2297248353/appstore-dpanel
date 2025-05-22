@@ -1,0 +1,14 @@
+additionalProperties:
+  key: bili-fetcher
+  name: BiliFetcher
+  tags:
+    - WebSite
+    - Local
+  shortDescZh: B站历史记录
+  shortDescEn: Bilibili History Fetcher
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/2977094657/BilibiliHistoryFetcher/
+  github: https://github.com/2977094657/BilibiliHistoryFetcher/
+  document: https://github.com/2977094657/BilibiliHistoryFetcher/
