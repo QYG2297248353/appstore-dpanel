@@ -18,8 +18,8 @@ additionalProperties:
     - default: 8899
       edit: true
       envKey: PANEL_APP_PORT_API
-      labelZh: WebUI 端口
-      labelEn: WebUI port
+      labelZh: API 端口
+      labelEn: API port
       required: true
       rule: paramPort
       type: number

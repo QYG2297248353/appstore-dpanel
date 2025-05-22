@@ -4,7 +4,7 @@ additionalProperties:
   tags:
     - WebSite
     - Local
-  shortDescZh: B站历史记录
+  shortDescZh: 同步B站历史记录
   shortDescEn: Bilibili History Fetcher
   type: website
   crossVersionUpdate: true
