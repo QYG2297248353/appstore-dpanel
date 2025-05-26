@@ -14,7 +14,7 @@ services:
     - RUSTDESK_API_RUSTDESK_RELAY_SERVER=${RUSTDESK_SERVER_URL}:21117
     - RUSTDESK_API_RUSTDESK_API_SERVER=${RUSTDESK_SERVER_URL}:${PANEL_APP_PORT_HTTP:-21114}
     - RUSTDESK_API_RUSTDESK_KEY=${KEY}
-    image: lejianwen/rustdesk-api:v2.6.20
+    image: lejianwen/rustdesk-api:v2.6.21
     labels:
       createdBy: Apps
     networks:
