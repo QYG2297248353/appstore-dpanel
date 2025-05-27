@@ -5,8 +5,8 @@ services:
   mailserver:
     container_name: mailserver
     dns:
-    - ${DNS1}
-    - ${DNS2}
+    - ${DNS1:-223.5.5.5}
+    - ${DNS2:-119.29.29.29}
     env_file:
     - ./envs/global.env
     - ./envs/mailserver.env
@@ -20,7 +20,7 @@ services:
     - SPOOF_PROTECTION=1
     - https_proxy=${http_proxy}
     extra_hosts:
-    - ${DOMAIN_HOSTS1}
+    - ${DOMAIN_HOSTS1:-localhost:127.0.0.1}
     healthcheck:
       retries: 0
       test: ss --listening --tcp | grep -P 'LISTEN.+:smtp' || exit 1
