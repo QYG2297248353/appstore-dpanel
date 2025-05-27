@@ -18,7 +18,7 @@ services:
     - SSL_CERT_PATH=/tmp/dms/certs/${CERTS_PUBLIC_CRT:-public.crt}
     - SSL_KEY_PATH=/tmp/dms/certs/${CERTS_PRIVATE_KEY:-private.key}
     - SPOOF_PROTECTION=1
-    - https_proxy=${http_proxy}
+    - HTTPS_PROXY=${HTTP_PROXY:-}
     extra_hosts:
     - ${DOMAIN_HOSTS1:-localhost:127.0.0.1}
     healthcheck:

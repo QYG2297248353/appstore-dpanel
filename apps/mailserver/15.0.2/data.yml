@@ -177,7 +177,7 @@ additionalProperties:
       type: text
     - default: ""
       edit: true
-      envKey: http_proxy
+      envKey: HTTP_PROXY
       labelZh: 网络代理
       labelEn: Network proxy
       required: false
