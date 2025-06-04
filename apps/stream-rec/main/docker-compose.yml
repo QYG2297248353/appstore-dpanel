@@ -25,6 +25,7 @@ services:
     restart: always
     volumes:
     - ${STREAM_REC_ROOT_PATH}/records:/opt/records
+    - ${STREAM_REC_ROOT_PATH}/rclone:/root/.config/rclone
     - ${STREAM_REC_ROOT_PATH}/download:/download
   stream-rec-frontend:
     container_name: stream-rec
