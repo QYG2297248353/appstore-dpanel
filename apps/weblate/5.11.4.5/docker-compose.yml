@@ -16,7 +16,7 @@ services:
     - WEBLATE_ALLOWED_HOSTS=*
     - POSTGRES_DATABASE=weblate
     - CLIENT_MAX_BODY_SIZE=200M
-    image: weblate/weblate:5.11.4.4
+    image: weblate/weblate:5.11.4.5
     labels:
       createdBy: Apps
     networks:
