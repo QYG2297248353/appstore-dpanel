@@ -20,6 +20,10 @@ services:
     restart: always
     stdin_open: true
     tty: true
+    ulimits:
+      nofile:
+        hard: 524288
+        soft: 524288
     volumes:
     - ${AMMDS_ROOT_PATH}/data:/ammds/data
     - ${AMMDS_ROOT_PATH}/db:/ammds/db
