@@ -7,7 +7,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: btpanel/baota:9.0_lts_latest
+    image: btpanel/baota:10.0_lts
     labels:
       createdBy: Apps
     network_mode: ${NETWORK_MODE}
