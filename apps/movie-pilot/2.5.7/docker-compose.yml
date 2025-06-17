@@ -19,7 +19,7 @@ services:
     - AUTH_SITE=iyuu,hhclub,audiences,hddolby,zmpt,freefarm,hdfans,wintersakura,leaves,ptba,icc2022,xingtan,ptvicomo,agsvpt,hdkyl,qingwa,discfan,haidan,rousi,sunny,ptcafe,ptzone,kufei,yemapt
     - HTTP_PROXY=${PROXY_HOST}
     - HTTPS_PROXY=${PROXY_HOST}
-    image: jxxghp/moviepilot-v2:2.5.6
+    image: jxxghp/moviepilot-v2:2.5.7
     labels:
       createdBy: Apps
     logging:
