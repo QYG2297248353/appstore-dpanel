@@ -1,8 +1,8 @@
-# AList
+# OpenList (AList)
 
 一个支持多种存储的文件列表程序
 
-![AList](https://file.lifebus.top/imgs/alist_cover.png)
+![OpenList](https://file.lifebus.top/imgs/alist_cover.png)
 
 ![](https://img.shields.io/badge/%E6%96%B0%E7%96%86%E8%90%8C%E6%A3%AE%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E6%8F%90%E4%BE%9B%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81-blue)
 
@@ -15,6 +15,12 @@
         </div>
     </div>
 </div>
+
+## 版本说明
+
+- `3.40.0` 源作者版 (已下线)
+- `3.45.0` 被修改版 (已下线)
+- `3.46.0` OpenList 社区版 (迁移版)
 
 ## 特性
 
@@ -61,6 +67,8 @@
 > 默认密码：首次启动，可通过日志查询，或重置密码
 
 ### 重置密码
+
+`4.0` 及以上请使用 `openlist` 替换 `alist`
 
 + 随机生成一个密码
 
