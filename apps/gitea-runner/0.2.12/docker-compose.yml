@@ -7,7 +7,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: gitea/act_runner:0.2.11
+    image: gitea/act_runner:0.2.12
     labels:
       createdBy: Apps
     networks:
