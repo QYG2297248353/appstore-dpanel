@@ -14,7 +14,7 @@ services:
     - PORT=7789
     - CONFIG=/config
     - TZ=Asia/Shanghai
-    image: wushuo894/ani-rss:v2.0.19
+    image: wushuo894/ani-rss:v2.0.20
     labels:
       createdBy: Apps
     networks:
