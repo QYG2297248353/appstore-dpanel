@@ -10,11 +10,7 @@ services:
     environment:
     - TZ=Asia/Shanghai
     - RUSTDESK_API_LANG=zh-CN
-    - RUSTDESK_API_RUSTDESK_ID_SERVER=${RUSTDESK_SERVER_URL}:21116
-    - RUSTDESK_API_RUSTDESK_RELAY_SERVER=${RUSTDESK_SERVER_URL}:21117
-    - RUSTDESK_API_RUSTDESK_API_SERVER=${RUSTDESK_SERVER_URL}:${PANEL_APP_PORT_HTTP:-21114}
-    - RUSTDESK_API_RUSTDESK_KEY=${KEY}
-    image: lejianwen/rustdesk-api:v2.6.24
+    image: lejianwen/rustdesk-api:v2.6.25
     labels:
       createdBy: Apps
     networks:
@@ -23,7 +19,7 @@ services:
     - ${PANEL_APP_PORT_HTTP}:21114
     restart: always
     volumes:
-    - ${RUSTDESK_API_ROOT_PATH}/data:/data
+    - ${RUSTDESK_API_ROOT_PATH}/api-data:/app/data
   rustdesk-server-s6:
     container_name: server-rustdesk-api
     env_file:
@@ -32,23 +28,22 @@ services:
     environment:
     - TZ=Asia/Shanghai
     - RUSTDESK_API_LANG=zh-CN
-    - RELAY=${RUSTDESK_SERVER_URL}:21117
+    - RELAY=${RUSTDESK_SERVER_URL}
     - ENCRYPTED_ONLY=1
-    - RUSTDESK_API_RUSTDESK_KEY=${KEY}
     image: rustdesk/rustdesk-server-s6:latest
     labels:
       createdBy: Apps
     networks:
     - 1panel-network
     ports:
-    - 21115:21115
-    - 21116:21116
-    - 21116:21116/udp
-    - 21117:21117
-    - 21118:21118
-    - 21119:21119
+    - ${PANEL_APP_PORT_SERVER_1}:21115
+    - ${PANEL_APP_PORT_ID}:21116
+    - ${PANEL_APP_PORT_ID}:21116/udp
+    - ${PANEL_APP_PORT_SERVER}:21117
+    - ${PANEL_APP_PORT_SERVER_2}:21118
+    - ${PANEL_APP_PORT_SERVER_3}:21119
     restart: always
     volumes:
-    - ${RUSTDESK_API_ROOT_PATH}/data:/data
+    - ${RUSTDESK_API_ROOT_PATH}/server-data:/data
     - ${HBBR_RUN_FILE:-./conf/hbbr/run}:/etc/s6-overlay/s6-rc.d/hbbr/run
     - ${HBBS_RUN_FILE:-./conf/hbbs/run}:/etc/s6-overlay/s6-rc.d/hbbs/run

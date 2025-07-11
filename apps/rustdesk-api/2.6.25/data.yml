@@ -15,11 +15,65 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-    - default: "http://127.0.0.1"
+    - default: 21115
+      edit: true
+      envKey: PANEL_APP_PORT_SERVER_1
+      labelZh: 服务端口 21115
+      labelEn: 服务端口 21115
+      required: true
+      rule: paramPort
+      type: number
+    - default: 21116
+      edit: true
+      envKey: PANEL_APP_PORT_ID
+      labelZh: ID 服务端口
+      labelEn: ID Server Port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 21117
+      edit: true
+      envKey: PANEL_APP_PORT_SERVER
+      labelZh: 中继服务端口
+      labelEn: Intermediate Service Port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 21118
+      edit: true
+      envKey: PANEL_APP_PORT_SERVER_2
+      labelZh: 服务端口 21118
+      labelEn: Server Port 21118
+      required: true
+      rule: paramPort
+      type: number
+    - default: 21119
+      edit: true
+      envKey: PANEL_APP_PORT_SERVER_3
+      labelZh: 服务端口 21119
+      labelEn: Server Port 21119
+      required: true
+      rule: paramPort
+      type: number
+    - default: "http://127.0.0.1:21117"
       edit: true
       envKey: RUSTDESK_SERVER_URL
-      labelZh: RustDesk 服务地址
-      labelEn: RustDesk server address
+      labelZh: RustDesk 中级服务地址
+      labelEn: RustDesk Intermediate service address
+      required: true
+      type: text
+    - default: "http://127.0.0.1:21116"
+      edit: true
+      envKey: RUSTDESK_API_RUSTDESK_ID_SERVER
+      labelZh: RustDesk ID 服务地址
+      labelEn: RustDesk ID server address
+      required: true
+      type: text
+    - default: "http://127.0.0.1:21114"
+      edit: true
+      envKey: RUSTDESK_API_RUSTDESK_API_SERVER
+      labelZh: RustDesk API 服务地址
+      labelEn: RustDesk API server address
       required: true
       type: text
     - default: "RustDesk API Admin"
@@ -121,7 +175,7 @@ additionalProperties:
         - label: sqlite
           value: "sqlite"
         - label: MySQL
-          value: "false"
+          value: "mysql"
     - default: "127.0.0.1:3306"
       edit: true
       envKey: RUSTDESK_API_MYSQL_ADDR
