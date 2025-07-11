@@ -1,0 +1,25 @@
+networks:
+  1panel-network:
+    external: true
+services:
+  rustfs:
+    container_name: rustfs
+    env_file:
+    - ./envs/global.env
+    - .env
+    environment:
+    - TZ=Asia/Shanghai
+    - RUSTFS_ADDRESS=:9000
+    image: rustfs/rustfs:latest
+    labels:
+      createdBy: Apps
+    networks:
+    - 1panel-network
+    ports:
+    - ${PANEL_APP_PORT_HTTP}:9000
+    restart: always
+    volumes:
+    - ${RUSTFS_ROOT_PATH}/data:/etc/rustfs
+    - ${CUSTOM_MOUNT_DIRECTORY_1:-./default_mount_1}:${CUSTOM_MOUNT_DIRECTORY_1:-/default_mount_1}
+    - ${CUSTOM_MOUNT_DIRECTORY_2:-./default_mount_2}:${CUSTOM_MOUNT_DIRECTORY_2:-/default_mount_2}
+    - ${CUSTOM_MOUNT_DIRECTORY_3:-./default_mount_3}:${CUSTOM_MOUNT_DIRECTORY_3:-/default_mount_3}
