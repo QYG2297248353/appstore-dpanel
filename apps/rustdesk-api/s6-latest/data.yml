@@ -18,8 +18,8 @@ additionalProperties:
     - default: 21115
       edit: true
       envKey: PANEL_APP_PORT_NAT
-      labelZh: NAT 服务端口
-      labelEn: NAT Server Port
+      labelZh: NAT 测试服务端口
+      labelEn: NAT Test Server Port
       required: true
       rule: paramPort
       type: number
