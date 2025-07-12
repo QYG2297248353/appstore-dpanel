@@ -20,6 +20,7 @@ services:
     restart: always
     volumes:
     - ${RUSTDESK_API_ROOT_PATH}/api-data:/app/data
+    - ${RUSTDESK_API_ROOT_PATH}/api-config:/app/config
   rustdesk-server-s6:
     container_name: server-rustdesk-api
     env_file:
