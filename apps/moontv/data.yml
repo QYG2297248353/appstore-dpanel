@@ -1,0 +1,14 @@
+additionalProperties:
+  key: moontv
+  name: MoonTV
+  tags:
+    - WebSite
+    - Local
+  shortDescZh: 跨平台的影视聚合播放站
+  shortDescEn: Cross-platform video aggregation station
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/senshinya/MoonTV/
+  github: https://github.com/senshinya/MoonTV/
+  document: https://github.com/senshinya/MoonTV/
