@@ -2,17 +2,14 @@ networks:
   1panel-network:
     external: true
 services:
-  bark:
-    container_name: bark
+  libretv:
+    container_name: libretv
     env_file:
     - ./envs/global.env
     - .env
     environment:
-    - BARK_SERVER_ADDRESS=0.0.0.0:8080
-    - BARK_SERVER_URL_PREFIX=/
-    - BARK_SERVER_DATA_DIR=/data
-    - BARK_SERVER_SERVERLESS=false
-    image: finab/bark-server:v2.2.3
+    - TZ=Asia/Shanghai
+    image: bestzwei/libretv:latest
     labels:
       createdBy: Apps
     networks:
@@ -20,5 +17,3 @@ services:
     ports:
     - ${PANEL_APP_PORT_HTTP}:8080
     restart: always
-    volumes:
-    - ${BARK_ROOT_PATH}/data:/data
