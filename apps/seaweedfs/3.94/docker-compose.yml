@@ -1,11 +1,10 @@
 networks:
   1panel-network:
     external: true
-  seaweedfs-network:
-    external: true
+  seaweedfs-network: null
 services:
   seaweedfs-filer:
-    command: filer -master="master:9333" -ip.bind=0.0.0.0 -metricsPort=9326
+    command: filer -master="seaweedfs-master:9333" -ip.bind=0.0.0.0 -metricsPort=9326
     container_name: seaweedfs-filer
     depends_on:
     - seaweedfs-master
@@ -68,7 +67,7 @@ services:
     volumes:
     - ${SEAWEEDFS_ROOT_PATH}/prometheus:/etc/prometheus
   seaweedfs-s3:
-    command: s3 -filer="filer:8888" -ip.bind=0.0.0.0 -metricsPort=9327
+    command: s3 -filer="seaweedfs-filer:8888" -ip.bind=0.0.0.0 -metricsPort=9327
     container_name: seaweedfs
     depends_on:
     - seaweedfs-master
@@ -93,7 +92,7 @@ services:
     - ${CUSTOM_MOUNT_DIRECTORY_2:-./default_mount_2}:${CUSTOM_MOUNT_DIRECTORY_2:-/default_mount_2}
     - ${CUSTOM_MOUNT_DIRECTORY_3:-./default_mount_3}:${CUSTOM_MOUNT_DIRECTORY_3:-/default_mount_3}
   seaweedfs-volume:
-    command: volume -mserver="master:9333" -ip.bind=0.0.0.0 -port=8080  -metricsPort=9325
+    command: volume -mserver="seaweedfs-master:9333" -ip.bind=0.0.0.0 -port=8080  -metricsPort=9325
     container_name: seaweedfs-volume
     depends_on:
     - seaweedfs-master
@@ -115,7 +114,7 @@ services:
     - ${CUSTOM_MOUNT_DIRECTORY_2:-./default_mount_2}:${CUSTOM_MOUNT_DIRECTORY_2:-/default_mount_2}
     - ${CUSTOM_MOUNT_DIRECTORY_3:-./default_mount_3}:${CUSTOM_MOUNT_DIRECTORY_3:-/default_mount_3}
   seaweedfs-webdav:
-    command: webdav -filer="filer:8888"
+    command: webdav -filer="seaweedfs-filer:8888"
     container_name: seaweedfs-webdav
     depends_on:
     - seaweedfs-master

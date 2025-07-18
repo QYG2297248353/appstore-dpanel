@@ -1,7 +1,8 @@
 additionalProperties:
-  key: garage-hq
-  name: Garage HQ
+  key: garage-hq-web
+  name: Garage HQ (WebUI版)
   tags:
+    - WebSite
     - Storage
     - Local
   shortDescZh: 专为自托管而定制的开源分布式对象存储服务
