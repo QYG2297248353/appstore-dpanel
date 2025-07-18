@@ -15,6 +15,34 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
+    - default: "mdc-ng"
+      edit: true
+      envKey: MDC_USERNAME
+      labelZh: 管理员用户名
+      labelEn: Amdin Username
+      required: true
+      type: text
+    - default: "mdc-ng"
+      edit: true
+      envKey: MDC_PASSWORD
+      labelZh: 管理员密码
+      labelEn: Amdin Password
+      required: true
+      type: text
+    - default: 0
+      edit: true
+      envKey: PGID
+      labelZh: 运行组 ID
+      labelEn: Run Group ID
+      required: true
+      type: number
+    - default: 0
+      edit: true
+      envKey: PUID
+      labelZh: 运行用户 ID
+      labelEn: Run User ID
+      required: true
+      type: number
     - default: ""
       edit: true
       envKey: CUSTOM_MOUNT_DIRECTORY_1
