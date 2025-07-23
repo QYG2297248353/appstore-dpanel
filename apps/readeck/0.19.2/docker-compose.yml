@@ -12,6 +12,7 @@ services:
     - READECK_LOG_LEVEL=info
     - READECK_SERVER_HOST=0.0.0.0
     - READECK_SERVER_PORT=${PANEL_APP_PORT_HTTP}
+    - HTTPS_PROXY=${HTTP_PROXY:-}
     healthcheck:
       interval: 30s
       retries: 3
