@@ -32,4 +32,4 @@ services:
     - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
     restart: always
     volumes:
-    - ${READECK_ROOT_PATH}/data:/data
+    - ${READECK_ROOT_PATH}/data:/readeck
