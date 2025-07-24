@@ -1,0 +1,141 @@
+additionalProperties:
+  formFields:
+    - default: "/home/nezha"
+      edit: true
+      envKey: NEZHA_ROOT_PATH
+      labelZh: 数据持久化路径
+      labelEn: Data persistence path
+      required: true
+      type: text
+    - default: 8008
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: WebUI 端口
+      labelEn: WebUI port
+      required: true
+      rule: paramPort
+      type: number
+    - default: "zh_CN"
+      edit: true
+      envKey: NZ_LANGUAGE
+      labelZh: 系统语言
+      labelEn: System language
+      required: true
+      type: select
+      values:
+        - label: 中文简体
+          value: "zh_CN"
+        - label: 中文繁体
+          value: "zh_TW"
+        - label: 英语
+          value: "en_US"
+    - default: "哪吒监控"
+      edit: true
+      envKey: NZ_SITE_NAME
+      labelZh: 数据持久化路径
+      labelEn: Data persistence path
+      required: true
+      type: text
+    - default: "false"
+      edit: true
+      envKey: NZ_TLS
+      labelZh: Agent是否启用TLS
+      labelEn: Agent whether to enable TLS
+      required: true
+      type: select
+      values:
+        - label: 启用
+          value: "true"
+        - label: 禁用
+          value: "false"
+    - default: "github"
+      edit: true
+      envKey: NZ_OAUTH2_TYPE
+      labelZh: OAuth 服务商
+      labelEn: OAuth Provider
+      required: true
+      type: select
+      values:
+        - label: GitHub
+          value: "github"
+        - label: Cloudflare
+          value: "cloudflare"
+        - label: GitLab
+          value: "gitlab"
+        - label: Gitee
+          value: "gitee"
+        - label: Gitea
+          value: "gitea"
+        - label: Jihulab
+          value: "jihulab"
+    - default: ""
+      edit: true
+      envKey: NZ_OAUTH2_ADMIN
+      labelZh: 管理员账号ID
+      labelEn: Admin Account ID
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: NZ_OAUTH2_CLIENTID
+      labelEn: OAuth Client ID
+      labelZh: OAuth 客户端 ID
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: NZ_OAUTH2_CLIENTSECRET
+      labelEn: OAuth Client Secret
+      labelZh: OAuth 客户端 Secret
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: NZ_OAUTH2_ENDPOINT
+      labelEn: OAuth Callback
+      labelZh: OAuth 端点 (可选)
+      required: false
+      type: text
+    - default: 1
+      edit: true
+      envKey: NZ_JWT_TIMEOUT
+      labelZh: 登录有效期 (小时)
+      labelEn: Login validity period (hours)
+      required: true
+      type: number
+    - default: "false"
+      edit: true
+      envKey: NZ_FORCE_AUTH
+      labelZh: 强制认证
+      labelEn: Compulsory Certification
+      required: true
+      type: select
+      values:
+        - label: 启用
+          value: "true"
+        - label: 禁用
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: NZ_ENABLE_PLAIN_IP_IN_NOTIFICATION
+      labelZh: 是否脱敏通知IP
+      labelEn: Whether to desensitize notification IP
+      required: true
+      type: select
+      values:
+        - label: 明文IP
+          value: "true"
+        - label: 脱敏IP
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: NZ_ENABLE_IP_CHANGE_NOTIFICATION
+      labelZh: IP 变更通知
+      labelEn: IP Change Notification
+      required: true
+      type: select
+      values:
+        - label: 通知
+          value: "true"
+        - label: 禁用
+          value: "false"
