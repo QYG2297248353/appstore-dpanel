@@ -1,0 +1,41 @@
+networks:
+  1panel-network:
+    external: true
+services:
+  clickhouse-server:
+    container_name: openpanel
+    env_file:
+    - ./envs/global.env
+    - .env
+    environment:
+    - TZ=Asia/Shanghai
+    - DATABASE_URL_DIRECT=${DATABASE_URL}
+    - BATCH_SIZE=5000
+    - BATCH_INTERVAL=10000
+    - CONCURRENCY=10
+    - WORKER_PORT=9999
+    - API_PORT=3333
+    - NEXT_PUBLIC_API_URL="http://localhost:3333"
+    - NEXT_PUBLIC_DASHBOARD_URL="http://localhost:3000"
+    - GITHUB_REDIRECT_URI=https://openpanel.domain.com/api/oauth/github/callback
+    - GOOGLE_REDIRECT_URI=https://openpanel.domain.com/api/oauth/google/callback
+    image: clickhouse/clickhouse-server:25.6.5.41-alpine
+    labels:
+      createdBy: Apps
+    networks:
+    - 1panel-network
+    ports:
+    - ${PANEL_APP_PORT_HTTP}:8123
+    - ${PANEL_APP_PORT_NATIVE_TCP}:9000
+    - ${PANEL_APP_PORT_INTER_SERVER}:9009
+    restart: always
+    ulimits:
+      nofile:
+        hard: 262144
+        soft: 262144
+    volumes:
+    - ${CLICKHOUSE_SERVER_ROOT_PATH}/data:/var/lib/clickhouse
+    - ${CLICKHOUSE_SERVER_ROOT_PATH}/logs:/var/log/clickhouse-server
+    - ${CLICKHOUSE_SERVER_ROOT_PATH}/config/op-config.xml:/etc/clickhouse-server/config.d/op-config.xml
+    - ${CLICKHOUSE_SERVER_ROOT_PATH}/config/op-user-config.xml:/etc/clickhouse-server/users.d/op-user-config.xml
+    - ${CLICKHOUSE_SERVER_ROOT_PATH}/config/init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
