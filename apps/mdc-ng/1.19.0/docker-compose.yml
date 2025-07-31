@@ -7,7 +7,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: mdcng/mdc:1.18.3
+    image: mdcng/mdc:1.19.0
     labels:
       createdBy: Apps
     networks:
