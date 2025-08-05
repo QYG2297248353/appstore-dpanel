@@ -26,4 +26,5 @@ services:
     - ${PANEL_APP_PORT_HTTP}:80
     restart: always
     volumes:
-    - ${DOCKWARE_ROOT_PATH}/public:/var/www/html/public
+    - ${DOCKWARE_ROOT_PATH}/mysql:/var/lib/mysql
+    - ${DOCKWARE_ROOT_PATH}/html:/var/www/html
