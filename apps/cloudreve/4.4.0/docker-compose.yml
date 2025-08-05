@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: cloudreve/cloudreve:4.3.0
+    image: cloudreve/cloudreve:4.4.0
     labels:
       createdBy: Apps
     networks:

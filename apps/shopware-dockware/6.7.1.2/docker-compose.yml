@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   dockware:
-    container_name: shopware
+    container_name: shopware-dockware
     env_file:
     - ./envs/global.env
     - .env
@@ -25,6 +25,3 @@ services:
     ports:
     - ${PANEL_APP_PORT_HTTP}:80
     restart: always
-    volumes:
-    - ${DOCKWARE_ROOT_PATH}/mysql:/var/lib/mysql
-    - ${DOCKWARE_ROOT_PATH}/html:/var/www/html

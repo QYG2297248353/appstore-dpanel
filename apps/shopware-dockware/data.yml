@@ -1,6 +1,6 @@
 additionalProperties:
-  key: shopware
-  name: ShopWare
+  key: shopware-dockware
+  name: ShopWare (Dockware版)
   tags:
     - WebSite
     - Local
