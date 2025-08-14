@@ -2,20 +2,22 @@ networks:
   1panel-network:
     external: true
 services:
-  moontv:
-    container_name: moontv
+  jproxy:
+    container_name: jproxy
     env_file:
     - ./envs/global.env
     - .env
     environment:
+    - PUID=0
+    - PGID=0
     - TZ=Asia/Shanghai
-    image: ghcr.io/senshinya/moontv:latest
+    image: luckypuppy514/jproxy:v3.4.8
     labels:
       createdBy: Apps
     networks:
     - 1panel-network
     ports:
-    - ${PANEL_APP_PORT_HTTP}:3000
+    - ${PANEL_APP_PORT_HTTP}:8117
     restart: always
     volumes:
-    - ${MOONTV_ROOT_PATH}/data:/data
+    - ${JPROXY_ROOT_PATH}/data:/app/database

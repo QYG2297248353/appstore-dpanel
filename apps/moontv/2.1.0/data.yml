@@ -14,13 +14,6 @@ additionalProperties:
       values:
         - label: Redis
           value: redis
-    - default: "/home/moontv"
-      edit: true
-      envKey: MOONTV_ROOT_PATH
-      labelZh: 数据持久化路径
-      labelEn: Data persistence path
-      required: true
-      type: text
     - default: 3000
       edit: true
       envKey: PANEL_APP_PORT_HTTP
@@ -50,7 +43,45 @@ additionalProperties:
       labelEn: Search result maximum number of pages
       required: true
       type: number
-    - default: "localstorage"
+    - default: ""
+      edit: true
+      envKey: USERNAME
+      labelZh:
+      labelEn:
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: PASSWORD
+      labelZh:
+      labelEn:
+      required: true
+      type: password
+    - default: "false"
+      edit: true
+      envKey: NEXT_PUBLIC_ENABLE_REGISTER
+      labelZh: 是否允许注册
+      labelEn: Enable Register
+      required: true
+      type: select
+      values:
+        - label: 允许注册
+          value: "true"
+        - label: 禁用注册
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: NEXT_PUBLIC_DISABLE_YELLOW_FILTER
+      labelZh: 关闭色情内容过滤
+      labelEn: Disable Yellow Filter
+      required: true
+      type: select
+      values:
+        - label: 开启过滤
+          value: "true"
+        - label: 禁用过滤
+          value: "false"
+    - default: "redis"
       edit: true
       envKey: NEXT_PUBLIC_STORAGE_TYPE
       labelZh: 数据存储类型
@@ -58,8 +89,8 @@ additionalProperties:
       required: true
       type: select
       values:
-        - label: 本地浏览器存储
-          value: "localstorage"
+        - label: Upstash
+          value: "upstash"
         - label: Redis
           value: "redis"
     - default: "redis://127.0.0.1:6379"
@@ -71,27 +102,15 @@ additionalProperties:
       type: text
     - default: ""
       edit: true
-      envKey: USERNAME
-      labelZh: Redis 用户 (Redis 存储)
-      labelEn: Redis User (Redis Storage)
+      envKey: UPSTASH_URL
+      labelZh: Upstash 地址 (Upstash 存储)
+      labelEn: Upstash Address (Upstash Storage)
       required: false
       type: text
     - default: ""
       edit: true
-      envKey: PASSWORD
-      labelZh: Redis 密码 (Redis 存储)
-      labelEn: Redis Password (Redis Storage)
+      envKey: UPSTASH_TOKEN
+      labelZh: Upstash 授权码 (Upstash 存储)
+      labelEn: Upstash Token (Upstash Storage)
       required: false
       type: password
-    - default: "false"
-      edit: true
-      envKey: NEXT_PUBLIC_ENABLE_REGISTER
-      labelZh: 是否允许注册
-      labelEn: Enable Register
-      required: true
-      type: select
-      values:
-        - label: 允许注册 (Redis 存储)
-          value: "true"
-        - label: 禁用注册
-          value: "false"
