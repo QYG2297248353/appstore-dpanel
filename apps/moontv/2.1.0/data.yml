@@ -46,15 +46,15 @@ additionalProperties:
     - default: ""
       edit: true
       envKey: USERNAME
-      labelZh:
-      labelEn:
+      labelZh: 管理员用户名
+      labelEn: Admin Username
       required: true
       type: text
     - default: ""
       edit: true
       envKey: PASSWORD
-      labelZh:
-      labelEn:
+      labelZh: 管理员密码
+      labelEn: Admin Password
       required: true
       type: password
     - default: "false"

@@ -18,16 +18,8 @@ additionalProperties:
     - default: 9000
       edit: true
       envKey: PANEL_APP_PORT_API
-      labelZh: API 端口 (映射内部端口)
-      labelEn: API Port (mapped internal port)
-      required: true
-      rule: paramPort
-      type: number
-    - default: 9000
-      edit: true
-      envKey: MINIO_API_PORT
-      labelZh: API 内部端口
-      labelEn: Internal API Port
+      labelZh: API 端口
+      labelEn: API Port
       required: true
       rule: paramPort
       type: number
@@ -76,14 +68,6 @@ additionalProperties:
       envKey: MINIO_BROWSER_SESSION_DURATION
       labelEn: Session duration
       labelZh: 会话持续时间 (s/秒 m/分钟 h/小时 d/天)
-      required: true
-      type: text
-    - default: "http://127.0.0.1:9000"
-      edit: true
-      envKey: MINIO_SERVER_URL
-      labelZh: API 服务器 URL
-      labelEn: API Server URL
-      rule: paramExtUrl
       required: true
       type: text
     - default: "localhost"

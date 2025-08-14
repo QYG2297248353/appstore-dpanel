@@ -78,14 +78,6 @@ additionalProperties:
       labelZh: 会话持续时间 (s/秒 m/分钟 h/小时 d/天)
       required: true
       type: text
-    - default: "http://127.0.0.1:9000"
-      edit: true
-      envKey: MINIO_SERVER_URL
-      labelZh: API 服务器 URL
-      labelEn: API Server URL
-      rule: paramExtUrl
-      required: true
-      type: text
     - default: "localhost"
       edit: true
       envKey: MINIO_SERVER_HOST

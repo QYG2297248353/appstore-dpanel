@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   minio:
-    command: server --console-address :${PANEL_APP_PORT_HTTP} --address :${MINIO_API_PORT}
+    command: server --console-address :${PANEL_APP_PORT_HTTP} --address :${PANEL_APP_PORT_API}
       --json
     container_name: minio
     env_file:
@@ -27,7 +27,7 @@ services:
     - 1panel-network
     ports:
     - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
-    - ${PANEL_APP_PORT_API}:${MINIO_API_PORT}
+    - ${PANEL_APP_PORT_API}:${PANEL_APP_PORT_API}
     restart: always
     volumes:
     - ${MINIO_ROOT_PATH}/certs:/root/.minio/certs
