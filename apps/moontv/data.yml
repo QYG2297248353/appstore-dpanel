@@ -1,6 +1,6 @@
 additionalProperties:
   key: moontv
-  name: MoonTV
+  name: MoonTV (LunaTV)
   tags:
     - WebSite
     - Local

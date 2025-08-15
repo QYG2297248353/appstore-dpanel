@@ -14,6 +14,8 @@ additionalProperties:
       values:
         - label: Redis
           value: redis
+        - label: Kvrocks
+          value: kvrocks
     - default: 3000
       edit: true
       envKey: PANEL_APP_PORT_HTTP
@@ -93,7 +95,16 @@ additionalProperties:
           value: "upstash"
         - label: Redis
           value: "redis"
+        - label: Kvrocks
+          value: "kvrocks"
     - default: "redis://127.0.0.1:6379"
+      edit: true
+      envKey: REDIS_URL
+      labelZh: Redis 地址 (Redis 存储)
+      labelEn: Redis Address (Redis Storage)
+      required: false
+      type: text
+    - default: "redis://127.0.0.1:6666"
       edit: true
       envKey: REDIS_URL
       labelZh: Redis 地址 (Redis 存储)
