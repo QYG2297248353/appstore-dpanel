@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: ghcr.io/moontechlab/lunatv:2.7.1
+    image: ghcr.io/moontechlab/lunatv:3.0.2
     labels:
       createdBy: Apps
     networks:
