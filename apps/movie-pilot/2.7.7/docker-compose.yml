@@ -13,7 +13,7 @@ services:
     - DEBUG=false
     - DEV=false
     - LOG_LEVEL=INFO
-    image: jxxghp/moviepilot:2.7.6
+    image: jxxghp/moviepilot:2.7.7
     labels:
       createdBy: Apps
     logging:
