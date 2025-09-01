@@ -10,6 +10,6 @@
   type: website
   crossVersionUpdate: true
   limit: 0
-  website: https://github.com/envyafish/AutoLadyIssue/
-  github: https://github.com/envyafish/AutoLadyIssue/
-  document: https://github.com/envyafish/AutoLadyIssue/
+  website: https://github.com/envyafish/
+  github: https://github.com/envyafish/
+  document: https://github.com/envyafish/
