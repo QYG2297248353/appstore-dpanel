@@ -29,7 +29,7 @@ services:
     environment:
       API_BASE_URL: http://garage:3903
       S3_ENDPOINT_URL: http://garage:3900
-    image: khairul169/garage-webui:1.0.9
+    image: khairul169/garage-webui:1.1.0
     networks:
     - 1panel-network
     ports:
