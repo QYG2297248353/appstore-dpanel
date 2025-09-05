@@ -19,7 +19,7 @@ services:
 
         '
       timeout: 3s
-    image: jiangrui1994/cloudsaver:0.6.1
+    image: jiangrui1994/cloudsaver:0.6.2
     labels:
       createdBy: Apps
     networks:
