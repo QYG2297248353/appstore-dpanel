@@ -45,7 +45,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: ghcr.io/immich-app/immich-server:v1.140.0
+    image: ghcr.io/immich-app/immich-server:v1.140.1
     labels:
       createdBy: Apps
     networks:

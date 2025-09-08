@@ -10,7 +10,7 @@ services:
     environment:
     - TZ=Asia/Shanghai
     - HTTPS_PROXY=${HTTP_PROXY:-}
-    image: lkw199711/smanga-nodejs:4.1.6
+    image: lkw199711/smanga-nodejs:4.1.9
     labels:
       createdBy: Apps
     networks:
