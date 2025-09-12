@@ -7,7 +7,7 @@ additionalProperties:
   shortDescZh: 现代化的 NodePass 管理界面
   shortDescEn: NodePass Dashboard
   type: website
-  crossVersionUpdate: true
+  crossVersionUpdate: false
   limit: 0
   website: https://github.com/NodePassProject/NodePassDash/
   github: https://github.com/NodePassProject/NodePassDash/
