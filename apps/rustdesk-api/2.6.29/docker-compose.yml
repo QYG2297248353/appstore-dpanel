@@ -10,7 +10,7 @@ services:
     environment:
     - TZ=Asia/Shanghai
     - RUSTDESK_API_LANG=zh-CN
-    image: lejianwen/rustdesk-api:v2.6.28
+    image: lejianwen/rustdesk-api:v2.6.29
     labels:
       createdBy: Apps
     networks:
