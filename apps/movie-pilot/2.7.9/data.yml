@@ -46,13 +46,6 @@ additionalProperties:
       labelEn: Superuser Username
       required: true
       type: text
-    - default: "admin"
-      edit: true
-      envKey: SUPERUSER_PASSWORD
-      labelZh: 管理员密码
-      labelEn: Superuser
-      required: true
-      type: text
     - default: "moviepilot"
       edit: true
       envKey: API_TOKEN
