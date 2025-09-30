@@ -50,3 +50,10 @@ additionalProperties:
       labelEn: Telegram APP HASH
       required: false
       type: text
+    - default: ""
+      edit: true
+      envKey: PROXY_URL
+      labelZh: 代理地址
+      labelEn: Proxy Url
+      required: false
+      type: text
