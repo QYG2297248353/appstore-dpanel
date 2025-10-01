@@ -10,7 +10,7 @@ services:
     environment:
     - TZ=Asia/Shanghai
     - PORT=${PANEL_APP_PORT_HTTP}
-    image: ghcr.io/nodepassproject/nodepassdash:3.0.4
+    image: ghcr.io/nodepassproject/nodepassdash:3.1.0
     labels:
       createdBy: Apps
     network_mode: ${NETWORK_MODE}
