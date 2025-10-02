@@ -7,7 +7,7 @@ services:
     environment:
     - NZ_LISTEN_PORT=${PANEL_APP_PORT_HTTP}
     - NZ_LOCATION=Asia/Shanghai
-    image: ghcr.io/nezhahq/nezha:v1.13.2
+    image: ghcr.io/nezhahq/nezha:v1.14.1
     labels:
       createdBy: Apps
     networks:
