@@ -26,7 +26,7 @@ services:
     environment:
     - BACKEND_URL=http://bili-fetcher-api:8899
     - TZ=Asia/Shanghai
-    image: qyg2297248353/bili-fetcher-web:v1.6.7
+    image: qyg2297248353/bili-fetcher-web:v1.6.8
     labels:
       createdBy: Apps
     networks:
