@@ -3,13 +3,13 @@ networks:
     external: true
 services:
   moontv:
-    container_name: moontv
+    container_name: lunatv
     env_file:
     - ./envs/global.env
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: ghcr.io/moontechlab/lunatv:4.3.0
+    image: ghcr.io/moontechlab/lunatv:latest
     labels:
       createdBy: Apps
     networks:
