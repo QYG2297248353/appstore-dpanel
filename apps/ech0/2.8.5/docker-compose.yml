@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: sn0wl1n/ech0:v2.8.4
+    image: sn0wl1n/ech0:v2.8.5
     labels:
       createdBy: Apps
     networks:
