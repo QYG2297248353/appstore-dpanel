@@ -14,7 +14,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: chrislusf/seaweedfs:3.97
+    image: chrislusf/seaweedfs:3.98
     networks:
     - seaweedfs-network
     ports:
@@ -36,7 +36,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: chrislusf/seaweedfs:3.97
+    image: chrislusf/seaweedfs:3.98
     networks:
     - seaweedfs-network
     ports:
@@ -78,7 +78,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: chrislusf/seaweedfs:3.97
+    image: chrislusf/seaweedfs:3.98
     labels:
       createdBy: Apps
     networks:
@@ -101,7 +101,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: chrislusf/seaweedfs:3.97
+    image: chrislusf/seaweedfs:3.98
     networks:
     - seaweedfs-network
     ports:
@@ -125,7 +125,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: chrislusf/seaweedfs:3.97
+    image: chrislusf/seaweedfs:3.98
     networks:
     - seaweedfs-network
     ports:
