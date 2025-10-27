@@ -33,6 +33,14 @@ API 文档和 API 开发调试使用同一个工具，API 调试完成后即可�
 
 ## 安装说明
 
+### 版本说明
+
+- `latest`：通用版
+  包含 Runner 所有功能，及以下外部程序语言环境：Nodejs 18,Java 21,Python 3,PHP 8
+
+- `slim`：精简版
+  在精简版中，包含 Runner 所有功能，及以下外部程序语言环境：Nodejs 18
+
 ### 应用服务地址
 
 默认值：`https://api.apifox.cn`

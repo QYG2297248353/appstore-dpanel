@@ -31,11 +31,11 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-    - default: 9994
+    - default: 9993
       edit: true
-      envKey: PANEL_APP_PORT_API
-      labelZh: API 端口
-      labelEn: API Port
+      envKey: PANEL_APP_PORT_ZT
+      labelZh: Zerotier 端口
+      labelEn: Zerotier port
       required: true
       rule: paramPort
       type: number
