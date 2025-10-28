@@ -1,6 +1,6 @@
 additionalProperties:
-  key: apifox-runner
-  name: Apifox Runner (组织版)
+  key: apifox-runner-team
+  name: Apifox Runner (团队版)
   tags:
     - Runtime
     - Local

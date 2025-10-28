@@ -31,9 +31,9 @@ additionalProperties:
       type: text
     - default: 0
       edit: true
-      envKey: TEAM_ID
-      labelZh: 团队 ID
-      labelEn: Team ID
+      envKey: ORGANIZATION_ID
+      labelZh: 组织 ID
+      labelEn: Organization ID
       required: true
       type: number
     - default: 0
