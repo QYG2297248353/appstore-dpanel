@@ -9,6 +9,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
+    - HTTPS_PROXY=${HTTP_PROXY}
     image: sn0wl1n/ech0:v2.9.5
     labels:
       createdBy: Apps
