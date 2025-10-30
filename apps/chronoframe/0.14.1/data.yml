@@ -1,0 +1,38 @@
+additionalProperties:
+  formFields:
+    - default: "/home/chronoframe"
+      edit: true
+      envKey: CHRONOFRAME_ROOT_PATH
+      labelZh: 数据持久化路径
+      labelEn: Data persistence path
+      required: true
+      type: text
+    - default: 3000
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: WebUI 端口
+      labelEn: WebUI port
+      required: true
+      rule: paramPort
+      type: number
+    - default: "admin@chronoframe.com"
+      edit: true
+      envKey: CFRAME_ADMIN_EMAIL
+      labelZh: 管理员邮箱
+      labelEn: Admin Email
+      required: true
+      type: text
+    - default: "Chronoframe"
+      edit: true
+      envKey: CFRAME_ADMIN_NAME
+      labelZh: 管理员用户名
+      labelEn: Admin Username
+      required: true
+      type: text
+    - default: "CF1234@!"
+      edit: true
+      envKey: CFRAME_ADMIN_PASSWORD
+      labelZh: 管理员密码
+      labelEn: Admin Password
+      required: true
+      type: text
