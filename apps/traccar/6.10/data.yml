@@ -15,3 +15,10 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
+    - default: "http://127.0.0.1:8082"
+      edit: true
+      envKey: WEB_URL
+      labelZh: WebUI 地址
+      labelEn: WebUI URL
+      required: true
+      type: text

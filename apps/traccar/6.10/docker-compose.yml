@@ -7,7 +7,13 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    hostname: traccar
+    environment:
+    - CONFIG_USE_ENVIRONMENT_VARIABLES=true
+    - WEB_URL=${WEB_URL:-http://127.0.0.1:8082}
+    - DATABASE_DRIVER=${DATABASE_DRIVER:-org.h2.Driver}
+    - DATABASE_URL=${DATABASE_URL:-jdbc:h2:./data/database}
+    - DATABASE_USER=${DATABASE_USER:-sa}
+    - DATABASE_PASSWORD=${DATABASE_PASSWORD:-}
     image: traccar/traccar:6.10
     labels:
       createdBy: Apps
@@ -18,4 +24,4 @@ services:
     restart: always
     volumes:
     - ${TRACCAR_ROOT_PATH}/logs:/opt/traccar/logs:rw
-    - ${TRACCAR_ROOT_PATH}/traccar.xml:/opt/traccar/conf/traccar.xml:ro
+    - ${TRACCAR_ROOT_PATH}/data:/opt/traccar/data:rw

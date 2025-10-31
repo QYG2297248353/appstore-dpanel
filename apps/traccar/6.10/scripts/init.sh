@@ -10,8 +10,6 @@ if [ -f .env ]; then
   echo "ENV_FILE=${CURRENT_DIR}/.env" >> .env
   echo "GLOBAL_ENV_FILE=${CURRENT_DIR}/envs/global.env" >> .env
 
-  cp conf/traccar.xml "${TRACCAR_ROOT_PATH}/traccar.xml"
-
   echo "Check Finish."
 
 else
