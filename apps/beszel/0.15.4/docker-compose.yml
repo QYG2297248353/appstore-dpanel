@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: henrygd/beszel:0.15.3
+    image: henrygd/beszel:0.15.4
     labels:
       createdBy: Apps
     networks:
