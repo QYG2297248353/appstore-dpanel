@@ -17,7 +17,7 @@ services:
     networks:
     - 1panel-network
     ports:
-    - ${PANEL_APP_PORT_HTTP}:80
+    - ${PANEL_APP_PORT_HTTP}:3750
     restart: always
     volumes:
     - ${AUTO_LADY_ROOT_PATH}/config:/data
