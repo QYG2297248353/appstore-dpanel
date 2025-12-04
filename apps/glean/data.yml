@@ -1,0 +1,14 @@
+additionalProperties:
+  key: glean
+  name: Glean 拾灵
+  tags:
+    - WebSite
+    - Local
+  shortDescZh: 一个自托管的 RSS 阅读器和个人知识管理工具
+  shortDescEn: A self-hosted RSS reader and personal knowledge management tool
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/LeslieLeung/glean/
+  github: https://github.com/LeslieLeung/glean/
+  document: https://github.com/LeslieLeung/glean/
