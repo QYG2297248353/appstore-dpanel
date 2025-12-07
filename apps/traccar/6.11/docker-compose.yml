@@ -14,7 +14,7 @@ services:
     - DATABASE_URL=${DATABASE_URL:-jdbc:h2:./data/database}
     - DATABASE_USER=${DATABASE_USER:-sa}
     - DATABASE_PASSWORD=${DATABASE_PASSWORD:-}
-    image: traccar/traccar:6.10
+    image: traccar/traccar:6.11
     labels:
       createdBy: Apps
     networks:
