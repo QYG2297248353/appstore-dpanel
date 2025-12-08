@@ -29,3 +29,4 @@ Nginx UI 是一个全新的 Nginx 网络管理界面，旨在简化 Nginx 服务
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

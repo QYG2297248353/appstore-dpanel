@@ -39,3 +39,4 @@ LibreTV 是一个轻量级、免费的在线视频搜索与观看平台，提供
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

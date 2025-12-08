@@ -14,3 +14,4 @@ AFFiNE 是一个开源的全能工作空间和操作系统，用于组装您的�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

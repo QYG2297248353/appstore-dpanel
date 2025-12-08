@@ -18,3 +18,4 @@ Pingvin Share 是一个自托管的文件共享平台，是 WeTransfer 的替代
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

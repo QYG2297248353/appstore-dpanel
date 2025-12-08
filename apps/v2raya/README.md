@@ -48,3 +48,4 @@ v2rayA 提供多种策略应对 DNS 污染，高级设置可为用户提供更�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

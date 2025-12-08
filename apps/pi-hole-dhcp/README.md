@@ -21,3 +21,4 @@ Pi-hole 是一个 Linux 网络级广告和互联网跟踪器阻止应用程序�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

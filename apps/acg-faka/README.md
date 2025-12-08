@@ -75,3 +75,4 @@ ORM，模板渲染使用Smarty3.1以及PHP原生渲染，会话保持全程使�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

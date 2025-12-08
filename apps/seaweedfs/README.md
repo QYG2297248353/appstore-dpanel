@@ -14,3 +14,4 @@ SeaweedFS 是一个快速的分布式存储系统，适用于 Blob、对象、�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

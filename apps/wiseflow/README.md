@@ -70,3 +70,4 @@ WiseFlow尤其擅长从微信公众号文章中提取信息，为此我们配置
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

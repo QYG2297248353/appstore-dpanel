@@ -39,3 +39,4 @@ NodePassDash是一个现代化的 NodePass 管理界面，基于 Go 后端 + Nex
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

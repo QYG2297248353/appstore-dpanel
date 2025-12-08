@@ -17,3 +17,4 @@ NezhaDash 是一个基于 Next.js 和 哪吒监控 的仪表盘
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

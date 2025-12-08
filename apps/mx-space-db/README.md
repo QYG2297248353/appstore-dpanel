@@ -35,3 +35,4 @@ Mix Space 原生支持 Markdown 语法，也支持自定义 Markdown 内语法�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

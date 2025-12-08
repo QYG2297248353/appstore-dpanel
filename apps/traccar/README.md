@@ -134,3 +134,4 @@ Traccar 默认使用 8082 端口作为 Web / 移动端 服务端口。
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

@@ -25,3 +25,4 @@ PageSpy 的目标，就是为包括以上场景的人员提供帮助。
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

@@ -40,3 +40,4 @@ TCP 端口 21118 和 21119 是 RustDesk Web 客户端的 WebSocket 端口，您�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

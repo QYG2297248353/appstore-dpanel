@@ -34,3 +34,4 @@ MediaCMS 是一个现代、功能齐全的开源视频和媒体内容管理系�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

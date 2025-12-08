@@ -54,3 +54,4 @@ GDPR 请求的电子邮件地址。启用遥测时必须指定。
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

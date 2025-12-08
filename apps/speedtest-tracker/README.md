@@ -23,3 +23,4 @@ Speedtest Tracker 是一个自托管的互联网性能跟踪应用程序，可�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

@@ -17,3 +17,4 @@ Synapse 是一个开源的 Matrix 家庭服务器实现，由 Element 开发和�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

@@ -44,3 +44,4 @@ Ollama、LLMTuner。具有多轮对话、人格情境、多模态能力，支持
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

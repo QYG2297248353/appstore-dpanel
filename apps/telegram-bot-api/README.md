@@ -44,3 +44,4 @@ Telegram Bot API 服务器仅接受 HTTP 请求，因此需要使用 TLS 终止�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

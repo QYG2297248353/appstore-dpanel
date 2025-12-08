@@ -23,3 +23,4 @@ CookieCloud 是一个用于将 cookie 与您的自托管服务器同步的小工
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

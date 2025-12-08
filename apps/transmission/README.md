@@ -23,3 +23,4 @@ Transmission 是一个快速、轻量级的 BitTorrent 客户端，支持多种�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

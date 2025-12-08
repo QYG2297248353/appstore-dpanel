@@ -13,3 +13,4 @@ Plex是一套媒体播放器及媒体服务器软件，让用户整理在设备�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

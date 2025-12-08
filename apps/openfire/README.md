@@ -17,3 +17,4 @@ OpenFire 是一个实时协作服务器。它使用了唯一被广泛采用的�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

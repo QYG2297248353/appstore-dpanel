@@ -14,3 +14,4 @@ NodeBB 论坛自带许多现代功能，如社交网络集成和流式讨论，�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

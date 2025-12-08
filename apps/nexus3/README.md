@@ -19,3 +19,4 @@ Sonatype Nexus存储库是您所有内部和第三方二进制组，组件和包
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

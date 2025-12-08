@@ -113,3 +113,4 @@ AGPL-3.0协议开源，无追踪/无订阅/无服务依赖
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

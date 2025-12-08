@@ -39,3 +39,4 @@ PeerBanHelper 是一个开放源代码的个人网络防火墙安全软件。通
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

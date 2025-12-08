@@ -80,3 +80,4 @@ register_new_matrix_user http://localhost:8008 -c /data/homeserver.yaml -u userN
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

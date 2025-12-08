@@ -32,3 +32,4 @@ Kavita 是一个开源、自托管的数字图书馆管理系统，主要用于�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

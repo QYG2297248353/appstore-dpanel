@@ -92,3 +92,4 @@ Agent 是哪吒监控的数据采集工具，用于采集服务器的性能数�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

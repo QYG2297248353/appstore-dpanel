@@ -50,3 +50,4 @@ Beszel 由两个主要组件组成：中心 (hub) 和 代理 (agent)。
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

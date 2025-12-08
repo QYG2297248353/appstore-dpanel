@@ -18,3 +18,4 @@ CyberChef 是一个简单直观的网页应用程序，可以在网页浏览器�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

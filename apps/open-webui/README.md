@@ -59,3 +59,4 @@ LibreTranslate 的实时翻译以支持多语言、有毒信息过滤等更多�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

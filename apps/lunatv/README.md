@@ -59,3 +59,4 @@ MoonTV 是一个开箱即用的、跨平台的影视聚合播放器。它基于 
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

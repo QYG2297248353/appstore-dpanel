@@ -70,3 +70,4 @@ Sonarr 是为 Usenet 和 BitTorrent 用户设计的 PVR。它能够监控多个 
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

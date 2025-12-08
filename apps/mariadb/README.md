@@ -22,3 +22,4 @@ MariaDB的API和协议兼容MySQL，另外又添加了一些功能，以支持�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

@@ -14,3 +14,4 @@ RSS 订阅 Web 应用程序，用于聚合您的订阅源。
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

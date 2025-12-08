@@ -77,3 +77,4 @@ Halo 的项目代码开源在 GitHub 上且处于积极维护状态，截止目�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

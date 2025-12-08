@@ -93,3 +93,4 @@ Artalk 是一款简单易用但功能丰富的评论系统，你可以开箱即�
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)

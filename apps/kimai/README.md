@@ -20,3 +20,4 @@ TOTP 的双因素认证（2FA），可定制的角色和团队权限，响应式
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
+![Ms Studio](https://analytics.lifebus.top/p/wJix5nI1W)
