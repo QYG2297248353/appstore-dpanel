@@ -4,7 +4,7 @@ networks:
     external: true
 services:
   immich-server:
-    container_name: immich-server-${CONTAINER_NAME}
+    container_name: immich-server-immich-server
     devices:
     - /dev/dri:/dev/dri
     env_file:

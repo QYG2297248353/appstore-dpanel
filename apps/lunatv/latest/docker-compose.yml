@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   moontv:
-    container_name: ${CONTAINER_NAME}
+    container_name: lunatv
     env_file:
     - ./envs/global.env
     - .env

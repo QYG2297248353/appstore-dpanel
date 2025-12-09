@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   onedev:
-    container_name: ${CONTAINER_NAME}
+    container_name: onedev
     env_file:
     - ./envs/global.env
     - ./envs/onedev.env

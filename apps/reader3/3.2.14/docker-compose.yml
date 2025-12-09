@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   reader3:
-    container_name: ${CONTAINER_NAME}
+    container_name: reader3
     env_file:
     - ./envs/global.env
     - .env

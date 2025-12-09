@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   mdc-ng:
-    container_name: ${CONTAINER_NAME}
+    container_name: mdc-ng
     env_file:
     - ./envs/global.env
     - .env

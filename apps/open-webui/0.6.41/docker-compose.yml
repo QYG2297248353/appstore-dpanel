@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   open-webui:
-    container_name: ${CONTAINER_NAME}
+    container_name: open-webui
     devices:
     - /dev/dri:/dev/dri
     env_file:

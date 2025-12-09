@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   garage:
-    container_name: ${CONTAINER_NAME}
+    container_name: garage-hq-web
     env_file:
     - ./envs/global.env
     - .env
@@ -25,7 +25,7 @@ services:
     - ${GARAGE_ROOT_PATH}/meta:/var/lib/garage/meta
     - ${GARAGE_ROOT_PATH}/data:/var/lib/garage/data
   garage-webui:
-    container_name: ${CONTAINER_NAME}-web
+    container_name: garage-hq-web-web
     environment:
       API_BASE_URL: http://garage:3903
       S3_ENDPOINT_URL: http://garage:3900

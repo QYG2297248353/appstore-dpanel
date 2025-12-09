@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   alist:
-    container_name: ${CONTAINER_NAME}
+    container_name: alist
     env_file:
     - ./envs/global.env
     - .env

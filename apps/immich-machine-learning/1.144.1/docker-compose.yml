@@ -4,7 +4,7 @@ networks:
     external: true
 services:
   immich-machine-learning:
-    container_name: immich-machine-learning-${CONTAINER_NAME}
+    container_name: immich-machine-learning-immich-machine-learning
     devices:
     - /dev/dri:/dev/dri
     env_file:

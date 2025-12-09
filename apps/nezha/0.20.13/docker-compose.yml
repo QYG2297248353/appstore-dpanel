@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   nezha-dashboard:
-    container_name: ${CONTAINER_NAME}
+    container_name: nezha
     image: ghcr.io/naiba/nezha-dashboard:v0.20.13
     labels:
       createdBy: Apps

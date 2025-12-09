@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   nezha-dash:
-    container_name: ${CONTAINER_NAME}
+    container_name: nezha-dash
     env_file:
     - ./envs/global.env
     - .env

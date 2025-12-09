@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   jellyfin:
-    container_name: ${CONTAINER_NAME}
+    container_name: jellyfin
     devices:
     - /dev/dri:/dev/dri
     environment:

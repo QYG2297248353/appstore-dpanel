@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   tsdd-manager:
-    container_name: ${CONTAINER_NAME}-manager
+    container_name: tangsengdaodao-manager
     env_file:
     - ./envs/global.env
     - .env
@@ -19,7 +19,7 @@ services:
     restart: always
   tsdd-server:
     command: api
-    container_name: ${CONTAINER_NAME}-server
+    container_name: tangsengdaodao-server
     depends_on:
     - tsdd-wukongim
     env_file:
@@ -53,7 +53,7 @@ services:
     volumes:
     - ${TANGSENGDAODAO_ROOT_PATH}/tsdd:/home/tsdddata
   tsdd-web:
-    container_name: ${CONTAINER_NAME}-web
+    container_name: tangsengdaodao-web
     env_file:
     - ./envs/global.env
     - .env
@@ -68,7 +68,7 @@ services:
     - ${PANEL_APP_PORT_TS_APP_WEB}:80
     restart: always
   tsdd-wukongim:
-    container_name: ${CONTAINER_NAME}
+    container_name: tangsengdaodao
     env_file:
     - ./envs/global.env
     - .env

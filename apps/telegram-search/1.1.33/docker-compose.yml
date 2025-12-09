@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   telegram_search:
-    container_name: ${CONTAINER_NAME}
+    container_name: telegram-search
     depends_on:
       telegram_search_pgvector:
         condition: service_healthy
@@ -25,7 +25,7 @@ services:
     volumes:
     - ${TELEGRAM_SEARCH_ROOT_PATH}/data:/app/data
   telegram_search_pgvector:
-    container_name: db-${CONTAINER_NAME}
+    container_name: db-telegram-search
     env_file:
     - ./envs/global.env
     - .env

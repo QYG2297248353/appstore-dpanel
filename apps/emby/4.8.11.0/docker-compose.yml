@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   emby:
-    container_name: ${CONTAINER_NAME}
+    container_name: emby
     devices:
     - /dev/dri:/dev/dri
     environment:

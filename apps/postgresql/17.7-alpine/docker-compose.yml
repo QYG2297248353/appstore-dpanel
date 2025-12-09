@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   postgresql:
-    container_name: ${CONTAINER_NAME}
+    container_name: postgresql
     env_file:
     - ./envs/global.env
     - .env

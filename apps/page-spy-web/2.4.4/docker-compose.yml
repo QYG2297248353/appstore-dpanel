@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   page-spy-web:
-    container_name: ${CONTAINER_NAME}
+    container_name: page-spy-web
     env_file:
     - ./envs/global.env
     - .env

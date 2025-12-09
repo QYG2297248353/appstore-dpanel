@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   openresty-manager:
-    container_name: ${CONTAINER_NAME}
+    container_name: openresty-manager
     env_file:
     - ./envs/global.env
     - .env

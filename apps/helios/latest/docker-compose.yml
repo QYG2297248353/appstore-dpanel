@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   helios:
-    container_name: ${CONTAINER_NAME}
+    container_name: helios
     env_file:
     - ./envs/global.env
     - .env

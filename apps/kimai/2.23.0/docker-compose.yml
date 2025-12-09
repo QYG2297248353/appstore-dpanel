@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   kimai2:
-    container_name: ${CONTAINER_NAME}
+    container_name: kimai
     env_file:
     - ./envs/global.env
     - .env

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   limesurvey:
-    container_name: ${CONTAINER_NAME}
+    container_name: limesurvey
     env_file:
     - ./envs/global.env
     - .env

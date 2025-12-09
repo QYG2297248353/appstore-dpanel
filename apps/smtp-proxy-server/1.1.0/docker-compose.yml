@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   smtp_proxy_server:
-    container_name: ${CONTAINER_NAME}
+    container_name: smtp-proxy-server
     env_file:
     - ./envs/global.env
     - .env

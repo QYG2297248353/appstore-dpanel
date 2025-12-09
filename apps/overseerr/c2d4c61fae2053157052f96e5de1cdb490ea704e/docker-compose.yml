@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   overseerr:
-    container_name: ${CONTAINER_NAME}
+    container_name: overseerr
     env_file:
     - ./envs/global.env
     - .env

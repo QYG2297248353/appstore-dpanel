@@ -5,7 +5,7 @@ services:
   neko:
     cap_add:
     - SYS_ADMIN
-    container_name: ${CONTAINER_NAME}
+    container_name: neko-brave
     env_file:
     - ./envs/global.env
     - .env

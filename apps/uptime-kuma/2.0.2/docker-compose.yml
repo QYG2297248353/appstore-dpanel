@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   uptime-kuma:
-    container_name: ${CONTAINER_NAME}
+    container_name: uptime-kuma
     env_file:
     - ./envs/global.env
     - .env

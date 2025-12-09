@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   acg-faka:
-    container_name: ${CONTAINER_NAME}
+    container_name: acg-faka
     env_file:
     - ./envs/global.env
     - .env

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   logto:
-    container_name: ${CONTAINER_NAME}
+    container_name: logto
     entrypoint:
     - sh
     - -c

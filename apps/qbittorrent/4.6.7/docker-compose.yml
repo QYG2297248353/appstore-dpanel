@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   qbittorrent:
-    container_name: ${CONTAINER_NAME}
+    container_name: qbittorrent
     env_file:
     - ./envs/global.env
     environment:

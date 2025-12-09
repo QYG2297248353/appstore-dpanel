@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   maccms10:
-    container_name: ${CONTAINER_NAME}
+    container_name: maccms10
     env_file:
     - ./envs/global.env
     - .env

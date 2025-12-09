@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   nezha:
-    container_name: ${CONTAINER_NAME}
+    container_name: nezha
     environment:
     - NZ_LISTEN_PORT=${PANEL_APP_PORT_HTTP}
     - NZ_LOCATION=Asia/Shanghai

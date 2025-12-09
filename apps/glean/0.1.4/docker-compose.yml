@@ -5,7 +5,7 @@ networks:
     driver: bridge
 services:
   admin:
-    container_name: ${CONTAINER_NAME}-admin
+    container_name: glean-admin
     depends_on:
     - backend
     env_file:
@@ -28,7 +28,7 @@ services:
     - 0.0.0.0
     - --port
     - '8000'
-    container_name: ${CONTAINER_NAME}
+    container_name: glean
     depends_on:
       postgres:
         condition: service_healthy
@@ -65,7 +65,7 @@ services:
     - glean-network
     restart: always
   postgres:
-    container_name: ${CONTAINER_NAME}-postgres
+    container_name: glean-postgres
     env_file:
     - ./envs/global.env
     - .env
@@ -88,7 +88,7 @@ services:
     - ${GLEAN_ROOT_PATH}/postgres:/var/lib/postgresql/data
   redis:
     command: redis-server --appendonly yes
-    container_name: ${CONTAINER_NAME}-redis
+    container_name: glean-redis
     env_file:
     - ./envs/global.env
     - .env
@@ -107,7 +107,7 @@ services:
     volumes:
     - ${GLEAN_ROOT_PATH}/redis:/data
   web:
-    container_name: ${CONTAINER_NAME}-web
+    container_name: glean-web
     depends_on:
     - backend
     env_file:
@@ -126,7 +126,7 @@ services:
     - --no-sync
     - arq
     - glean_worker.main.WorkerSettings
-    container_name: ${CONTAINER_NAME}-worker
+    container_name: glean-worker
     depends_on:
       backend:
         condition: service_healthy

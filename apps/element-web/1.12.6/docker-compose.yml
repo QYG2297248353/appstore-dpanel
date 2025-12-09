@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   element-web:
-    container_name: ${CONTAINER_NAME}
+    container_name: element-web
     env_file:
     - ./envs/global.env
     - .env

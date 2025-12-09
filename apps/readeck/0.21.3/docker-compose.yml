@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   readeck:
-    container_name: ${CONTAINER_NAME}
+    container_name: readeck
     env_file:
     - ./envs/global.env
     - .env

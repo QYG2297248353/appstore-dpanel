@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   prowlarr:
-    container_name: ${CONTAINER_NAME}
+    container_name: prowlarr
     env_file:
     - ./envs/global.env
     - .env

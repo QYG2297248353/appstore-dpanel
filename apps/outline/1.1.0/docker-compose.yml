@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   outline:
-    container_name: ${CONTAINER_NAME}
+    container_name: outline
     env_file:
     - ./envs/global.env
     - ./envs/outline.env

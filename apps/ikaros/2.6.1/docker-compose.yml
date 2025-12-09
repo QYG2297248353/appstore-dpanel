@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   ikaros:
-    container_name: ${CONTAINER_NAME}
+    container_name: ikaros
     env_file:
     - ./envs/global.env
     - .env

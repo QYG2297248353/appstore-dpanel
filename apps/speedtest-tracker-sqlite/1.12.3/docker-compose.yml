@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   speedtest-tracker:
-    container_name: ${CONTAINER_NAME}
+    container_name: speedtest-tracker-sqlite
     env_file:
     - ./envs/global.env
     - .env

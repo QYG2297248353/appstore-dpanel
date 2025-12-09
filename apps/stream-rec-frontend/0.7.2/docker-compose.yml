@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   stream-rec-frontend:
-    container_name: ${CONTAINER_NAME}
+    container_name: stream-rec-frontend
     env_file:
     - ./envs/global.env
     - .env

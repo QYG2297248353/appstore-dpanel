@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   dockware:
-    container_name: ${CONTAINER_NAME}
+    container_name: shopware-dockware
     env_file:
     - ./envs/global.env
     - .env

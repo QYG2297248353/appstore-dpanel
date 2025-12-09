@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   casdoor:
-    container_name: ${CONTAINER_NAME}
+    container_name: casdoor
     env_file:
     - ./envs/global.env
     - ./envs/casdoor.env

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   nexus3:
-    container_name: ${CONTAINER_NAME}
+    container_name: nexus3
     env_file:
     - ./envs/global.env
     - .env

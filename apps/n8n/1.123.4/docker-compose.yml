@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   n8n:
-    container_name: ${CONTAINER_NAME}
+    container_name: n8n
     env_file:
     - ./envs/global.env
     - .env

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   browserless:
-    container_name: browserless-${CONTAINER_NAME}
+    container_name: browserless-rsshub
     expose:
     - 3000
     healthcheck:
@@ -26,7 +26,7 @@ services:
         hard: 0
         soft: 0
   rsshub:
-    container_name: rsshub-${CONTAINER_NAME}
+    container_name: rsshub-rsshub
     depends_on:
     - browserless
     env_file:

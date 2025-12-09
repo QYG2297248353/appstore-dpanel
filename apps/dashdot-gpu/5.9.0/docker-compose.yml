@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   dashdot:
-    container_name: ${CONTAINER_NAME}
+    container_name: dashdot-gpu
     deploy:
       resources:
         reservations:

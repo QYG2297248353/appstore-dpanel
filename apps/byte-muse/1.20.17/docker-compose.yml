@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   auto-lady:
-    container_name: ${CONTAINER_NAME}
+    container_name: byte-muse
     env_file:
     - ./envs/global.env
     - .env

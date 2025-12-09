@@ -4,7 +4,7 @@ networks:
     external: true
 services:
   immich-machine-learning:
-    container_name: immich-machine-learning-${CONTAINER_NAME}
+    container_name: immich-machine-learning-immich
     devices: &id001
     - /dev/dri:/dev/dri
     env_file:
@@ -21,7 +21,7 @@ services:
     volumes:
     - ${IMMICH_ROOT_PATH}/data/cache:/cache
   immich-pg14-vectors:
-    container_name: pg14-vectors-${CONTAINER_NAME}
+    container_name: pg14-vectors-immich
     environment:
       POSTGRES_DB: ${DB_DATABASE_NAME:-immich}
       POSTGRES_INITDB_ARGS: --data-checksums
@@ -38,7 +38,7 @@ services:
     volumes:
     - ${IMMICH_ROOT_PATH}/pg14/data:/var/lib/postgresql/data
   immich-server:
-    container_name: immich-server-${CONTAINER_NAME}
+    container_name: immich-server-immich
     depends_on:
     - immich-pg14-vectors
     devices: *id001

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   twikoo:
-    container_name: ${CONTAINER_NAME}
+    container_name: twikoo
     env_file:
     - ./envs/global.env
     - .env

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   v2raya:
-    container_name: ${CONTAINER_NAME}
+    container_name: v2raya
     env_file:
     - ./envs/global.env
     - .env

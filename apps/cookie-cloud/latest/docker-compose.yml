@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   cookie-cloud:
-    container_name: ${CONTAINER_NAME}
+    container_name: cookie-cloud
     env_file:
     - ./envs/global.env
     - .env

@@ -14,7 +14,7 @@ services:
     - ${SUPER_PRODUCTIVITY_ROOT_PATH}/config/webdav.yaml:/config.yml
     - ${SUPER_PRODUCTIVITY_ROOT_PATH}/data:/data
   super-productivity:
-    container_name: ${CONTAINER_NAME}
+    container_name: super-productivity
     env_file:
     - ./envs/global.env
     - .env

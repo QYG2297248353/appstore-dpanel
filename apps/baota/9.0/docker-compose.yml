@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   baota:
-    container_name: ${CONTAINER_NAME}
+    container_name: baota
     env_file:
     - ./envs/global.env
     - .env

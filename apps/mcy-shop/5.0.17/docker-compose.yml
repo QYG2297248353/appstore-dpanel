@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   mcy-shop:
-    container_name: ${CONTAINER_NAME}
+    container_name: mcy-shop
     env_file:
     - ./envs/global.env
     - .env

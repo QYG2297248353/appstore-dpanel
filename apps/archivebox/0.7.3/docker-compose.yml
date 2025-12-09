@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   archivebox:
-    container_name: ${CONTAINER_NAME}
+    container_name: archivebox
     env_file:
     - ./envs/global.env
     - .env
@@ -25,7 +25,7 @@ services:
     volumes:
     - ${ARCHIVEBOX_ROOT_PATH}/data:/data
   archivebox-sonic:
-    container_name: sonic-${CONTAINER_NAME}
+    container_name: sonic-archivebox
     env_file:
     - ./envs/global.env
     - .env

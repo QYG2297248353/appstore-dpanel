@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   speedtest:
-    container_name: ${CONTAINER_NAME}
+    container_name: speedtest
     env_file:
     - ./envs/global.env
     - .env

@@ -6,7 +6,7 @@ services:
     command: "sh -c ' if [ -z \"${REDIS_ROOT_PASSWORD}\" ]; then\n  redis-server /etc/redis/redis.conf\n\
       else\n  redis-server /etc/redis/redis.conf --requirepass ${REDIS_ROOT_PASSWORD}\n\
       fi'\n"
-    container_name: ${CONTAINER_NAME}
+    container_name: redis
     image: redis:6.2.21-alpine
     labels:
       createdBy: Apps

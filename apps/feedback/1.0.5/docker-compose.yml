@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   feedback:
-    container_name: ${CONTAINER_NAME}
+    container_name: feedback
     env_file:
     - ./envs/global.env
     - .env

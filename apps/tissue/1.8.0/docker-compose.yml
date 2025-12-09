@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   tissue:
-    container_name: ${CONTAINER_NAME}
+    container_name: tissue
     env_file:
     - ./envs/global.env
     - .env

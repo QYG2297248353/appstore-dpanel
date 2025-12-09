@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   lucky:
-    container_name: ${CONTAINER_NAME}
+    container_name: lucky
     entrypoint:
     - /goodluck/start.sh
     env_file:

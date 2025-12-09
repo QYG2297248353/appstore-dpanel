@@ -5,7 +5,7 @@ services:
   windows:
     cap_add:
     - NET_ADMIN
-    container_name: ${CONTAINER_NAME}
+    container_name: windows
     devices:
     - /dev/kvm:/dev/kvm
     - /dev/dri:/dev/dri

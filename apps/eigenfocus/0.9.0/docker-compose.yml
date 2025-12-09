@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   eigenfocus:
-    container_name: ${CONTAINER_NAME}
+    container_name: eigenfocus
     env_file:
     - ./envs/global.env
     - .env

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   sonarr:
-    container_name: ${CONTAINER_NAME}
+    container_name: sonarr
     env_file:
     - ./envs/global.env
     - .env

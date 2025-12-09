@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   xunlei-cnk3x:
-    container_name: ${CONTAINER_NAME}
+    container_name: xunlei-cnk3x
     env_file:
     - ./envs/global.env
     - .env

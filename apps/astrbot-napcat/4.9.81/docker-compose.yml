@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   astrbot:
-    container_name: ${CONTAINER_NAME}
+    container_name: astrbot-napcat
     env_file:
     - ./envs/global.env
     - .env
@@ -27,7 +27,7 @@ services:
     - ${ASTRBOT_ROOT_PATH}/ntqq:/app/.config/QQ
     - ${ASTRBOT_ROOT_PATH}/napcat/config:/app/napcat/config
   napcat:
-    container_name: napcat-${CONTAINER_NAME}
+    container_name: napcat-astrbot-napcat
     env_file:
     - ./envs/global.env
     - .env

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   teemii-backend:
-    container_name: backend-${CONTAINER_NAME}
+    container_name: backend-teemii
     env_file:
     - ./envs/global.env
     - .env
@@ -19,7 +19,7 @@ services:
     volumes:
     - ${TEEMII_ROOT_PATH}/data:/data
   teemii-frontend:
-    container_name: frontend-${CONTAINER_NAME}
+    container_name: frontend-teemii
     env_file:
     - ./envs/global.env
     - .env

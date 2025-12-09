@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   nginx-ui:
-    container_name: ${CONTAINER_NAME}
+    container_name: nginx-ui
     env_file:
     - ./envs/global.env
     - .env

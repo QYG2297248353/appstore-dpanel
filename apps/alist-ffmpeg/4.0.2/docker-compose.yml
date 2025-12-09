@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   openlist:
-    container_name: ${CONTAINER_NAME}
+    container_name: alist-ffmpeg
     env_file:
     - ./envs/global.env
     - .env
