@@ -3,6 +3,7 @@
 DEFAULT_PORT=16601
 PORT_FILE="/app/conf/port"
 WAIT_SECONDS=30
+DELAY_AFTER_PORT_UP=5
 
 if [ -f "$PORT_FILE" ]; then
     DETECT_PORT=$(cat "$PORT_FILE")
@@ -30,7 +31,8 @@ while ! nc -z 127.0.0.1 "${DETECT_PORT}" 2>/dev/null; do
 done
 
 if nc -z 127.0.0.1 "${DETECT_PORT}" 2>/dev/null; then
-    echo "Port ${DETECT_PORT} is up."
+    echo "Port ${DETECT_PORT} is up. Waiting extra ${DELAY_AFTER_PORT_UP}s..."
+    sleep ${DELAY_AFTER_PORT_UP}
 else
     echo "Port ${DETECT_PORT} still not open, continuing anyway."
 fi
