@@ -4,6 +4,8 @@ networks:
 services:
   lucky:
     container_name: lucky
+    entrypoint:
+    - /goodluck/start.sh
     env_file:
     - ./envs/global.env
     - .env
@@ -17,4 +19,5 @@ services:
     - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
     restart: always
     volumes:
+    - ./run/start.sh:/goodluck/start.sh:ro
     - ${LUCKY_ROOT_PATH}/data:/goodluck
