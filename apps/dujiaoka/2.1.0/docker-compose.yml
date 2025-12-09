@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   dujiaoka:
-    container_name: dujiaoka
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

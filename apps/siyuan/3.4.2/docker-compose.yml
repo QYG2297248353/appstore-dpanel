@@ -6,7 +6,7 @@ services:
     command:
     - --workspace=/siyuan/workspace/
     - --accessAuthCode=${AuthCode}
-    container_name: siyuan
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     environment:

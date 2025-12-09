@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   movie-pilot:
-    container_name: movie-pilot
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

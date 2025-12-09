@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   wechatpadpro:
-    container_name: wechatpadpro
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

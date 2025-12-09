@@ -5,7 +5,7 @@ services:
   neko:
     cap_add:
     - SYS_ADMIN
-    container_name: neko-xfce
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

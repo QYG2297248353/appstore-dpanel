@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   iframely:
-    container_name: iframely
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

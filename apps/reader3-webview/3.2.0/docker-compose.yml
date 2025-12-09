@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   reader3-webview:
-    container_name: reader3-webview
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     image: hectorqin/remote-webview:3.2.0

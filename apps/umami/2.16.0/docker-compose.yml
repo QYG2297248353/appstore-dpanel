@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   umami:
-    container_name: umami
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

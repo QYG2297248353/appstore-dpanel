@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   sentinel-dashboard:
-    container_name: sentinel
+    container_name: ${CONTAINER_NAME}
     entrypoint:
     - java
     - -Djava.security.egd=file:/dev/./urandom

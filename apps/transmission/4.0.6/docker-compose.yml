@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   transmission:
-    container_name: transmission
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

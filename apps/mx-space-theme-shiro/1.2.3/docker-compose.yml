@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   mx-server-shiro:
-    container_name: mx-space-theme-shiro
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

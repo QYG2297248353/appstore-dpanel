@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   synapse:
-    container_name: synapse
+    container_name: ${CONTAINER_NAME}
     depends_on:
     - synapse-init
     env_file:
@@ -20,7 +20,7 @@ services:
     volumes:
     - ${SYNAPSE_ROOT_PATH}/data:/data
   synapse-init:
-    container_name: init-synapse
+    container_name: init-${CONTAINER_NAME}
     entrypoint:
     - /start.py
     - generate

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   iyuuplus:
-    container_name: iyuu-plus
+    container_name: ${CONTAINER_NAME}
     image: iyuucn/iyuuplus-nodb:latest
     labels:
       createdBy: Apps

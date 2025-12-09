@@ -5,7 +5,7 @@ services:
   clouddrive2:
     cap_add:
     - SYS_ADMIN
-    container_name: clouddrive2
+    container_name: ${CONTAINER_NAME}
     devices:
     - /dev/fuse:/dev/fuse
     env_file:

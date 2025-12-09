@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   openfire:
-    container_name: openfire
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

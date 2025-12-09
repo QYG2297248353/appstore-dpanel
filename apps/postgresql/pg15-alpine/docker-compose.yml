@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   postgresql:
-    container_name: pg15-alpine-postgresql
+    container_name: pg15-alpine-${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

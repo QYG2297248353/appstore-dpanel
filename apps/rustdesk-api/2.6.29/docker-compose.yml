@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   rustdesk-api:
-    container_name: rustdesk-api
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env
@@ -22,7 +22,7 @@ services:
     - ${RUSTDESK_API_ROOT_PATH}/api-data:/app/data
     - ${RUSTDESK_API_ROOT_PATH}/api-config:/app/config
   rustdesk-server-s6:
-    container_name: server-rustdesk-api
+    container_name: server-${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

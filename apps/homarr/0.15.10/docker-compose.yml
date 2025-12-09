@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   homarr:
-    container_name: homarr
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

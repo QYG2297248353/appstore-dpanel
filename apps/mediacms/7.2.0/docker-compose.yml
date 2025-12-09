@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   mediacms:
-    container_name: mediacms
+    container_name: ${CONTAINER_NAME}
     depends_on:
     - mediacms-migrations
     env_file:
@@ -27,7 +27,7 @@ services:
     - ${MEDIACMS_ROOT_PATH}/media_files/original:/home/mediacms.io/mediacms/media_files/original
     - ${MEDIACMS_ROOT_PATH}/media_files/uploads:/home/mediacms.io/mediacms/media_files/uploads
   mediacms-celery-beat:
-    container_name: celery-beat-mediacms
+    container_name: celery-beat-${CONTAINER_NAME}
     environment:
     - ENABLE_UWSGI=no
     - ENABLE_NGINX=no
@@ -40,7 +40,7 @@ services:
     - ${MEDIACMS_ROOT_PATH}/media_files/original:/home/mediacms.io/mediacms/media_files/original
     - ${MEDIACMS_ROOT_PATH}/media_files/uploads:/home/mediacms.io/mediacms/media_files/uploads
   mediacms-celery-worker:
-    container_name: celery-worker-mediacms
+    container_name: celery-worker-${CONTAINER_NAME}
     depends_on:
     - mediacms-migrations
     environment:
@@ -56,7 +56,7 @@ services:
   mediacms-migrations:
     command:
     - ./deploy/docker/prestart.sh
-    container_name: migrations-mediacms
+    container_name: migrations-${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   bark:
-    container_name: yarr
+    container_name: ${CONTAINER_NAME}
     image: qyg2297248353/yarr:v2.4.0
     labels:
       createdBy: Apps

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   radarr:
-    container_name: radarr
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

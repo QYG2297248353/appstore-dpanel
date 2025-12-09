@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   deeplx:
-    container_name: deeplx
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   plex:
-    container_name: plex
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

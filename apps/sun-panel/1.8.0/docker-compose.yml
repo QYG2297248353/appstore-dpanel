@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   sun-panel:
-    container_name: sun-panel
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

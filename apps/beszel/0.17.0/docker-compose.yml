@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   beszel:
-    container_name: beszel
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

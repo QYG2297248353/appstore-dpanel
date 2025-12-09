@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   umami-mysql:
-    container_name: umami-mysql
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

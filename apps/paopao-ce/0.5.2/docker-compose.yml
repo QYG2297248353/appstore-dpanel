@@ -5,7 +5,7 @@ networks:
     driver: bridge
 services:
   paopao-ce:
-    container_name: paopao-ce
+    container_name: ${CONTAINER_NAME}
     depends_on:
     - paopao-db
     - paopao-redis
@@ -26,7 +26,7 @@ services:
     - ${PAOPAO_CE_ROOT_PATH}/config/config.yaml:/app/paopao-ce/config.yaml
     - ${PAOPAO_CE_ROOT_PATH}/custom:/app/paopao-ce/custom
   paopao-db:
-    container_name: db-paopao-ce
+    container_name: db-${CONTAINER_NAME}
     environment:
       MYSQL_DATABASE: ${MYSQL_DATABASE:-paopao}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD:-paopao}
@@ -42,7 +42,7 @@ services:
     - ${PAOPAO_CE_ROOT_PATH}/scripts/paopao-mysql.sql:/docker-entrypoint-initdb.d/paopao.sql
     - ${PAOPAO_CE_ROOT_PATH}/mysql:/var/lib/mysql
   paopao-meili:
-    container_name: meili-paopao-ce
+    container_name: meili-${CONTAINER_NAME}
     environment:
     - MEILI_MASTER_KEY=${MEILI_MASTER_KEY:-paopao-meilisearch}
     expose:
@@ -54,7 +54,7 @@ services:
     volumes:
     - ${PAOPAO_CE_ROOT_PATH}/meili_data:/meili_data
   paopao-redis:
-    container_name: redis-paopao-ce
+    container_name: redis-${CONTAINER_NAME}
     environment:
       REDISEARCH_ARGS: MAXSEARCHRESULTS 5
     expose:

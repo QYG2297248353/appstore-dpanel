@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   bili-fetcher-api:
-    container_name: api-bili-fetcher
+    container_name: api-${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env
@@ -20,7 +20,7 @@ services:
     - ${BILI_FETCHER_ROOT_PATH}/config:/app/config
     - ${BILI_FETCHER_ROOT_PATH}/output:/app/output
   bili-fetcher-web:
-    container_name: bili-fetcher
+    container_name: ${CONTAINER_NAME}
     depends_on:
     - bili-fetcher-api
     environment:

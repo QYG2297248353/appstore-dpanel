@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   ztncui:
-    container_name: ztncui
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

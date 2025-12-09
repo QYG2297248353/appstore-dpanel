@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   smanga:
-    container_name: smanga
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

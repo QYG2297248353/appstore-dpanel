@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   topiam-ce:
-    container_name: topiam-ce
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

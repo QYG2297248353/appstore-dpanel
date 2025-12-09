@@ -5,7 +5,7 @@ services:
   metatube-server:
     command: -dsn "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_NAME}"
       -port 8080 -db-auto-migrate -db-prepared-stmt
-    container_name: metatube-server
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

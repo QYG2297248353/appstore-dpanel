@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   excalidraw:
-    container_name: excalidraw
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

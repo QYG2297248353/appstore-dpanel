@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   opengist:
-    container_name: opengist
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   metatube-server:
-    container_name: metatube-server-memory
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

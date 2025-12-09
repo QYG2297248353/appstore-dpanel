@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   ghost:
-    container_name: ghost
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

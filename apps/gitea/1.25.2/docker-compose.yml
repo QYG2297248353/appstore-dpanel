@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   gitea:
-    container_name: gitea
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - ./envs/gitea.env

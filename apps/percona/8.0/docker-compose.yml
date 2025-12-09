@@ -5,7 +5,7 @@ services:
   percona:
     command:
     - --default-authentication-plugin=mysql_native_password
-    container_name: percona
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

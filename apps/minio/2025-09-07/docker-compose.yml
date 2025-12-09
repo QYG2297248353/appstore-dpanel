@@ -5,7 +5,7 @@ services:
   minio:
     command: server --console-address :${PANEL_APP_PORT_HTTP} --address :${MINIO_API_PORT}
       --json
-    container_name: minio
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

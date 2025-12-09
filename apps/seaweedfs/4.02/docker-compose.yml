@@ -5,7 +5,7 @@ networks:
 services:
   seaweedfs-filer:
     command: filer -master="seaweedfs-master:9333" -ip.bind=0.0.0.0 -metricsPort=9326
-    container_name: seaweedfs-filer
+    container_name: ${CONTAINER_NAME}-filer
     depends_on:
     - seaweedfs-master
     - seaweedfs-volume
@@ -30,7 +30,7 @@ services:
     - ${CUSTOM_MOUNT_DIRECTORY_3:-./default_mount_3}:${CUSTOM_MOUNT_DIRECTORY_3:-/default_mount_3}
   seaweedfs-master:
     command: master -ip=master -ip.bind=0.0.0.0 -metricsPort=9324
-    container_name: seaweedfs-master
+    container_name: ${CONTAINER_NAME}-master
     env_file:
     - ./envs/global.env
     - .env
@@ -50,7 +50,7 @@ services:
     - ${CUSTOM_MOUNT_DIRECTORY_3:-./default_mount_3}:${CUSTOM_MOUNT_DIRECTORY_3:-/default_mount_3}
   seaweedfs-prometheus:
     command: --web.enable-lifecycle  --config.file=/etc/prometheus/prometheus.yml
-    container_name: seaweedfs-prometheus
+    container_name: ${CONTAINER_NAME}-prometheus
     depends_on:
     - seaweedfs-s3
     env_file:
@@ -68,7 +68,7 @@ services:
     - ${SEAWEEDFS_ROOT_PATH}/prometheus:/etc/prometheus
   seaweedfs-s3:
     command: s3 -filer="seaweedfs-filer:8888" -ip.bind=0.0.0.0 -metricsPort=9327
-    container_name: seaweedfs
+    container_name: ${CONTAINER_NAME}
     depends_on:
     - seaweedfs-master
     - seaweedfs-volume
@@ -93,7 +93,7 @@ services:
     - ${CUSTOM_MOUNT_DIRECTORY_3:-./default_mount_3}:${CUSTOM_MOUNT_DIRECTORY_3:-/default_mount_3}
   seaweedfs-volume:
     command: volume -mserver="seaweedfs-master:9333" -ip.bind=0.0.0.0 -port=8080  -metricsPort=9325
-    container_name: seaweedfs-volume
+    container_name: ${CONTAINER_NAME}-volume
     depends_on:
     - seaweedfs-master
     env_file:
@@ -115,7 +115,7 @@ services:
     - ${CUSTOM_MOUNT_DIRECTORY_3:-./default_mount_3}:${CUSTOM_MOUNT_DIRECTORY_3:-/default_mount_3}
   seaweedfs-webdav:
     command: webdav -filer="seaweedfs-filer:8888"
-    container_name: seaweedfs-webdav
+    container_name: ${CONTAINER_NAME}-webdav
     depends_on:
     - seaweedfs-master
     - seaweedfs-volume

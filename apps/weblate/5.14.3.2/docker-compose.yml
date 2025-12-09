@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   weblate:
-    container_name: weblate
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

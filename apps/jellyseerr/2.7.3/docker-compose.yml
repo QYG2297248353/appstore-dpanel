@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   jellyseerr:
-    container_name: jellyseerr
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

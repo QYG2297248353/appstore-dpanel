@@ -4,7 +4,7 @@ networks:
     external: true
 services:
   immich-pg14-vectors:
-    container_name: pg14-vectors-immich-no-machine
+    container_name: pg14-vectors-${CONTAINER_NAME}
     environment:
       POSTGRES_DB: ${DB_DATABASE_NAME:-immich}
       POSTGRES_INITDB_ARGS: --data-checksums
@@ -21,7 +21,7 @@ services:
     volumes:
     - ${IMMICH_ROOT_PATH}/pg14/data:/var/lib/postgresql/data
   immich-server:
-    container_name: immich-server-immich-no-machine
+    container_name: immich-server-${CONTAINER_NAME}
     depends_on:
     - immich-pg14-vectors
     devices:

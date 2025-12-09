@@ -7,7 +7,7 @@ services:
     - worker
     - run
     - --all
-    container_name: bitmagnet
+    container_name: ${CONTAINER_NAME}
     dns:
     - 1.1.1.1
     - 114.114.114.114

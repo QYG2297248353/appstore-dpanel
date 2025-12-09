@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   pingvin-share:
-    container_name: pingvin-share
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

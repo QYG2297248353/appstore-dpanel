@@ -7,7 +7,7 @@ services:
     - sh
     - -c
     - node ./scripts/self-host-predeploy && node ./dist/index.js
-    container_name: affine
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

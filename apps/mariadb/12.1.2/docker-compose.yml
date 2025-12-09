@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   mariadb:
-    container_name: mariadb
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   nodebb:
-    container_name: 4.7.0
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

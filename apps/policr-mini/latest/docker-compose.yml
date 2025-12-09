@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   policr-mini:
-    container_name: policr-mini
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

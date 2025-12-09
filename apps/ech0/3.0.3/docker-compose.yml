@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   app_name:
-    container_name: ech0
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   mx-mongo:
-    container_name: mongo-mx-space-db
+    container_name: mongo-${CONTAINER_NAME}
     image: mongo
     networks:
     - 1panel-network
@@ -11,7 +11,7 @@ services:
     volumes:
     - ${MX_SERVER_ROOT_PATH}/db:/data/db
   mx-redis:
-    container_name: redis-mx-space-db
+    container_name: redis-${CONTAINER_NAME}
     image: redis:alpine
     networks:
     - 1panel-network
@@ -19,7 +19,7 @@ services:
     volumes:
     - ${MX_SERVER_ROOT_PATH}/redis:/data
   mx-server:
-    container_name: mx-space-db
+    container_name: ${CONTAINER_NAME}
     depends_on:
     - mx-mongo
     - mx-redis

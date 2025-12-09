@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   iycms:
-    container_name: iycms
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   qinglong:
-    container_name: qinglong
+    container_name: ${CONTAINER_NAME}
     environment:
     - QlPort=5700
     - QlBaseUrl=${QINGLONG_BASE_URL:-/}

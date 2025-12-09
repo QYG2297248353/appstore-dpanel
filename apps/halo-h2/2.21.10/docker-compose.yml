@@ -6,7 +6,7 @@ services:
     command:
     - --spring.sql.init.platform=h2
     - --halo.external-url=${HALO_EXTERNAL_URL}
-    container_name: halo-h2
+    container_name: ${CONTAINER_NAME}
     environment:
     - JVM_OPTS=-Xmx256m -Xms256m
     image: halohub/halo:2.21.10

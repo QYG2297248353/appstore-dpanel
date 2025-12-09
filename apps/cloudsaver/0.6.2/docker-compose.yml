@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   cloudsaver:
-    container_name: cloudsaver
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   photoprism:
-    container_name: photoprism
+    container_name: ${CONTAINER_NAME}
     devices:
     - /dev/dri:/dev/dri
     env_file:

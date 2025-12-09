@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   artalk:
-    container_name: artalk
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

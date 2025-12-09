@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   ollama:
-    container_name: ollama
+    container_name: ${CONTAINER_NAME}
     devices:
     - /dev/dri:/dev/dri
     env_file:

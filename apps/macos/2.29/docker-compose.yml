@@ -5,7 +5,7 @@ services:
   windows:
     cap_add:
     - NET_ADMIN
-    container_name: macos
+    container_name: ${CONTAINER_NAME}
     devices:
     - /dev/kvm:/dev/kvm
     - /dev/dri:/dev/dri

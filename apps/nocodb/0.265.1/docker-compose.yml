@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   nocodb:
-    container_name: nocodb
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

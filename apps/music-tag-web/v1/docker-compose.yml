@@ -4,7 +4,7 @@ networks:
 services:
   music_tag_web:
     command: /start
-    container_name: music-tag-web
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

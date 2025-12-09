@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   rustfs:
-    container_name: rustfs
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

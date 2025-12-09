@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   elasticsearch:
-    container_name: elastic-elasticsearch
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

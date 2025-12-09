@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   kibana:
-    container_name: elastic-kibana
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

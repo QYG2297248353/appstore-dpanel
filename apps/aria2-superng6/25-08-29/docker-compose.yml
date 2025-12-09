@@ -5,7 +5,7 @@ services:
   aria2-superng6:
     cap_add:
     - NET_ADMIN
-    container_name: aria2-superng6
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

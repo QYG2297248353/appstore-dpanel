@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   jproxy:
-    container_name: jproxy
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

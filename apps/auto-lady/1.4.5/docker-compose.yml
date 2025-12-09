@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   auto-lady:
-    container_name: auto-lady
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

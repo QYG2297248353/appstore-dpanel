@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   s-ui:
-    container_name: s-ui
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

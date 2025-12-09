@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   postgresql:
-    container_name: pg15-vectors-postgresql
+    container_name: pg15-vectors-${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

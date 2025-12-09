@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   openlist:
-    container_name: alist-aria2
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

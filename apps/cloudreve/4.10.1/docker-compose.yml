@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   cloudreve:
-    container_name: cloudreve
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

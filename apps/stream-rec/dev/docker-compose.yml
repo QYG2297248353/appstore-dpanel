@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   stream-rec-backend:
-    container_name: stream-rec-backend
+    container_name: ${CONTAINER_NAME}-backend
     env_file:
     - ./envs/global.env
     - .env
@@ -28,7 +28,7 @@ services:
     - ${STREAM_REC_ROOT_PATH}/rclone:/root/.config/rclone
     - ${STREAM_REC_ROOT_PATH}/download:/download
   stream-rec-frontend:
-    container_name: stream-rec
+    container_name: ${CONTAINER_NAME}
     depends_on:
     - stream-rec-backend
     env_file:

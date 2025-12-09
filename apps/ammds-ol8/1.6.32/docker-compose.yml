@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   ammds:
-    container_name: ammds-ol8
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

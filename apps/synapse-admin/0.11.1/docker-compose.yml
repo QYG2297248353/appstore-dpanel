@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   synapse-admin:
-    container_name: synapse-admin
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

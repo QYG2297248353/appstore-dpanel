@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   ani-rss:
-    container_name: ani-rss
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

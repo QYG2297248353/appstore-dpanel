@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   zerotier-planet:
-    container_name: zerotier-planet
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

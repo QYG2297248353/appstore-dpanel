@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   shiori:
-    container_name: shiori
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

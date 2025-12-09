@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   bookstack:
-    container_name: bookstack
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

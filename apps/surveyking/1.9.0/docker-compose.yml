@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   surveyking:
-    container_name: surveyking
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

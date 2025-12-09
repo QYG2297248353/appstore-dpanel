@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   fider:
-    container_name: fider
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

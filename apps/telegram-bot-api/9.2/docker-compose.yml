@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   telegram-bot-api:
-    container_name: telegram-bot-api
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env

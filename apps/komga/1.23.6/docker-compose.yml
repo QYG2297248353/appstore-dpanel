@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   komga:
-    container_name: komga
+    container_name: ${CONTAINER_NAME}
     env_file:
     - ./envs/global.env
     - .env
