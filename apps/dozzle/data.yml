@@ -14,3 +14,7 @@ additionalProperties:
   website: https://dozzle.dev/
   github: https://github.com/amir20/dozzle/
   document: https://dozzle.dev/
+  architectures:
+    - amd64
+    - arm
+    - arm64

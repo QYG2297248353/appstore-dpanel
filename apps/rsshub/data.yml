@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: rsshub
   name: RssHub
   tags:
@@ -13,3 +13,6 @@
   website: https://rsshub.app/
   github: https://github.com/DIYgod/RSSHub/
   document: https://docs.rsshub.app/
+  architectures:
+    - amd64
+    - arm64

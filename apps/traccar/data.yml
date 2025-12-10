@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: traccar
   name: Traccar 轨迹
   tags:
@@ -13,3 +13,6 @@
   website: https://www.traccar.org/
   github: https://github.com/traccar/traccar/
   document: https://www.traccar.org/documentation/
+  architectures:
+    - amd64
+    - arm64

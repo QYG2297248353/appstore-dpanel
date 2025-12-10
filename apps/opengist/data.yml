@@ -12,3 +12,6 @@ additionalProperties:
   website: https://opengist.io/
   github: https://github.com/thomiceli/opengist
   document: https://opengist.io/docs/
+  architectures:
+    - amd64
+    - arm64

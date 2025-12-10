@@ -12,3 +12,7 @@ additionalProperties:
   website: https://beszel.dev/
   github: https://github.com/henrygd/beszel/
   document: https://beszel.dev/
+  architectures:
+    - amd64
+    - arm
+    - arm64

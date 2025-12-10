@@ -13,3 +13,6 @@ additionalProperties:
   website: https://rustfs.com/
   github: https://github.com/rustfs/rustfs/
   document: https://rustfs.com/
+  architectures:
+    - amd64
+    - arm64

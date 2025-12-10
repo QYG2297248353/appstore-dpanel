@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: reader3-webview
   name: 阅读3 Webview插件
   tags:
@@ -12,3 +12,6 @@
   website: https://github.com/hectorqin/reader/
   github: https://github.com/hectorqin/reader/
   document: https://github.com/hectorqin/reader/
+  architectures:
+    - amd64
+    - arm64

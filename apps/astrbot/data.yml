@@ -12,3 +12,6 @@ additionalProperties:
   website: https://astrbot.app/
   github: https://github.com/AstrBotDevs/AstrBot/
   document: https://astrbot.app/
+  architectures:
+    - amd64
+    - arm64

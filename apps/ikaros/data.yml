@@ -12,3 +12,6 @@ additionalProperties:
   website: https://github.com/Suwmlee/ikaros/
   github: https://github.com/Suwmlee/ikaros/
   document: https://github.com/Suwmlee/ikaros/
+  architectures:
+    - amd64
+    - arm64

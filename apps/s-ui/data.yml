@@ -12,3 +12,8 @@ additionalProperties:
   website: https://github.com/alireza0/s-ui/
   github: https://github.com/alireza0/s-ui/
   document: https://github.com/alireza0/s-ui/
+  architectures:
+    - '386'
+    - amd64
+    - arm
+    - arm64

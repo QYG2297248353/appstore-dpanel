@@ -12,3 +12,5 @@ additionalProperties:
   website: https://github.com/WeChatPadPro/WeChatPadPro/
   github: https://github.com/WeChatPadPro/WeChatPadPro/
   document: https://github.com/WeChatPadPro/WeChatPadPro/
+  architectures:
+    - amd64

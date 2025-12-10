@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: byte-muse
   name: Byte Muse
   tags:
@@ -13,3 +13,5 @@
   website: https://github.com/envyafish/
   github: https://github.com/envyafish/
   document: https://github.com/envyafish/
+  architectures:
+    - amd64

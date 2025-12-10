@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: nacos
   name: Nacos
   tags:
@@ -13,3 +13,6 @@
   website: https://nacos.io/
   github: https://github.com/alibaba/nacos/
   document: https://nacos.io/docs/latest/what-is-nacos/
+  architectures:
+    - amd64
+    - arm64

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: sentinel
   name: Sentinel Dashboard
   tags:
@@ -13,3 +13,6 @@
   website: https://sentinelguard.io/
   github: https://github.com/alibaba/Sentinel
   document: https://sentinelguard.io/
+  architectures:
+    - amd64
+    - arm64

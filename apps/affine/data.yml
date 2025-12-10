@@ -12,3 +12,7 @@ additionalProperties:
   website: https://affine.pro/
   github: https://github.com/toeverything/AFFiNE/
   document: https://docs.affine.pro/docs/code-of-conduct/
+  architectures:
+    - amd64
+    - arm
+    - arm64

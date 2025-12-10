@@ -13,3 +13,6 @@ additionalProperties:
   website: https://matrix.org/
   github: https://github.com/matrix-org/synapse/
   document: https://matrix.org/
+  architectures:
+    - amd64
+    - arm64

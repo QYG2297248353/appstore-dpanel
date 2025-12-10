@@ -12,3 +12,6 @@ additionalProperties:
   website: https://github.com/vertex-app/vertex/
   github: https://github.com/vertex-app/vertex/
   document: https://wiki.vertex-app.top/
+  architectures:
+    - amd64
+    - arm64

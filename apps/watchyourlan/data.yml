@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: watchyourlan
   name: 路由设备监控
   tags:
@@ -13,3 +13,7 @@
   website: https://github.com/aceberg/WatchYourLAN/
   github: https://github.com/aceberg/WatchYourLAN/
   document: https://github.com/aceberg/WatchYourLAN/
+  architectures:
+    - amd64
+    - arm
+    - arm64

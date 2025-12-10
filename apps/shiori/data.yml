@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: shiori
   name: Shiori
   tags:
@@ -12,3 +12,7 @@
   website: https://github.com/go-shiori/shiori/
   github: https://github.com/go-shiori/shiori/
   document: https://github.com/go-shiori/shiori/
+  architectures:
+    - amd64
+    - arm
+    - arm64

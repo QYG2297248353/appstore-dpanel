@@ -12,3 +12,6 @@
   website: https://www.maccms.la/
   github: https://github.com/magicblack/maccms10/
   document: https://www.maccms.plus/
+  architectures:
+    - amd64
+    - arm64

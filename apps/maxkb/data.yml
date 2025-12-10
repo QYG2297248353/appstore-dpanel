@@ -13,3 +13,6 @@ additionalProperties:
   website: https://maxkb.cn/
   github: https://github.com/1Panel-dev/MaxKB/
   document: https://maxkb.cn/docs/
+  architectures:
+    - amd64
+    - arm64

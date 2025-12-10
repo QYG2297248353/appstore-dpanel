@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: alist-ffmpeg
   name: Alist FFMpeg插件版
   tags:
@@ -13,3 +13,11 @@
   website: https://alist.nn.ci/
   github: https://github.com/alist-org/alist/
   document: https://alist.nn.ci/guide/
+  architectures:
+    - '386'
+    - amd64
+    - arm
+    - arm64
+    - ppc64le
+    - riscv64
+    - s390x

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: iframely
   name: Iframely
   tags:
@@ -13,3 +13,6 @@
   website: https://iframely.com/
   github: https://github.com/itteco/iframely/
   document: https://iframely.com/docs/
+  architectures:
+    - amd64
+    - arm64

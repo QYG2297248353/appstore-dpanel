@@ -12,3 +12,7 @@ additionalProperties:
   website: https://libretv.is-an.org/
   github: https://github.com/LibreSpark/LibreTV/
   document: https://libretv.is-an.org/
+  architectures:
+    - amd64
+    - arm
+    - arm64

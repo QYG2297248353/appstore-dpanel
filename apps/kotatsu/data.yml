@@ -12,3 +12,6 @@ additionalProperties:
   website: https://kotatsu.app/
   github: https://github.com/KotatsuApp/Kotatsu/
   document: https://kotatsu.app/
+  architectures:
+    - amd64
+    - arm64

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: bark
   name: Bark
   tags:
@@ -14,3 +14,7 @@
   website: https://bark.day.app/
   github: https://github.com/finb/bark/
   document: https://bark.day.app/
+  architectures:
+    - amd64
+    - arm
+    - arm64

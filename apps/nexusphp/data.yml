@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: nexusphp
   name: NexusPHP
   tags:
@@ -12,3 +12,6 @@
   website: https://nexusphp.org/
   github: https://github.com/xiaomlove/nexusphp/
   document: https://doc.nexusphp.org/
+  architectures:
+    - amd64
+    - arm64

@@ -13,3 +13,5 @@
   website: https://gitcode.com/q23163677431/feedback-docker/
   github: https://gitcode.com/q23163677431/feedback-docker/
   document: https://gitcode.com/q23163677431/feedback-docker/
+  architectures:
+    - amd64

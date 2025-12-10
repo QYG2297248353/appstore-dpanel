@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: element-web
   name: Element Web
   tags:
@@ -12,3 +12,6 @@
   website: https://element.io/
   github: https://github.com/element-hq/element-web/
   document: https://element.io/user-guide/
+  architectures:
+    - amd64
+    - arm64

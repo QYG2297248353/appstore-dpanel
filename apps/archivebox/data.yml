@@ -12,3 +12,6 @@ additionalProperties:
   website: https://archivebox.io/
   github: https://github.com/ArchiveBox/ArchiveBox/
   document: https://github.com/ArchiveBox/ArchiveBox/
+  architectures:
+    - amd64
+    - arm64

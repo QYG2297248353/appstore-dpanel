@@ -13,3 +13,6 @@ additionalProperties:
   website: https://logto.io/
   github: https://github.com/logto-io/logto/
   document: https://docs.logto.io/
+  architectures:
+    - amd64
+    - arm64

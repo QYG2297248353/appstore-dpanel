@@ -12,3 +12,9 @@ additionalProperties:
   website: https://pi-hole.net/
   github: https://github.com/pi-hole/pi-hole/
   document: https://docs.pi-hole.net/
+  architectures:
+    - '386'
+    - amd64
+    - arm
+    - arm64
+    - riscv64

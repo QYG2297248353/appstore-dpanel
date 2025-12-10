@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: yarr
   name: Yarr
   tags:
@@ -12,3 +12,5 @@
   website: https://github.com/nkanaev/yarr/
   github: https://github.com/nkanaev/yarr
   document: https://github.com/nkanaev/yarr/
+  architectures:
+    - amd64

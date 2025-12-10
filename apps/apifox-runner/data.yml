@@ -12,3 +12,4 @@ additionalProperties:
   website: https://apifox.com/
   github: https://apifox.com/
   document: https://apifox.com/help/
+  architectures: []

@@ -12,3 +12,6 @@ additionalProperties:
   website: https://ammds.lifebus.top/
   github: https://github.com/QYG2297248353/AMMDS-Docker/
   document: https://ammds.lifebus.top/
+  architectures:
+    - amd64
+    - arm64

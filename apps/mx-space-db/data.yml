@@ -12,3 +12,11 @@ additionalProperties:
   website: https://mx-space.js.org/
   github: https://github.com/mx-space/
   document: https://mx-space.js.org/
+  architectures:
+    - '386'
+    - amd64
+    - arm
+    - arm64
+    - ppc64le
+    - riscv64
+    - s390x

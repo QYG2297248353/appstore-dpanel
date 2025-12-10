@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: reader3
   name: 阅读3
   tags:
@@ -12,3 +12,10 @@
   website: https://github.com/hectorqin/reader/
   github: https://github.com/hectorqin/reader/
   document: https://github.com/hectorqin/reader/
+  architectures:
+    - '386'
+    - amd64
+    - arm
+    - arm64
+    - ppc64le
+    - s390x

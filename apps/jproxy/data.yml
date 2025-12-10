@@ -12,3 +12,6 @@
   website: https://github.com/LuckyPuppy514/jproxy/
   github: https://github.com/LuckyPuppy514/jproxy/
   document: https://github.com/LuckyPuppy514/jproxy/
+  architectures:
+    - amd64
+    - arm64

@@ -12,3 +12,6 @@ additionalProperties:
   website: https://github.com/jiangrui1994/CloudSaver/
   github: https://github.com/jiangrui1994/CloudSaver/
   document: https://github.com/jiangrui1994/CloudSaver/
+  architectures:
+    - amd64
+    - arm64

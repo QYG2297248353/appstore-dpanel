@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: prowlarr
   name: Prowlarr
   tags:
@@ -13,3 +13,6 @@
   website: https://prowlarr.com/
   github: https://github.com/Prowlarr/Prowlarr/
   document: https://wiki.servarr.com/prowlarr/
+  architectures:
+    - amd64
+    - arm64

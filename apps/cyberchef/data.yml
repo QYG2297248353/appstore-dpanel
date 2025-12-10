@@ -12,3 +12,4 @@ additionalProperties:
   website: https://github.com/gchq/CyberChef/
   github: https://github.com/gchq/CyberChef/
   document: https://github.com/gchq/CyberChef/
+  architectures: []

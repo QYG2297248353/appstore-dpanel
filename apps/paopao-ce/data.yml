@@ -12,3 +12,5 @@
   website: https://www.paopao.info/
   github: https://github.com/rocboss/paopao-ce/
   document: https://github.com/rocboss/paopao-ce/
+  architectures:
+    - amd64

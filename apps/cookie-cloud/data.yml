@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: cookie-cloud
   name: CookieCloud
   tags:
@@ -14,3 +14,9 @@
   website: https://github.com/easychen/CookieCloud/
   github: https://github.com/easychen/CookieCloud/
   document: https://github.com/easychen/CookieCloud/
+  architectures:
+    - amd64
+    - arm
+    - arm64
+    - ppc64le
+    - s390x

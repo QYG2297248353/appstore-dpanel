@@ -12,3 +12,6 @@
   website: https://docker-mailserver.github.io/docker-mailserver/latest/
   github: https://github.com/docker-mailserver/docker-mailserver/
   document: https://docker-mailserver.github.io/docker-mailserver/latest/
+  architectures:
+    - amd64
+    - arm64

@@ -12,3 +12,10 @@ additionalProperties:
   website: https://seaweedfs.com/
   github: https://github.com/seaweedfs/seaweedfs/
   document: https://github.com/seaweedfs/seaweedfs/
+  architectures:
+    - '386'
+    - amd64
+    - arm
+    - arm64
+    - ppc64le
+    - s390x

@@ -12,3 +12,6 @@ additionalProperties:
   website: https://readeck.org/
   github: https://codeberg.org/readeck/readeck/
   document: https://readeck.org/
+  architectures:
+    - amd64
+    - arm64/v8

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: iyuu-plus
   name: IYUU-Plus
   tags:
@@ -14,3 +14,8 @@
   website: https://iyuu.cn/
   github: https://github.com/ledccn/iyuuplus-dev
   document: https://doc.iyuu.cn/
+  architectures:
+    - '386'
+    - amd64
+    - arm
+    - arm64

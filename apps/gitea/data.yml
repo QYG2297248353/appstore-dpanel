@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: gitea
   name: Gitea
   tags:
@@ -14,3 +14,7 @@
   website: https://gitea.io/
   github: https://github.com/go-gitea/gitea/
   document: https://docs.gitea.io/
+  architectures:
+    - amd64
+    - arm64
+    - riscv64

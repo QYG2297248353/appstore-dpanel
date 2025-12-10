@@ -12,3 +12,8 @@ additionalProperties:
   website: https://lucky666.cn/
   github: https://github.com/gdy666/lucky/
   document: https://lucky666.cn/
+  architectures:
+    - '386'
+    - amd64
+    - arm
+    - arm64

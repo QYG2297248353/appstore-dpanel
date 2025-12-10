@@ -12,3 +12,6 @@ additionalProperties:
   website: https://om.uusec.com/
   github: https://github.com/Safe3/openresty-manager/
   document: https://om.uusec.com/
+  architectures:
+    - amd64
+    - arm64

@@ -12,3 +12,6 @@ additionalProperties:
   website: https://github.com/NodePassProject/NodePassDash/
   github: https://github.com/NodePassProject/NodePassDash/
   document: https://github.com/NodePassProject/NodePassDash/
+  architectures:
+    - amd64
+    - arm64

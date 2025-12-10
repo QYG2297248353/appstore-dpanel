@@ -12,3 +12,6 @@ additionalProperties:
   website: https://github.com/chris-2s/tissue/
   github: https://github.com/chris-2s/tissue/
   document: https://github.com/chris-2s/tissue/
+  architectures:
+    - amd64
+    - arm64

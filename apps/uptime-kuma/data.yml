@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: uptime-kuma
   name: Uptime Kuma
   tags:
@@ -13,3 +13,7 @@
   website: https://uptime.kuma.pet/
   github: https://github.com/louislam/uptime-kuma/
   document: https://github.com/louislam/uptime-kuma/wiki/
+  architectures:
+    - amd64
+    - arm
+    - arm64

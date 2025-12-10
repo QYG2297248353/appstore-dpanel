@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: windows
   name: Windows 系统
   tags:
@@ -12,3 +12,6 @@
   website: https://www.microsoft.com/
   github: https://github.com/dockur/windows/
   document: https://www.microsoft.com/
+  architectures:
+    - amd64
+    - arm64

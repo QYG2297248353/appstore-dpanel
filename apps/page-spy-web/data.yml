@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: page-spy-web
   name: PageSpy
   tags:
@@ -13,3 +13,7 @@
   website: https://www.pagespy.org/
   github: https://github.com/HuolalaTech/page-spy-web/
   document: https://www.pagespy.org/
+  architectures:
+    - amd64
+    - arm
+    - arm64

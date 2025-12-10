@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: immich
   name: Immich
   tags:
@@ -14,3 +14,6 @@
   website: https://immich.app/
   github: https://github.com/immich-app/immich/
   document: https://docs.immich.app/
+  architectures:
+    - amd64
+    - arm64

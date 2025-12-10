@@ -12,3 +12,7 @@ additionalProperties:
   website: https://www.kavitareader.com/
   github: https://github.com/Kareadita/Kavita/
   document: https://wiki.kavitareader.com/getting-started/
+  architectures:
+    - amd64
+    - arm
+    - arm64

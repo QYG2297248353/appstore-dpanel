@@ -12,3 +12,6 @@ additionalProperties:
   website: https://eigenfocus.com/
   github: https://github.com/Eigenfocus/eigenfocus/
   document: https://eigenfocus.com/
+  architectures:
+    - amd64
+    - arm64

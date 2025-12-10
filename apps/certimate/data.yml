@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: certimate
   name: Certimate
   tags:
@@ -14,3 +14,6 @@
   website: https://docs.certimate.me/
   github: https://github.com/usual2970/certimate/
   document: https://docs.certimate.me/docs/intro/
+  architectures:
+    - amd64
+    - arm64

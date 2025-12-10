@@ -12,3 +12,6 @@ additionalProperties:
   website: https://sonatype.com/
   github: https://github.com/sonatype/
   document: https://help.sonatype.com/
+  architectures:
+    - amd64
+    - arm64

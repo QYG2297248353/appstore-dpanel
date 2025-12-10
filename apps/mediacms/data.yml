@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: mediacms
   name: Media CMS
   tags:
@@ -12,3 +12,6 @@
   website: https://mediacms.io/
   github: https://github.com/mediacms-io/mediacms/
   document: https://github.com/mediacms-io/mediacms/
+  architectures:
+    - amd64
+    - arm64

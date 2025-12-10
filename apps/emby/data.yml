@@ -13,3 +13,5 @@
   website: https://emby.media/
   github: https://github.com/MediaBrowser/Emby/
   document: https://emby.media/blog/
+  architectures:
+    - amd64

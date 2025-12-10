@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: dockge
   name: Dockge
   tags:
@@ -14,3 +14,7 @@
   website: https://dockge.kuma.pet/
   github: https://github.com/louislam/dockge/
   document: https://github.com/louislam/dockge/wiki/
+  architectures:
+    - amd64
+    - arm
+    - arm64

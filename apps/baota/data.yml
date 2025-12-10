@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: baota
   name: 宝塔
   tags:
@@ -13,3 +13,6 @@
   website: https://www.bt.cn/
   github: https://www.bt.cn/
   document: https://www.bt.cn/
+  architectures:
+    - amd64
+    - arm64

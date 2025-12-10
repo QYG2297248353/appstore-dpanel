@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: aria2-superng6
   name: Aria2 Superng6版
   tags:
@@ -13,3 +13,7 @@
   website: https://github.com/SuperNG6/docker-aria2/
   github: https://github.com/aria2/aria2/
   document: https://github.com/SuperNG6/docker-aria2/
+  architectures:
+    - amd64
+    - arm
+    - arm64

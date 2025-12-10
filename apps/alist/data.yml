@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: alist
   name: OpenList (Alist)
   tags:
@@ -13,3 +13,11 @@
   website: https://docs.oplist.org/
   github: https://github.com/OpenListTeam/OpenList
   document: https://docs.oplist.org/
+  architectures:
+    - '386'
+    - amd64
+    - arm
+    - arm64
+    - ppc64le
+    - riscv64
+    - s390x

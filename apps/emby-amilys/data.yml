@@ -12,3 +12,5 @@
   website: https://hub.docker.com/r/lovechen/embyserver
   github: https://hub.docker.com/r/lovechen/embyserver
   document: https://hub.docker.com/r/lovechen/embyserver
+  architectures:
+    - amd64

@@ -12,3 +12,6 @@ additionalProperties:
   website: https://www.shopware.com/
   github: https://github.com/shopware/shopware/
   document: https://docs.dockware.io/
+  architectures:
+    - amd64
+    - arm64

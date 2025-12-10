@@ -13,3 +13,8 @@ additionalProperties:
   website: https://garagehq.deuxfleurs.fr/
   github: https://git.deuxfleurs.fr/Deuxfleurs/garage/
   document: https://garagehq.deuxfleurs.fr/
+  architectures:
+    - '386'
+    - amd64
+    - arm
+    - arm64

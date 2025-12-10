@@ -12,3 +12,6 @@ additionalProperties:
   github: https://github.com/ollama/ollama/
   document: https://ollama.com/
   gpuSupport: true
+  architectures:
+    - amd64
+    - arm64

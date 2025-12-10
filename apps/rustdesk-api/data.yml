@@ -12,3 +12,7 @@ additionalProperties:
   website: https://rustdesk.com/
   github: https://github.com/lejianwen/rustdesk-api/
   document: https://github.com/lejianwen/rustdesk-api/
+  architectures:
+    - amd64
+    - arm
+    - arm64

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: deeplx
   name: DeepLX
   tags:
@@ -13,3 +13,6 @@
   website: https://www.deepl.com/
   github: https://github.com/OwO-Network/DeepLX
   document: https://deeplx.owo.network/
+  architectures:
+    - amd64
+    - arm64

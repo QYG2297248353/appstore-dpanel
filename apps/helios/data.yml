@@ -12,3 +12,6 @@ additionalProperties:
   website: https://github.com/MoonTechLab/Helios/
   github: https://github.com/MoonTechLab/Helios/
   document: https://github.com/MoonTechLab/Helios/
+  architectures:
+    - amd64
+    - arm64

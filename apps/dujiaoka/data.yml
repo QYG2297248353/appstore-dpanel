@@ -13,3 +13,6 @@
   website: https://github.com/assimon/dujiaoka/
   github: https://github.com/assimon/dujiaoka/
   document: https://github.com/assimon/dujiaoka/
+  architectures:
+    - amd64
+    - arm64

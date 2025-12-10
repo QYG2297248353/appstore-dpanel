@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: dashdot-gpu
   name: Dash. (GPU支持)
   tags:
@@ -12,3 +12,6 @@
   website: https://getdashdot.com/
   github: https://github.com/MauriceNino/dashdot/
   document: https://getdashdot.com/
+  architectures:
+    - amd64
+    - arm64

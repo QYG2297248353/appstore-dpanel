@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: mcy-shop
   name: 异次元店铺系统V4
   tags:
@@ -13,3 +13,6 @@
   website: https://wiki.mcy.im/
   github: https://github.com/lizhipay/mcy-shop/
   document: https://wiki.mcy.im/
+  architectures:
+    - amd64
+    - arm64

@@ -12,3 +12,6 @@ additionalProperties:
   website: https://bonita.starunits.net/
   github: https://github.com/Suwmlee/bonita/
   document: https://bonita.starunits.net/
+  architectures:
+    - amd64
+    - arm64

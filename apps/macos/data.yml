@@ -12,3 +12,5 @@ additionalProperties:
   website: https://www.apple.com/
   github: https://github.com/dockur/macos/
   document: https://www.apple.com/
+  architectures:
+    - amd64

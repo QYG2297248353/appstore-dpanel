@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: percona
   name: Percona
   tags:
@@ -12,3 +12,5 @@
   website: https://www.percona.com/
   github: https://github.com/percona/percona-server/
   document: https://www.percona.com/mysql/software/percona-server-for-mysql/
+  architectures:
+    - amd64

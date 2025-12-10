@@ -12,3 +12,7 @@ additionalProperties:
   website: https://docs.overseerr.dev/
   github: https://github.com/sct/overseerr/
   document: https://docs.overseerr.dev/
+  architectures:
+    - amd64
+    - arm
+    - arm64

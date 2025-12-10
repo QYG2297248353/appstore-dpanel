@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: teemii
   name: Teemii
   tags:
@@ -12,3 +12,7 @@
   website: https://www.teemii.io/
   github: https://github.com/dokkaner/teemii/
   document: https://docs.teemii.io/
+  architectures:
+    - amd64
+    - arm
+    - arm64

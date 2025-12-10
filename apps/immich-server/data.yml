@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: immich-server
   name: Immich 服务端
   tags:
@@ -13,3 +13,6 @@
   website: https://immich.app/
   github: https://github.com/immich-app/immich/
   document: https://docs.immich.app/
+  architectures:
+    - amd64
+    - arm64

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: fider
   name: Fider
   tags:
@@ -12,3 +12,6 @@
   website: https://fider.io/
   github: https://github.com/getfider/fider/
   document: https://fider.io/docs/hosting-instance
+  architectures:
+    - amd64
+    - arm64

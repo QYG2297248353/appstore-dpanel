@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: postgresql
   name: PostgreSQL
   tags:
@@ -12,3 +12,6 @@
   website: https://www.postgresql.org/
   github: https://github.com/postgres/postgres/
   document: https://www.postgresql.org/docs/
+  architectures:
+    - amd64
+    - arm64

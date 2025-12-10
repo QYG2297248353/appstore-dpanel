@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: acg-faka
   name: 异次元店铺系统V3
   tags:
@@ -13,3 +13,6 @@
   website: https://faka.wiki/
   github: https://github.com/lizhipay/acg-faka/
   document: https://faka.wiki/
+  architectures:
+    - amd64
+    - arm64

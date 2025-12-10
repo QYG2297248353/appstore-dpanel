@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: halo-h2
   name: Halo H2
   tags:
@@ -12,3 +12,8 @@
   website: https://halo.run/
   github: https://github.com/halo-dev/halo/
   document: https://docs.halo.run/
+  architectures:
+    - amd64
+    - arm64
+    - ppc64le
+    - s390x

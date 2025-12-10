@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: immich-machine-learning
   name: Immich 机器学习模块
   tags:
@@ -12,3 +12,6 @@
   website: https://immich.app/
   github: https://github.com/immich-app/immich/
   document: https://docs.immich.app/
+  architectures:
+    - amd64
+    - arm64

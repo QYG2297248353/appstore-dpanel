@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: puff
   name: Puff
   tags:
@@ -13,3 +13,5 @@
   website: https://github.com/BitAUR/Puff/
   github: https://github.com/BitAUR/Puff/
   document: https://github.com/BitAUR/Puff/
+  architectures:
+    - amd64

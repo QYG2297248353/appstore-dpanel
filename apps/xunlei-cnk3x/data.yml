@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: xunlei-cnk3x
   name: 迅雷 NAS版
   tags:
@@ -13,3 +13,6 @@
   website: https://github.com/cnk3x/xunlei/
   github: https://github.com/cnk3x/xunlei/
   document: https://github.com/cnk3x/xunlei/
+  architectures:
+    - amd64
+    - arm64

@@ -12,3 +12,6 @@ additionalProperties:
   website: https://github.com/MoonTechLab/LunaTV/
   github: https://github.com/MoonTechLab/LunaTV/
   document: https://github.com/MoonTechLab/LunaTV/
+  architectures:
+    - amd64
+    - arm64

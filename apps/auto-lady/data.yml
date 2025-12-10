@@ -13,3 +13,5 @@
   website: https://catcat.blog/
   github: https://catcat.blog/
   document: https://catcat.blog/docker-autolady.html
+  architectures:
+    - amd64

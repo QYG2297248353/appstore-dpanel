@@ -12,3 +12,7 @@ additionalProperties:
   website: https://docs.termix.site/
   github: https://github.com/LukeGus/Termix/
   document: https://docs.termix.site/
+  architectures:
+    - amd64
+    - arm
+    - arm64

@@ -12,3 +12,7 @@ additionalProperties:
   website: https://www.clouddrive2.com/
   github: https://www.clouddrive2.com/
   document: https://www.clouddrive2.com/
+  architectures:
+    - amd64
+    - arm
+    - arm64

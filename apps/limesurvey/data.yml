@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: limesurvey
   name: 问卷星
   tags:
@@ -13,3 +13,6 @@
   website: https://www.limesurvey.org/
   github: https://github.com/LimeSurvey/LimeSurvey/
   document: https://www.limesurvey.org/manual/LimeSurvey_Manual/
+  architectures:
+    - amd64
+    - arm64

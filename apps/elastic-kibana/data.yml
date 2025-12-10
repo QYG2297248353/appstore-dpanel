@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: elastic-kibana
   name: Kibana
   tags:
@@ -14,3 +14,6 @@
   website: https://www.elastic.co/
   github: https://github.com/elastic/kibana/
   document: https://www.elastic.co/docs/
+  architectures:
+    - amd64
+    - arm64

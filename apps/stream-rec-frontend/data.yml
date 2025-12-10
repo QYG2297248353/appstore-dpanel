@@ -13,3 +13,6 @@
   website: https://github.com/hua0512/stream-rec/
   github: https://github.com/hua0512/stream-rec/
   document: https://github.com/hua0512/stream-rec/
+  architectures:
+    - amd64
+    - arm64

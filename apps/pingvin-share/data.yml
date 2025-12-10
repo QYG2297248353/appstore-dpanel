@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: pingvin-share
   name: Pingvin Share
   tags:
@@ -12,3 +12,6 @@
   website: https://github.com/stonith404/pingvin-share/
   github: https://github.com/stonith404/pingvin-share/
   document: https://stonith404.github.io/pingvin-share/introduction/
+  architectures:
+    - amd64
+    - arm64

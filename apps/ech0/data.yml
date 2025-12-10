@@ -12,3 +12,6 @@ additionalProperties:
   website: https://memo.vaaat.com/
   github: https://github.com/lin-snow/Ech0/
   document: https://github.com/lin-snow/Ech0/
+  architectures:
+    - amd64
+    - arm64

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: dashdot
   name: Dash.
   tags:
@@ -12,3 +12,6 @@
   website: https://getdashdot.com/
   github: https://github.com/MauriceNino/dashdot/
   document: https://getdashdot.com/
+  architectures:
+    - amd64
+    - arm64

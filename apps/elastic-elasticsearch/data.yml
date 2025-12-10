@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: elastic-elasticsearch
   name: Elasticsearch
   tags:
@@ -13,3 +13,6 @@
   website: https://www.elastic.co/
   github: https://github.com/elastic/elasticsearch/
   document: https://www.elastic.co/docs/
+  architectures:
+    - amd64
+    - arm64

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: postgresql-postgis
   name: PostgreSQL (PostGIS)
   tags:
@@ -12,3 +12,5 @@
   website: https://www.postgresql.org/
   github: https://github.com/postgres/postgres/
   document: https://www.postgresql.org/docs/
+  architectures:
+    - amd64

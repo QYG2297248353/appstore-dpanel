@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: kimai
   name: Kimai
   tags:
@@ -13,3 +13,6 @@
   website: https://www.kimai.org/
   github: https://github.com/kimai/kimai/
   document: https://www.kimai.org/documentation/
+  architectures:
+    - amd64
+    - arm64

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: movie-pilot
   name: MoviePilot
   tags:
@@ -12,3 +12,6 @@
   website: https://github.com/jxxghp/MoviePilot/
   github: https://github.com/jxxghp/MoviePilot/
   document: https://wiki.movie-pilot.org/
+  architectures:
+    - amd64
+    - arm64

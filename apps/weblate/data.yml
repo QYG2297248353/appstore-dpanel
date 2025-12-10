@@ -12,3 +12,6 @@ additionalProperties:
   website: https://weblate.org/
   github: https://github.com/WeblateOrg/weblate/
   document: https://docs.weblate.org/
+  architectures:
+    - amd64
+    - arm64

@@ -13,3 +13,7 @@ additionalProperties:
   website: https://excalidraw.com/
   github: https://github.com/excalidraw/excalidraw/
   document: https://excalidraw.com/
+  architectures:
+    - amd64
+    - arm
+    - arm64

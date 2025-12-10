@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: dpanel
   name: DPanel
   tags:
@@ -13,3 +13,7 @@
   website: https://dpanel.cc/
   github: https://github.com/donknap/dpanel/
   document: https://dpanel.cc/
+  architectures:
+    - amd64
+    - arm
+    - arm64

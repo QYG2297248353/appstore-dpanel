@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: homarr
   name: Homarr
   tags:
@@ -12,3 +12,6 @@
   website: https://homarr.dev/
   github: https://github.com/ajnart/homarr/
   document: https://homarr.dev/
+  architectures:
+    - amd64
+    - arm64

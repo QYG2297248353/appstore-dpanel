@@ -12,3 +12,7 @@ additionalProperties:
   website: https://kspeeder.istoreos.com/
   github: https://github.com/linkease/docker_kspeeder/
   document: https://kspeeder.istoreos.com/
+  architectures:
+    - amd64
+    - arm
+    - arm64

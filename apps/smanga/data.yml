@@ -12,3 +12,6 @@ additionalProperties:
   website: https://github.com/lkw199711/smanga/
   github: https://github.com/lkw199711/smanga/
   document: https://github.com/lkw199711/smanga/
+  architectures:
+    - amd64
+    - arm64

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: metatube-server-memory
   name: MetaTube (内存模式)
   tags:
@@ -13,3 +13,6 @@
   website: https://github.com/metatube-community/
   github: https://github.com/metatube-community/
   document: https://metatube-community.github.io/
+  architectures:
+    - amd64
+    - arm64

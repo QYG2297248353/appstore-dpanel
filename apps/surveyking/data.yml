@@ -12,3 +12,6 @@ additionalProperties:
   website: https://surveyking.cn/
   github: https://github.com/javahuang/surveyking/
   document: https://surveyking.cn/help/quickstart/
+  architectures:
+    - amd64
+    - arm64

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: pixman
   name: Pixman
   tags:
@@ -12,3 +12,6 @@
   website: https://pixman.io/
   github: https://pixman.io/
   document: https://pixman.io/
+  architectures:
+    - amd64
+    - arm64

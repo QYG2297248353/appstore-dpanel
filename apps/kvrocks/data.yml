@@ -14,3 +14,6 @@ additionalProperties:
   website: https://kvrocks.apache.org/
   github: https://github.com/apache/kvrocks/
   document: https://kvrocks.apache.org/
+  architectures:
+    - amd64
+    - arm64

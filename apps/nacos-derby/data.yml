@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: nacos-derby
   name: Nacos Derby版
   tags:
@@ -13,3 +13,6 @@
   website: https://nacos.io/
   github: https://github.com/alibaba/nacos/
   document: https://nacos.io/docs/latest/what-is-nacos/
+  architectures:
+    - amd64
+    - arm64

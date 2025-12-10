@@ -12,3 +12,8 @@ additionalProperties:
   website: https://github.com/FlareSolverr/FlareSolverr/
   github: https://github.com/FlareSolverr/FlareSolverr/
   document: https://github.com/FlareSolverr/FlareSolverr/
+  architectures:
+    - '386'
+    - amd64
+    - arm
+    - arm64

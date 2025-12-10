@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: iycms
   name: 爱影CMS
   tags:
@@ -12,3 +12,6 @@
   website: https://www.iycms.com/
   github: https://www.iycms.com/
   document: https://www.iycms.com/
+  architectures:
+    - amd64
+    - arm64

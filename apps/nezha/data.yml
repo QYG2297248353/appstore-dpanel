@@ -13,3 +13,7 @@
   website: https://nezha.wiki/
   github: https://github.com/naiba/nezha/
   document: https://nezha.wiki/guide/dashboard.html
+  architectures:
+    - amd64
+    - arm64
+    - s390x

@@ -1,4 +1,4 @@
-﻿additionalProperties:
+additionalProperties:
   key: speedtest-tracker-sqlite
   name: SpeedTest Tracker SQLite版
   tags:
@@ -13,3 +13,6 @@
   website: https://docs.speedtest-tracker.dev/
   github: https://github.com/alexjustesen/speedtest-tracker
   document: https://docs.speedtest-tracker.dev/
+  architectures:
+    - amd64
+    - arm64

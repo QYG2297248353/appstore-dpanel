@@ -14,3 +14,5 @@
   website: https://igniterealtime.org/
   github: https://github.com/igniterealtime/Openfire/
   document: https://igniterealtime.org/projects/openfire/
+  architectures:
+    - amd64

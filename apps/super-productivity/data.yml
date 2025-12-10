@@ -12,3 +12,7 @@ additionalProperties:
   website: https://super-productivity.com/
   github: https://github.com/johannesjo/super-productivity/
   document: https://super-productivity.com/
+  architectures:
+    - amd64
+    - arm
+    - arm64
