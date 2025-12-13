@@ -20,6 +20,12 @@ Transmission 是一个快速、轻量级的 BitTorrent 客户端，支持多种�
 
 参数不需要 `/home/transmission` 前缀，只需要填写 `/config/themes/<主题目录名称>` 即可。
 
+#### 内置主题
+
+`/themes/flood-for-transmission` 内置主题
+
+`/themes/transmission-web-control` 内置主题
+
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)
