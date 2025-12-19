@@ -15,6 +15,13 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
+    - default: "xxx-xxx-xxx-xxx"
+      edit: true
+      envKey: LICENSE_CODE
+      labelEn: License code
+      labelZh: 激活码
+      required: true
+      type: text
     - default: ""
       edit: true
       envKey: CUSTOM_MOUNT_DIRECTORY_1
