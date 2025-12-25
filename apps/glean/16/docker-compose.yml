@@ -58,7 +58,7 @@ services:
       - -f
       - http://localhost:8000/api/health
       timeout: 5s
-    image: ghcr.io/leslieleung/glean-backend:0.2.2
+    image: ghcr.io/leslieleung/glean-backend:0.2.3
     labels:
       createdBy: Apps
     networks:
@@ -113,7 +113,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: ghcr.io/leslieleung/glean-web:0.2.2
+    image: ghcr.io/leslieleung/glean-web:0.2.3
     networks:
     - glean-network
     ports:
@@ -141,7 +141,7 @@ services:
       DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-glean}:${POSTGRES_PASSWORD:-glean}@postgres:5432/${POSTGRES_DB:-glean}
       REDIS_URL: redis://redis:6379/0
       SECRET_KEY: ${SECRET_KEY:-}
-    image: ghcr.io/leslieleung/glean-backend:0.2.2
+    image: ghcr.io/leslieleung/glean-backend:0.2.3
     networks:
     - glean-network
     restart: always

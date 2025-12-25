@@ -11,15 +11,14 @@
         <span style="font-size: 24px; margin-right: 8px;">⚠️</span>
         <div>
             <strong style="font-size: 16px;">温馨提示</strong><br>
-            <span style="font-size: 14px; color: #333;">禁止在国内宣传该产品</span>
+            <span style="font-size: 14px; color: #333;">禁止在国内宣传该产品</span><br>
+            <strong style="font-size: 14px; color: #333;">应用已下架</strong>
         </div>
     </div>
 </div>
 
 ## 应用说明
 
-> 已下架
->
 > 账号密码可在 `日志` 查看
 
 ---

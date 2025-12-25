@@ -11,21 +11,15 @@
         <span style="font-size: 24px; margin-right: 8px;">⚠️</span>
         <div>
             <strong style="font-size: 16px;">温馨提示</strong><br>
-            <span style="font-size: 14px; color: #333;">禁止在国内宣传该产品</span>
+            <span style="font-size: 14px; color: #333;">禁止在国内宣传该产品</span><br>
+            <strong style="font-size: 14px; color: #333;">应用已下架</strong>
         </div>
     </div>
 </div>
 
 ## 应用说明
 
-> 目前仅支持 MT，FSM(已闭站)，PTT 三个 PT 站点的 AV 采集订阅
->
 > 账号密码可在 `日志` 查看
-
-## 应用配置
-
-+ qBittorrent 下载器
-+ PT 站点密钥
 
 ---
 
