@@ -11,7 +11,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: gdy666/lucky:2.24.0
+    image: gdy666/lucky:2.25.0
     labels:
       createdBy: Apps
     network_mode: ${NETWORK_MODE:-host}
