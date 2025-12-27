@@ -13,7 +13,7 @@ services:
     - DEMO=false
     - NODE_ENV=production
     - ENCRYPT_ENABLE=false
-    image: innei/mx-server:8.4.2
+    image: innei/mx-server:8.4.3
     labels:
       createdBy: Apps
     networks:
