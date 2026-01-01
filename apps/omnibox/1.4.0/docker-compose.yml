@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: lampon/omnibox:v1.3.20
+    image: lampon/omnibox:v1.4.0
     labels:
       createdBy: Apps
     networks:
