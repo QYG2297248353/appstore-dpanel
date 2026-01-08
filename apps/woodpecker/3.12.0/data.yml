@@ -1,0 +1,78 @@
+additionalProperties:
+  formFields:
+    - default: "/home/woodpecker"
+      edit: true
+      envKey: WOODPECKER_ROOT_PATH
+      labelZh: 数据持久化路径
+      labelEn: Data persistence path
+      required: true
+      type: text
+    - default: 8000
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: WebUI 端口
+      labelEn: WebUI port
+      required: true
+      rule: paramPort
+      type: number
+    - default: ""
+      edit: true
+      envKey: WOODPECKER_AGENT_SECRET
+      labelZh: 密钥
+      labelEn: Secret
+      required: true
+      type: text
+    - default: "http://localhost:8000"
+      edit: true
+      envKey: WOODPECKER_HOST
+      labelZh: 访问地址
+      labelEn: Host Address
+      required: true
+      type: text
+    - default: 4
+      edit: true
+      envKey: WOODPECKER_MAX_WORKFLOWS
+      labelZh: 最大任务数
+      labelEn: Maximum number of tasks
+      required: true
+      type: number
+    - default: "false"
+      edit: true
+      envKey: WOODPECKER_OPEN
+      labelZh: 是否允许注册
+      labelEn: Allow registration
+      required: true
+      type: select
+      values:
+        - label: 允许
+          value: "true"
+        - label: 禁止
+          value: "false"
+    - default: ""
+      edit: true
+      envKey: WOODPECKER_ADMIN
+      labelZh: 管理员账户列表
+      labelEn: Administrator account list
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WOODPECKER_ORGS
+      labelZh: 组织列表
+      labelEn: Organization list
+      required: false
+      type: text
+    - default: "72h"
+      edit: true
+      envKey: WOODPECKER_SESSION_EXPIRES
+      labelZh: 登录过期时间
+      labelEn: Login expiration time
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: WOODPECKER_HOSTNAME
+      labelZh: 操作系统主机名
+      labelEn: Operating system host name
+      required: true
+      type: text
