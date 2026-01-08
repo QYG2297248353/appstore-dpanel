@@ -15,6 +15,14 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
+    - default: 9000
+      edit: true
+      envKey: PANEL_APP_PORT_GRPC
+      labelZh: GRPC 端口
+      labelEn: GRPC port
+      required: true
+      rule: paramPort
+      type: number
     - default: ""
       edit: true
       envKey: WOODPECKER_AGENT_SECRET
@@ -29,13 +37,6 @@ additionalProperties:
       labelEn: Host Address
       required: true
       type: text
-    - default: 4
-      edit: true
-      envKey: WOODPECKER_MAX_WORKFLOWS
-      labelZh: 最大任务数
-      labelEn: Maximum number of tasks
-      required: true
-      type: number
     - default: "false"
       edit: true
       envKey: WOODPECKER_OPEN

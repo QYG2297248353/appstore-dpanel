@@ -1,6 +1,6 @@
 additionalProperties:
-  key: woodpecker
-  name: Woodpecker (啄木鸟)
+  key: woodpecker-server
+  name: Woodpecker Server (啄木鸟)
   tags:
     - WebSite
     - DevOps
