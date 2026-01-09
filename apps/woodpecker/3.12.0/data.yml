@@ -62,6 +62,13 @@ additionalProperties:
       labelEn: Organization list
       required: false
       type: text
+    - default: ""
+      edit: true
+      envKey: WOODPECKER_PLUGINS_PRIVILEGED
+      labelZh: 特权插件
+      labelEn: Privileged plugins
+      required: false
+      type: text
     - default: "72h"
       edit: true
       envKey: WOODPECKER_SESSION_EXPIRES
