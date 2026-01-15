@@ -10,8 +10,8 @@ additionalProperties:
     - default: "localhost:9000"
       edit: true
       envKey: WOODPECKER_SERVER
-      labelZh: 数据持久化路径
-      labelEn: Data persistence path
+      labelZh: Woodpecker GRPC 服务地址
+      labelEn: Woodpecker server GRPC address
       required: true
       type: text
     - default: ""

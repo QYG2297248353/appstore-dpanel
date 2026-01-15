@@ -10,7 +10,7 @@ services:
     environment:
     - TZ=Asia/Shanghai
     - DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
-    image: jvmilazz0/kavita:0.8.8
+    image: jvmilazz0/kavita:0.8.9
     labels:
       createdBy: Apps
     networks:
