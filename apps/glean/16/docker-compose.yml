@@ -113,7 +113,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: ghcr.io/leslieleung/glean-web:0.2.3
+    image: ghcr.io/leslieleung/glean-web:0.2.4
     networks:
     - glean-network
     ports:
