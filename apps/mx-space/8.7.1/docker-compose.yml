@@ -2,23 +2,24 @@ networks:
   1panel-network:
     external: true
 services:
-  waline:
-    container_name: waline
+  mx-server:
+    container_name: mx-space
     env_file:
     - ./envs/global.env
     - .env
     environment:
     - TZ=Asia/Shanghai
-    - SQLITE_PATH=/app/data
-    - SQLITE_DB=waline
-    - SQLITE_PREFIX=wl_
-    image: lizheming/waline:1.36.1
+    - PORT=2333
+    - DEMO=false
+    - NODE_ENV=production
+    - ENCRYPT_ENABLE=false
+    image: innei/mx-server:8.7.1
     labels:
       createdBy: Apps
     networks:
     - 1panel-network
     ports:
-    - ${PANEL_APP_PORT_HTTP}:8360
+    - ${PANEL_APP_PORT_HTTP}:2333
     restart: always
     volumes:
-    - ${WALINE_ROOT_PATH}/data:/app/data
+    - ${MX_SERVER_ROOT_PATH}/data:/root/.mx-space
