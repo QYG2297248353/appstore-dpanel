@@ -77,6 +77,10 @@ redis://password@127.0.0.1:6379/1?timeout=10&pool_size=10
   }
 ```
 
+## 其他配置
+
+请前往安装目录找到 `emvs/outline.env` 文件，进行配置。
+
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)

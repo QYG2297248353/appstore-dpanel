@@ -43,20 +43,20 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-    - default: "fbad4f5da794acbc10f060cdfcf8673300f3302d87f076d7f6e781d4840e9c3d"
+    - default: ""
       edit: true
       envKey: SECRET_KEY
       labelZh: 加密密钥
       labelEn: Secret Key
       required: true
-      type: password
-    - default: "b2be1c54acbfe6d965bda01e63195cc815e4743a6fb5ba5f82eae916d98989b5"
+      type: text
+    - default: ""
       edit: true
       envKey: UTILS_SECRET
       labelZh: 工具密钥
       labelEn: Utils Secret
       required: true
-      type: password
+      type: text
     - default: "http://127.0.0.1:3000"
       edit: true
       envKey: URL
@@ -64,28 +64,6 @@ additionalProperties:
       labelEn: Domain
       required: true
       rule: paramExtUrl
-      type: text
-    - default: ""
-      edit: true
-      envKey: CDN_URL
-      labelZh: CDN 域名
-      labelEn: CDN Domain
-      required: false
-      type: text
-    - default: "https://iframe.ly/api/iframely"
-      edit: true
-      envKey: IFRAMELY_URL
-      labelZh: iFramely 地址
-      labelEn: iFramely URL
-      required: true
-      rule: paramExtUrl
-      type: text
-    - default: ""
-      edit: true
-      envKey: IFRAMELY_API_KEY
-      labelZh: iFramely 密钥
-      labelEn: iFramely API Key
-      required: false
       type: text
     - default: "127.0.0.1"
       edit: true
@@ -146,129 +124,29 @@ additionalProperties:
       labelEn: Slack Client Secret (Auth)
       required: false
       type: password
+    - default: "false"
+      edit: true
+      envKey: FORCE_HTTPS
+      labelZh: 强制使用 HTTPS
+      labelEn: Force HTTPS
+      required: true
+      type: select
+      values:
+        - label: 启用
+          value: "true"
+        - label: 禁止
+          value: "false"
     - default: ""
       edit: true
-      envKey: GOOGLE_CLIENT_ID
-      labelZh: Google 客户端 ID (鉴权)
-      labelEn: Google Client ID (Auth)
+      envKey: HTTP_PROXY
+      labelZh: HTTP 代理
+      labelEn: HTTP Proxy
       required: false
       type: text
-    - default: ""
+    - default: "localhost,127.0.0.1,::1,192.168.0.0/16,10.0.0.0/8,*.local"
       edit: true
-      envKey: GOOGLE_CLIENT_SECRET
-      labelZh: Google 客户端密钥 (鉴权)
-      labelEn: Google Client Secret (Auth)
-      required: false
-      type: password
-    - default: ""
-      edit: true
-      envKey: DISCORD_CLIENT_ID
-      labelZh: Discord 客户端 ID (鉴权)
-      labelEn: Discord Client ID (Auth)
+      envKey: NO_PROXY
+      labelZh: 忽略代理
+      labelEn: No Proxy
       required: false
       type: text
-    - default: ""
-      edit: true
-      envKey: DISCORD_CLIENT_SECRET
-      labelZh: Discord 客户端密钥 (鉴权)
-      labelEn: Discord Client Secret (Auth)
-      required: false
-      type: password
-    - default: ""
-      edit: true
-      envKey: DISCORD_SERVER_ID
-      labelZh: Discord 服务端 ID (鉴权)
-      labelEn: Discord Server ID (Auth)
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: DISCORD_SERVER_ROLES
-      labelZh: Discord 服务端角色 (鉴权)
-      labelEn: Discord Server Roles (Auth)
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: SMTP_HOST
-      labelZh: SMTP 主机
-      labelEn: SMTP Host
-      required: false
-      type: text
-    - default: 465
-      edit: true
-      envKey: SMTP_PORT
-      labelZh: SMTP 端口
-      labelEn: SMTP Port
-      required: false
-      type: number
-    - default: ""
-      edit: true
-      envKey: SMTP_USERNAME
-      labelZh: SMTP 用户名
-      labelEn: SMTP Username
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: SMTP_PASSWORD
-      labelZh: SMTP 密码
-      labelEn: SMTP Password
-      required: false
-      type: password
-    - default: ""
-      edit: true
-      envKey: SMTP_FROM_EMAIL
-      labelZh: SMTP 发件人
-      labelEn: SMTP From Email
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: SLACK_VERIFICATION_TOKEN
-      labelZh: Slack 验证令牌 (Slack 集成)
-      labelEn: Slack Verification Token (Slack Integration)
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: SLACK_APP_ID
-      labelZh: Slack 应用ID (Slack 集成)
-      labelEn: Slack App ID (Slack Integration)
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: GITHUB_CLIENT_ID
-      labelZh: GitHub 客户端 ID (GitHub 集成)
-      labelEn: GitHub Client ID (GitHub Integration)
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: GITHUB_CLIENT_SECRET
-      labelZh: GitHub 客户端密钥 (GitHub 集成)
-      labelEn: GitHub Client Secret (GitHub Integration)
-      required: false
-      type: password
-    - default: ""
-      edit: true
-      envKey: GITHUB_APP_NAME
-      labelZh: GitHub 应用名称 (GitHub 集成)
-      labelEn: GitHub App Name (GitHub Integration)
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: GITHUB_APP_ID
-      labelZh: GitHub 应用ID (GitHub 集成)
-      labelEn: GitHub App ID (GitHub Integration)
-      required: false
-      type: text
-    - default: ""
-      edit: true
-      envKey: GITHUB_APP_PRIVATE_KEY
-      labelZh: GitHub 应用私钥 (GitHub 集成)
-      labelEn: GitHub App Private Key (GitHub Integration)
-      required: false
-      type: password
