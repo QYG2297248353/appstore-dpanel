@@ -11,7 +11,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: mysql:8.4.7
+    image: mysql:8.4.8
     labels:
       createdBy: Apps
     networks:
