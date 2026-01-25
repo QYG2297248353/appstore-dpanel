@@ -11,7 +11,7 @@ services:
     - TZ=Asia/Shanghai
     - PUID=1000
     - PGID=1000
-    image: linuxserver/jackett:0.24.912
+    image: linuxserver/jackett:0.24.932
     labels:
       createdBy: Apps
     networks:
