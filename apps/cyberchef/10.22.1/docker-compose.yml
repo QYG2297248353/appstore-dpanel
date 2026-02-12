@@ -7,7 +7,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: ghcr.io/gchq/cyberchef:10.22.0
+    image: ghcr.io/gchq/cyberchef:10.22.1
     labels:
       createdBy: Apps
     networks:
