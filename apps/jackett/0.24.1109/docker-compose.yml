@@ -2,20 +2,23 @@ networks:
   1panel-network:
     external: true
 services:
-  cloudreve:
-    container_name: cloudreve
+  jackett:
+    container_name: jackett
     env_file:
     - ./envs/global.env
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: cloudreve/cloudreve:4.13.0
+    - PUID=1000
+    - PGID=1000
+    image: linuxserver/jackett:0.24.1109
     labels:
       createdBy: Apps
     networks:
     - 1panel-network
     ports:
-    - ${PANEL_APP_PORT_HTTP}:5212
+    - ${PANEL_APP_PORT_HTTP}:9117
     restart: always
     volumes:
-    - ${CLOUDREVE_ROOT_PATH}/data:/cloudreve/data
+    - ${JACKETT_ROOT_PATH}/config:/config
+    - ${JACKETT_ROOT_PATH}/downloads:/downloads
