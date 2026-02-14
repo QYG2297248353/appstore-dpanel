@@ -10,6 +10,8 @@ services:
     environment:
     - TZ=Asia/Shanghai
     - LT_API_KEYS=true
+    - HTTPS_PROXY=${HTTPS_PROXY:-}
+    - NO_PROXY=${NO_PROXY:-}
     healthcheck:
       interval: 10s
       retries: 4
@@ -26,6 +28,7 @@ services:
     ports:
     - ${PANEL_APP_PORT_HTTP}:5000
     restart: always
+    tty: true
     volumes:
-    - ${LIBRETRANSLATE_ROOT_PATH}/db:/app/db
+    - ${LIBRETRANSLATE_ROOT_PATH}/db:/app/db:rw
     - ${LIBRETRANSLATE_ROOT_PATH}/models:/home/libretranslate/.local:rw
