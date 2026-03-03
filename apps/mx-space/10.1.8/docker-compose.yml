@@ -2,22 +2,24 @@ networks:
   1panel-network:
     external: true
 services:
-  kspeeder:
-    container_name: kspeeder
+  mx-server:
+    container_name: mx-space
     env_file:
     - ./envs/global.env
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: linkease/kspeeder:0.6.6
+    - PORT=2333
+    - DEMO=false
+    - NODE_ENV=production
+    - ENCRYPT_ENABLE=false
+    image: innei/mx-server:10.1.8
     labels:
       createdBy: Apps
     networks:
     - 1panel-network
     ports:
-    - ${PANEL_APP_PORT_HTTP}:5003
-    - ${PANEL_APP_PORT_API}:5443
+    - ${PANEL_APP_PORT_HTTP}:2333
     restart: always
     volumes:
-    - ${KSPEEDER_ROOT_PATH}/data:/kspeeder-data
-    - ${KSPEEDER_ROOT_PATH}/config:/kspeeder-config
+    - ${MX_SERVER_ROOT_PATH}/data:/root/.mx-space
