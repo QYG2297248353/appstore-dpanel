@@ -7,7 +7,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: mauricenino/dashdot:6.3.3
+    image: mauricenino/dashdot:6.3.4
     labels:
       createdBy: Apps
     networks:
