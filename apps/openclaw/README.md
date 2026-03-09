@@ -12,6 +12,12 @@
 
 OpenClaw 通过单个 Gateway 网关进程将聊天应用连接到 Pi 等编程智能体。它为 OpenClaw 助手提供支持，并支持本地或远程部署。
 
+## 使用
+
+尚未部署反向代理时，仅限本地访问。 `localhost` 或 `127.0.0.1` 。
+
+通过局域网地址无法访问。
+
 ---
 
 ![Ms Studio](https://file.lifebus.top/imgs/ms_blank_001.png)

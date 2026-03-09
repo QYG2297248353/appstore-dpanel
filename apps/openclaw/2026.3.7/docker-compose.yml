@@ -33,36 +33,12 @@ services:
     init: true
     labels:
       createdBy: Apps
+    networks:
+    - 1panel-network
     ports:
     - ${PANEL_APP_PORT_HTTP}:18789
     - ${PANEL_APP_PORT_RPC}:18790
     restart: always
-    user: node:node
-    volumes:
-    - ${OPENCLAW_ROOT_PATH}/data/config:/home/node/.openclaw
-    - ${OPENCLAW_ROOT_PATH}/data/workspace:/home/node/.openclaw/workspace
-  openclaw-cli:
-    cap_drop:
-    - NET_RAW
-    - NET_ADMIN
-    container_name: openclaw-cli
-    depends_on:
-    - openclaw
-    entrypoint:
-    - node
-    - dist/index.js
-    environment:
-    - TZ=Asia/Shanghai
-    - HOME=/home/node
-    - TERM=xterm-256color
-    - BROWSER=echo
-    image: ghcr.io/openclaw/openclaw:2026.3.7
-    init: true
-    network_mode: service:openclaw
-    security_opt:
-    - no-new-privileges:true
-    stdin_open: true
-    tty: true
     user: node:node
     volumes:
     - ${OPENCLAW_ROOT_PATH}/data/config:/home/node/.openclaw
