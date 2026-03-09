@@ -1,0 +1,69 @@
+networks:
+  1panel-network:
+    external: true
+services:
+  openclaw:
+    command:
+    - node
+    - dist/index.js
+    - gateway
+    - --bind
+    - ${OPENCLAW_GATEWAY_BIND:-lan}
+    - --port
+    - '18789'
+    container_name: openclaw
+    env_file:
+    - ./envs/global.env
+    - .env
+    environment:
+    - TZ=Asia/Shanghai
+    - HOME=/home/node
+    - TERM=xterm-256color
+    healthcheck:
+      interval: 30s
+      retries: 5
+      start_period: 20s
+      test:
+      - CMD
+      - node
+      - -e
+      - fetch('http://127.0.0.1:18789/healthz').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))
+      timeout: 5s
+    image: ghcr.io/openclaw/openclaw:2026.3.7
+    init: true
+    labels:
+      createdBy: Apps
+    ports:
+    - ${PANEL_APP_PORT_HTTP}:18789
+    - ${PANEL_APP_PORT_RPC}:18790
+    restart: always
+    user: node:node
+    volumes:
+    - ${OPENCLAW_ROOT_PATH}/data/config:/home/node/.openclaw
+    - ${OPENCLAW_ROOT_PATH}/data/workspace:/home/node/.openclaw/workspace
+  openclaw-cli:
+    cap_drop:
+    - NET_RAW
+    - NET_ADMIN
+    container_name: openclaw-cli
+    depends_on:
+    - openclaw
+    entrypoint:
+    - node
+    - dist/index.js
+    environment:
+    - TZ=Asia/Shanghai
+    - HOME=/home/node
+    - TERM=xterm-256color
+    - BROWSER=echo
+    image: ghcr.io/openclaw/openclaw:2026.3.7
+    init: true
+    network_mode: service:openclaw
+    security_opt:
+    - no-new-privileges:true
+    stdin_open: true
+    tty: true
+    user: node:node
+    volumes:
+    - ${OPENCLAW_ROOT_PATH}/data/config:/home/node/.openclaw
+    - ${OPENCLAW_ROOT_PATH}/data/workspace:/home/node/.openclaw/workspace
