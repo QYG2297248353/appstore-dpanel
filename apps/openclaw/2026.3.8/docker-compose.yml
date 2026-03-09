@@ -19,6 +19,7 @@ services:
     - TZ=Asia/Shanghai
     - HOME=/home/node
     - TERM=xterm-256color
+    - PLAYWRIGHT_BROWSERS_PATH=/home/node/.cache/ms-playwright
     healthcheck:
       interval: 30s
       retries: 5
@@ -43,3 +44,4 @@ services:
     volumes:
     - ${OPENCLAW_ROOT_PATH}/data/config:/home/node/.openclaw
     - ${OPENCLAW_ROOT_PATH}/data/workspace:/home/node/.openclaw/workspace
+    - ${OPENCLAW_ROOT_PATH}/data/ms-playwright:/home/node/.cache/ms-playwright
