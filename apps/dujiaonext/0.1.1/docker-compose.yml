@@ -40,7 +40,7 @@ services:
       - -qO-
       - http://127.0.0.1:8080/health
       timeout: 3s
-    image: dujiaonext/api:v0.1.0
+    image: dujiaonext/api:v0.1.1
     labels:
       createdBy: Apps
     networks:
@@ -63,7 +63,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: dujiaonext/user:v0.1.0
+    image: dujiaonext/user:v0.1.1
     networks:
     - dujiao-net
     ports:
