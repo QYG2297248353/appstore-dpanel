@@ -11,7 +11,7 @@ services:
     - TZ=Asia/Shanghai
     - DB_PATH=/emby-data/playback_reporting.db
     - playback_data_mode=sqlite
-    image: zeyu8023/emby-stats:1.2.0.691
+    image: zeyu8023/emby-stats:1.2.0.699
     labels:
       createdBy: Apps
     networks:
