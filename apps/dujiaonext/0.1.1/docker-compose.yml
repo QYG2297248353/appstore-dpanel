@@ -14,7 +14,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: dujiaonext/admin:v0.1.0
+    image: dujiaonext/admin:v0.1.1
     networks:
     - dujiao-net
     ports:
