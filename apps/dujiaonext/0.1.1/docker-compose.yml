@@ -9,9 +9,6 @@ services:
     depends_on:
       dujiaonext-api:
         condition: service_healthy
-    env_file:
-    - ./envs/global.env
-    - .env
     environment:
     - TZ=Asia/Shanghai
     image: dujiaonext/admin:v0.1.1
@@ -30,7 +27,6 @@ services:
     - QUEUE_HOST=${REDIS_HOST:-}
     - QUEUE_PORT=${REDIS_PORT:-}
     - QUEUE_PASSWORD=${REDIS_PASSWORD:-}
-    - QUEUE_DB=${REDIS_DB:-}
     healthcheck:
       interval: 10s
       retries: 10
@@ -58,9 +54,6 @@ services:
     depends_on:
       dujiaonext-api:
         condition: service_healthy
-    env_file:
-    - ./envs/global.env
-    - .env
     environment:
     - TZ=Asia/Shanghai
     image: dujiaonext/user:v0.1.1

@@ -21,7 +21,7 @@ if [ -f .env ]; then
 
   cp ./config/config.yml "$DUJIAONEXT_ROOT_PATH/config/config.yml"
 
-  chmod -R 777 "$DUJIAONEXT_ROOT_PATH/data"
+  chmod -R 0777 "$DUJIAONEXT_ROOT_PATH"
 
   echo "Check Finish."
 

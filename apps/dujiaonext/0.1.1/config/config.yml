@@ -13,7 +13,7 @@ log:
 
 database:
   driver: sqlite
-  dsn: ./db/dujiao.db
+  dsn: ./db/dujiao.db?_busy_timeout=5000&_journal_mode=WAL&_synchronous=NORMAL
   pool:
     max_open_conns: 1
     max_idle_conns: 1
@@ -21,20 +21,17 @@ database:
     conn_max_idle_time_seconds: 0
 
 jwt:
-  secret: your-secret-key-change-in-production-please
+  secret: "dev-admin-jwt-secret-change-me-please-32chars"
   expire_hours: 24
 
 user_jwt:
-  secret: user-secret-key-change-in-production-please
+  secret: "dev-user-jwt-secret-change-me-please-32chars"
   expire_hours: 24
   remember_me_expire_hours: 168
 
-telegram_auth:
-  enabled: false
-  bot_username: ""
-  bot_token: ""
-  login_expire_seconds: 300
-  replay_ttl_seconds: 300
+bootstrap:
+  default_admin_username: ""
+  default_admin_password: ""
 
 redis:
   enabled: true
@@ -103,6 +100,13 @@ security:
     require_lower: true
     require_number: true
     require_special: false
+
+telegram_auth:
+  enabled: false
+  bot_username: ""
+  bot_token: ""
+  login_expire_seconds: 300
+  replay_ttl_seconds: 300
 
 email:
   enabled: true

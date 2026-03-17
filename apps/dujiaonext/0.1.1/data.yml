@@ -94,10 +94,3 @@ additionalProperties:
       labelEn: Redis Connection Password
       required: false
       type: password
-    - default: 0
-      edit: true
-      envKey: REDIS_DB
-      labelZh: Redis 数据库索引
-      labelEn: Redis Database Index
-      required: true
-      type: number
