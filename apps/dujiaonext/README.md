@@ -22,6 +22,8 @@ API/User/Admin 三端分层清晰，便于二开与替换前台模板。
 
 ## 安装
 
+> 请注意 `管理员用户名` 为 `admin`，请勿修改。否则将无法登录后台管理。
+
 JWT 推荐使用 `openssl` 生成密钥：
 
 ```bash
@@ -29,6 +31,78 @@ openssl rand -hex 32
 ```
 
 ## 反向代理
+
+### 多域名部署
+
+```nginx
+# 前台 User
+server {
+    listen 80;
+    server_name user.example.com;
+
+    location / {
+        proxy_pass http://127.0.0.1:8081;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /api/ {
+        proxy_pass http://127.0.0.1:8080/api/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /uploads/ {
+        proxy_pass http://127.0.0.1:8080/uploads/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
+# 后台 Admin
+server {
+    listen 80;
+    server_name admin.example.com;
+
+    location / {
+        proxy_pass http://127.0.0.1:8082;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /api/ {
+        proxy_pass http://127.0.0.1:8080/api/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /uploads/ {
+        proxy_pass http://127.0.0.1:8080/uploads/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+### 单域名部署
+
+不推荐
+
+> 由于前台 User 与 Admin 分别部署在不同端口，因此需要配置反向代理。
+> 
+> 但是后台 /admin 属于 `/admin/` 路径，需要特殊处理。(否则无法正常访问资源，导致无法登录)
 
 ```nginx
 server {
@@ -72,6 +146,20 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
     }
+}
+```
+
+#### 补充规则
+
+```nginx
+location /assets/ {
+
+    if ($http_referer ~* "/admin/") {
+        proxy_pass http://127.0.0.1:57143;
+        break;
+    }
+
+    proxy_pass http://127.0.0.1:57142;
 }
 ```
 

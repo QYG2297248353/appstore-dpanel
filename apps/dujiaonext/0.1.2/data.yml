@@ -45,7 +45,7 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-    - default: ""
+    - default: "admin"
       edit: true
       envKey: DJ_DEFAULT_ADMIN_USERNAME
       labelZh: 管理员用户名
