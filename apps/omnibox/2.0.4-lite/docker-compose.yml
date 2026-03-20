@@ -2,7 +2,7 @@ networks:
   1panel-network:
     external: true
 services:
-  omnibox:
+  omnibox-lite:
     container_name: omnibox
     env_file:
     - ./envs/global.env
@@ -11,7 +11,7 @@ services:
     - TZ=Asia/Shanghai
     - SERVER_PORT=7023
     - DATABASE_TYPE=sqlite
-    image: lampon/omnibox:v2.0.4
+    image: lampon/omnibox:v2.0.4-lite
     labels:
       createdBy: Apps
     networks:

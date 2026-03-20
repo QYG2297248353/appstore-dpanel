@@ -9,7 +9,7 @@ additionalProperties:
   type: website
   crossVersionUpdate: true
   limit: 0
-  website: https://hub.docker.com/r/lampon/omnibox/
+  website: https://omnibox-doc.pages.dev/
   github: https://hub.docker.com/r/lampon/omnibox/
   document: https://hub.docker.com/r/lampon/omnibox/
   architectures:
