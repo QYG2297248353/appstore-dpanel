@@ -7,7 +7,7 @@ services:
     env_file:
     - ./envs/global.env
     - .env
-    image: vectorim/element-web:v1.12.12
+    image: vectorim/element-web:v1.12.13
     labels:
       createdBy: Apps
     networks:
