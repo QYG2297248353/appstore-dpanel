@@ -11,7 +11,7 @@ services:
         condition: service_healthy
     environment:
     - TZ=Asia/Shanghai
-    image: dujiaonext/admin:v0.1.6
+    image: dujiaonext/admin:v0.1.5
     networks:
     - dujiao-net
     ports:
@@ -56,7 +56,7 @@ services:
         condition: service_healthy
     environment:
     - TZ=Asia/Shanghai
-    image: dujiaonext/user:v0.1.5
+    image: dujiaonext/user:v0.1.7
     networks:
     - dujiao-net
     ports:
