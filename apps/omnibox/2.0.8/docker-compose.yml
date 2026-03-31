@@ -2,21 +2,22 @@ networks:
   1panel-network:
     external: true
 services:
-  twikoo:
-    container_name: twikoo
+  omnibox:
+    container_name: omnibox
     env_file:
     - ./envs/global.env
     - .env
     environment:
     - TZ=Asia/Shanghai
-    - TWIKOO_PORT=8080
-    image: imaegoo/twikoo:1.7.4
+    - SERVER_PORT=7023
+    - DATABASE_TYPE=sqlite
+    image: lampon/omnibox:v2.0.8
     labels:
       createdBy: Apps
     networks:
     - 1panel-network
     ports:
-    - ${PANEL_APP_PORT_HTTP}:8080
+    - ${PANEL_APP_PORT_HTTP}:7023
     restart: always
     volumes:
-    - ${TWIKOO_ROOT_PATH}/data:/app/data
+    - ${OMNIBOX_ROOT_PATH}/data:/app/data
