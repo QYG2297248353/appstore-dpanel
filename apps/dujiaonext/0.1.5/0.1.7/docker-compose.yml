@@ -11,7 +11,7 @@ services:
         condition: service_healthy
     environment:
     - TZ=Asia/Shanghai
-    image: dujiaonext/admin:v0.1.5
+    image: dujiaonext/admin:v1.0.0
     networks:
     - dujiao-net
     ports:
@@ -36,7 +36,7 @@ services:
       - -qO-
       - http://127.0.0.1:8080/health
       timeout: 3s
-    image: dujiaonext/api:v0.1.8
+    image: dujiaonext/api:v1.0.0
     labels:
       createdBy: Apps
     networks:

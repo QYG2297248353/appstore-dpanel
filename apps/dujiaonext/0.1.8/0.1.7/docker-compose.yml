@@ -5,7 +5,7 @@ networks:
     driver: bridge
 services:
   dujiaonext-admin:
-    container_name: admin-dujiaonext
+    container_name: admin-0.1.8
     depends_on:
       dujiaonext-api:
         condition: service_healthy
@@ -18,7 +18,7 @@ services:
     - ${PANEL_APP_PORT_ADMIN}:80
     restart: always
   dujiaonext-api:
-    container_name: dujiaonext
+    container_name: 0.1.8
     env_file:
     - ./envs/global.env
     - .env
@@ -36,7 +36,7 @@ services:
       - -qO-
       - http://127.0.0.1:8080/health
       timeout: 3s
-    image: dujiaonext/api:v1.0.0
+    image: dujiaonext/api:v0.1.8
     labels:
       createdBy: Apps
     networks:
@@ -50,13 +50,13 @@ services:
     - ${DUJIAONEXT_ROOT_PATH}/data/uploads:/app/uploads
     - ${DUJIAONEXT_ROOT_PATH}/data/logs:/app/logs
   dujiaonext-user:
-    container_name: user-dujiaonext
+    container_name: user-0.1.8
     depends_on:
       dujiaonext-api:
         condition: service_healthy
     environment:
     - TZ=Asia/Shanghai
-    image: dujiaonext/user:v0.1.5
+    image: dujiaonext/user:v1.0.0
     networks:
     - dujiao-net
     ports:
