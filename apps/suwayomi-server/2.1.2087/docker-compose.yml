@@ -19,3 +19,4 @@ services:
     restart: always
     volumes:
     - ${SUWAYOMI_SERVER_ROOT_PATH}/data:/home/suwayomi/.local/share/Tachidesk
+    - ${SUWAYOMI_SERVER_ROOT_PATH}/webUI:/tmp/Tachidesk/webUI-serve
