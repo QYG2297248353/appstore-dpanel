@@ -3,7 +3,7 @@ networks:
     external: true
 services:
   omnibox-lite:
-    container_name: 2.1.2
+    container_name: 2.1.3
     env_file:
     - ./envs/global.env
     - .env
