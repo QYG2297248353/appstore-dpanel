@@ -10,7 +10,7 @@ services:
     environment:
     - MODE=standalone
     - WEBPORT=80
-    image: ghcr.io/librespeed/speedtest:6.0.2
+    image: ghcr.io/librespeed/speedtest:6.1.0
     labels:
       createdBy: Apps
     networks:
