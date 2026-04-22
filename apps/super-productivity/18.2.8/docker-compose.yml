@@ -21,7 +21,7 @@ services:
     environment:
     - TZ=Asia/Shanghai
     - WEBDAV_BACKEND=http://sp-webdav
-    image: johannesjo/super-productivity:v18.2.7
+    image: johannesjo/super-productivity:v18.2.8
     labels:
       createdBy: Apps
     networks:
