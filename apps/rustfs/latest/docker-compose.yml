@@ -9,7 +9,6 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    - RUSTFS_VOLUMES=/data/rustfs{0...3}
     - RUSTFS_ADDRESS=0.0.0.0:9000
     - RUSTFS_CONSOLE_ADDRESS=0.0.0.0:9001
     - RUSTFS_CONSOLE_ENABLE=true
@@ -42,7 +41,4 @@ services:
     - no-new-privileges:true
     volumes:
     - ${RUSTFS_ROOT_PATH}/logs:/app/logs
-    - ${RUSTFS_ROOT_PATH}/data/rustfs0:/data/rustfs0
-    - ${RUSTFS_ROOT_PATH}/data/rustfs1:/data/rustfs1
-    - ${RUSTFS_ROOT_PATH}/data/rustfs2:/data/rustfs2
-    - ${RUSTFS_ROOT_PATH}/data/rustfs3:/data/rustfs3
+    - ${RUSTFS_ROOT_PATH}/data:/data
