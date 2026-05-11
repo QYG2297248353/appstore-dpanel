@@ -5,15 +5,14 @@ services:
   nezha:
     container_name: nezha
     environment:
-    - NZ_LISTEN_PORT=${PANEL_APP_PORT_HTTP}
-    - NZ_LOCATION=Asia/Shanghai
-    image: ghcr.io/nezhahq/nezha:v2.0.0
+    - TZ=Asia/Shanghai
+    image: ghcr.io/nezhahq/nezha:v2.0.7
     labels:
       createdBy: Apps
     networks:
     - 1panel-network
     ports:
-    - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
+    - ${PANEL_APP_PORT_HTTP}:8008
     restart: always
     volumes:
     - ${NEZHA_ROOT_PATH}/data:/dashboard/data
