@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: adguard/adguardhome:v0.107.75
+    image: adguard/adguardhome:v0.107.76
     labels:
       createdBy: Apps
     network_mode: ${NETWORK_MODE}
