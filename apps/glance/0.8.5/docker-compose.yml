@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: glanceapp/glance:v0.8.4
+    image: glanceapp/glance:v0.8.5
     labels:
       createdBy: Apps
     networks:
