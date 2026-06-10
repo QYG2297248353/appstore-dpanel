@@ -19,5 +19,5 @@ services:
     - ${PANEL_APP_PORT_DNS}:53/udp
     restart: always
     volumes:
-    - ${ADGUARDHOME_ROOT_PATH}/workdir:/my/own/workdir
-    - ${ADGUARDHOME_ROOT_PATH}/confdir:/my/own/confdir
+    - ${ADGUARDHOME_ROOT_PATH}/work:/opt/adguardhome/work
+    - ${ADGUARDHOME_ROOT_PATH}/conf:/opt/adguardhome/conf
