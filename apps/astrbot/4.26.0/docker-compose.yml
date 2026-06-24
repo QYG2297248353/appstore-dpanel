@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: soulter/astrbot:v4.25.6
+    image: soulter/astrbot:v4.26.0
     labels:
       createdBy: Apps
     networks:
