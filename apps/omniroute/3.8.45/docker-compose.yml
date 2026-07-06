@@ -9,7 +9,7 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    image: diegosouzapw/omniroute:3.8.44
+    image: diegosouzapw/omniroute:3.8.45
     labels:
       createdBy: Apps
     networks:
