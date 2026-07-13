@@ -12,7 +12,7 @@ services:
     - PGID=1000
     - UMASK=022
     - TZ=Asia/Shanghai
-    image: linuxserver/radarr:6.2.1
+    image: linuxserver/radarr:6.3.0
     labels:
       createdBy: Apps
     networks:
