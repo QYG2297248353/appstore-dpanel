@@ -9,7 +9,6 @@ services:
     - .env
     environment:
     - TZ=Asia/Shanghai
-    - MCSM_DOCKER_WORKSPACE_PATH=${MCSMANAGER_ROOT_PATH}/daemon/data/InstanceData
     image: githubyumao/mcsmanager-daemon:v10.16.2
     labels:
       createdBy: Apps

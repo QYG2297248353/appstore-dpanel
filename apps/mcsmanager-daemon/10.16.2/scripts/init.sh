@@ -10,6 +10,10 @@ if [ -f .env ]; then
   echo "ENV_FILE=${CURRENT_DIR}/.env" >> .env
   echo "GLOBAL_ENV_FILE=${CURRENT_DIR}/envs/global.env" >> .env
 
+  MCSMANAGER_ROOT_PATH=${MCSMANAGER_ROOT_PATH%/}
+  sed -i '/^MCSM_DOCKER_WORKSPACE_PATH=/d' .env
+  echo "MCSM_DOCKER_WORKSPACE_PATH=${MCSMANAGER_ROOT_PATH}/daemon/data/InstanceData" >> .env
+
   echo "Check Finish."
 
 else
