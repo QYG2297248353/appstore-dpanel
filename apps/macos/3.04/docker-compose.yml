@@ -14,7 +14,7 @@ services:
     - .env
     environment:
     - VERSION=${VERSION}
-    image: dockurr/macos:3.03
+    image: dockurr/macos:3.04
     labels:
       createdBy: Apps
     networks:
