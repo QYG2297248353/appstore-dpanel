@@ -1,0 +1,24 @@
+networks:
+  1panel-network:
+    external: true
+services:
+  avdb:
+    container_name: leolitaly-avdb
+    env_file:
+    - ./envs/global.env
+    - .env
+    environment:
+    - TZ=Asia/Shanghai
+    - PGID=${PGID:-1000}
+    - PUID=${PUID:-1000}
+    - DATABASE_URL=sqlite:////data/avdb.db
+    image: leolitaly/avdb:latest
+    labels:
+      createdBy: Apps
+    networks:
+    - 1panel-network
+    ports:
+    - ${PANEL_APP_PORT_HTTP}:8000
+    restart: always
+    volumes:
+    - ${AVDB_ROOT_PATH}/data:/data
